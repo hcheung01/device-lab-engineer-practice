@@ -18,13 +18,22 @@ ALLOWED_TRANSITIONS = {
 class Device:
     """Represent one managed lab device."""
 
-    def __init__(self, device_id: str, device_type: str, device_state: str, os_version: str):
+    def __init__(self, 
+                 device_id: str,
+                 device_type: str, 
+                 device_state: str, 
+                 os_version: str,
+                 battery_level: int = 100,
+                 is_connected: bool = True
+                 ):
         self.device_id = device_id
         self.device_type = device_type
         if device_state not in ALLOWED_TRANSITIONS:
             raise ValueError(f"Invalid device state: {device_state}")
         self.device_state = device_state
         self.os_version = os_version
+        self.battery_level = battery_level
+        self.is_connected = is_connected
     
     def change_state(self, new_state: str) -> None:
         allow_states = ALLOWED_TRANSITIONS[self.device_state]
@@ -54,8 +63,18 @@ class DeviceInventory:
             if device.device_state == state:
                 devices.append(device)
         return devices
-        
 
+class HealthCheckResult:
+    """Check health of device"""
+        
+    def battery_level(self, device_id: str, inventory: DeviceInventory):
+        if device_id not in inventory.device_inventory:
+            raise KeyError(f"Device ID not in inventory: {device_id}")
+        return inventory.lookup(device_id).battery_level
+    
+    def is_connected(self):
+        pass
+    
 if __name__ == "__main__":
     device_id = "iphone5g"
     device_type = "phone"
