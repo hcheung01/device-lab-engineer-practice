@@ -26,6 +26,7 @@ class Device:
                  battery_level: int = 100,
                  is_connected: bool = True
                  ):
+        
         self.device_id = device_id
         self.device_type = device_type
         if device_state not in ALLOWED_TRANSITIONS:
@@ -67,25 +68,35 @@ class DeviceInventory:
 class HealthCheckResult:
     """Check health of device"""
         
-    def battery_level(self, device_id: str, inventory: DeviceInventory):
-        if device_id not in inventory.device_inventory:
-            raise KeyError(f"Device ID not in inventory: {device_id}")
-        return inventory.lookup(device_id).battery_level
+    def get_device_battery(self, device_id: str, inventory: DeviceInventory):
+        try:
+            device = inventory.lookup(device_id)
+        except KeyError:
+            return None
+        return device.battery_level
     
-    def is_connected(self):
-        pass
-    
+    def is_connected(self, device_id: str, inventory: DeviceInventory):
+        try:
+            device = inventory.lookup(device_id)
+        except KeyError:
+            return None
+        return device.is_connected
+            
 if __name__ == "__main__":
     device_id = "iphone5g"
     device_type = "phone"
     device_state = "available"
     new_device_state = "in_use"
     os_version = "27.10b"
+    device_battery = 93
+    is_connected = True
     device1 = Device(
         device_id,
         device_type,
         device_state,
-        os_version
+        os_version,
+        device_battery,
+        is_connected
     )
     
     print(device1.device_id, device1.device_type, device1.device_state, device1.os_version)
@@ -98,11 +109,15 @@ if __name__ == "__main__":
     device_state = "available"
     new_device_state = "in_use"
     os_version = "28.99abc"
+    device_battery = 80
+    device_is_connect = False
     device2 = Device(
         device_id,
         device_type,
         device_state,
-        os_version
+        os_version,
+        device_battery,
+        device_is_connect
     )
     print(device2.device_id, device2.device_type, device2.device_state, device2.os_version)
     device2.change_state(new_device_state)
@@ -117,9 +132,17 @@ if __name__ == "__main__":
     
     device = dev_inventory.lookup("ipadprom4")
     print(device.device_id)
-    print("LISTING BY STATE")
+    print("LISTING BY DEVICE STATE:")
     devices = dev_inventory.list_by_state("in_use")
     for device in devices:
         print(device.device_id)
     
-    
+    device_health = HealthCheckResult()
+    device1_battery = device_health.get_device_battery(device1.device_id, dev_inventory)
+    print(f"Device1 battery: {device1_battery}")
+    device1_isconnected = device_health.is_connected(device1.device_id, dev_inventory)
+    print(f"Device1 is connected: {device1_isconnected}")
+    device2_battery = device_health.get_device_battery(device2.device_id, dev_inventory)
+    print(f"Device2 battery: {device2_battery}")
+    device2_isconnected = device_health.is_connected(device2.device_id, dev_inventory)
+    print(f"Device2 is connected: {device2_isconnected}")
