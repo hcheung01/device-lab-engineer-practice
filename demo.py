@@ -126,3 +126,39 @@ if __name__ == "__main__":
     print(f"reasons: {device4_health_result.reasons}")
     print(f"device state: {device4.device_state}")
     print("\n")
+    
+
+    current_configuration = {
+        "os_version": "18.01a",
+        "settings": {
+        "locale": "en_US",
+        "timezone": "central/Austin",
+        "test_profile": "smoke-test",
+        },
+    }
+    device5 = Device(
+        "imac001",
+        "personal computer",
+        "available",
+        "18.01",
+        100,
+        True,
+        current_configuration
+    )
+    dev_inventory.add(device5)
+    device5_health_result = HealthCheckResult(device5.device_id)
+    print(device5.device_id, device5.device_type, device5.device_state, device5.os_version)
+    print(f"Device5 current configuration: {current_configuration}")
+    print(f"health status: {device5_health_result.healthy}")
+    print(f"reasons: {device5_health_result.reasons}")
+    print(f"device state: {device5.device_state}")
+
+    
+    requestion_configuration = {
+        "os_version": "27.11b",
+        "settings": {
+        "locale": "en_US",
+        "timezone": "America/Los_Angeles",
+        "test_profile": "smoke-test",
+        },
+    }

@@ -118,3 +118,5 @@ class ProvisioningResult:
         self.success = success
         self.message = message
         
+    def provision_device(self, device: Device, requested_configuration: dict[str, str]):
+        pass
