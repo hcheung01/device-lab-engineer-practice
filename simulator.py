@@ -23,7 +23,7 @@ class Device:
                  device_type: str, 
                  device_state: str, 
                  os_version: str,
-                 battery_level: int = 100,
+                 battery_level: int | None = 100,
                  is_connected: bool = True
                  ):
         
@@ -67,12 +67,21 @@ class DeviceInventory:
 
 class HealthCheckResult:
     """Check health of device"""
+    
+    def __init__(self,
+                 device_id: str,
+                 healthy: bool = True,
+                 reasons: list[str] | None = None
+                 ):
+        self.device_id = device_id
+        self.healthy = healthy
+        self.reasons = [] if reasons is None else reasons
         
     def get_device_battery(self, device_id: str, inventory: DeviceInventory):
         try:
             device = inventory.lookup(device_id)
         except KeyError:
-            return None
+            return None            
         return device.battery_level
     
     def is_connected(self, device_id: str, inventory: DeviceInventory):
@@ -81,68 +90,16 @@ class HealthCheckResult:
         except KeyError:
             return None
         return device.is_connected
-            
-if __name__ == "__main__":
-    device_id = "iphone5g"
-    device_type = "phone"
-    device_state = "available"
-    new_device_state = "in_use"
-    os_version = "27.10b"
-    device_battery = 93
-    is_connected = True
-    device1 = Device(
-        device_id,
-        device_type,
-        device_state,
-        os_version,
-        device_battery,
-        is_connected
-    )
-    
-    print(device1.device_id, device1.device_type, device1.device_state, device1.os_version)
-    device1.change_state(new_device_state)
-    print(device1.device_id, device1.device_type, device1.device_state, device1.os_version)
-    # device1.change_state("bad state")
-    
-    device_id = "ipadprom4"
-    device_type = "tablet"
-    device_state = "available"
-    new_device_state = "in_use"
-    os_version = "28.99abc"
-    device_battery = 80
-    device_is_connect = False
-    device2 = Device(
-        device_id,
-        device_type,
-        device_state,
-        os_version,
-        device_battery,
-        device_is_connect
-    )
-    print(device2.device_id, device2.device_type, device2.device_state, device2.os_version)
-    device2.change_state(new_device_state)
-    print(device2.device_id, device2.device_type, device2.device_state, device2.os_version)
-    
-    dev_inventory = DeviceInventory()
-    print(dev_inventory.device_inventory)
-    dev_inventory.add(device1)
-    print(dev_inventory.device_inventory)
-    dev_inventory.add(device2)
-    print(dev_inventory.device_inventory)
-    
-    device = dev_inventory.lookup("ipadprom4")
-    print(device.device_id)
-    print("LISTING BY DEVICE STATE:")
-    devices = dev_inventory.list_by_state("in_use")
-    for device in devices:
-        print(device.device_id)
-    
-    device_health = HealthCheckResult()
-    device1_battery = device_health.get_device_battery(device1.device_id, dev_inventory)
-    print(f"Device1 battery: {device1_battery}")
-    device1_isconnected = device_health.is_connected(device1.device_id, dev_inventory)
-    print(f"Device1 is connected: {device1_isconnected}")
-    device2_battery = device_health.get_device_battery(device2.device_id, dev_inventory)
-    print(f"Device2 battery: {device2_battery}")
-    device2_isconnected = device_health.is_connected(device2.device_id, dev_inventory)
-    print(f"Device2 is connected: {device2_isconnected}")
+
+    def check_health(self, device_id: str, inventory: DeviceInventory):
+        try:
+            device = inventory.lookup(device_id)
+        except KeyError:
+            return None
+        if device.battery_level is None or not 20 <= device.battery_level <= 100:
+            self.reasons.append(f"battery level: {device.battery_level}")
+            self.healthy = False
+        if device.is_connected is None or device.is_connected is False:
+            self.reasons.append(f"device connected: {device.is_connected}")
+            self.healthy = False
+        return self
