@@ -24,7 +24,8 @@ class Device:
                  device_state: str, 
                  os_version: str,
                  battery_level: int | None = 100,
-                 is_connected: bool = True
+                 is_connected: bool = True,
+                 configuration: dict[str, str] | None = None
                  ):
         
         self.device_id = device_id
@@ -35,7 +36,8 @@ class Device:
         self.os_version = os_version
         self.battery_level = battery_level
         self.is_connected = is_connected
-    
+        self.configuration = {} if configuration is None else configuration
+        
     def change_state(self, new_state: str) -> None:
         allow_states = ALLOWED_TRANSITIONS[self.device_state]
         if new_state not in allow_states:
@@ -103,3 +105,16 @@ class HealthCheckResult:
             self.reasons.append(f"device connected: {device.is_connected}")
             self.healthy = False
         return self
+    
+class ProvisioningResult:
+    def __init__(self,
+                 device_id: str,
+                 requested_configuration: dict[str, str],
+                 success: bool,
+                 message: str
+                 ) -> None:
+        self.device_id = device_id
+        self.requested_configuration = requested_configuration
+        self.success = success
+        self.message = message
+        
