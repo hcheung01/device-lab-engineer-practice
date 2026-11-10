@@ -36,12 +36,20 @@ class TestProvisioning:
         ],
     )
     def test_provisions_available_device(self, config, expected_success):
-        """A valid request updates the device's OS and settings."""
-
+        """Apply valid config and leave the device unchanged for invalid config."""
         device = Device("test-1", "phone", AVAILABLE, "18.0")
+        original_configuration = device.configuration.copy()
 
         result = provision_device(device, config)
 
         assert result.success is expected_success
 
-
+        if expected_success:
+            assert device.os_version == config["os_version"]
+            assert device.configuration == {
+                key: value for key, value in config.items()
+                if key != "os_version"
+            }
+        else:
+            assert device.os_version == "18.0"
+            assert device.configuration == original_configuration
