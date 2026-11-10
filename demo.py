@@ -166,13 +166,6 @@ if __name__ == "__main__":
     
     print(f"device5 os version: ", device5.os_version)
     print(f"device5 configuration", device5.configuration)
-    
-
-
-
-
-
-
 
     current_configuration = {
         "locale": "cn_CHINA",
@@ -212,4 +205,48 @@ if __name__ == "__main__":
     
     print(f"device6 os version: ", device6.os_version)
     print(f"device6 configuration", device6.configuration)
+    
+
+
+
+
+
+    current_configuration = {
+        "locale": "jp_Japan",
+        "timezone": "somewhere/Japan",
+        "test_profile": "adhoc-test",
+    }
+    device7 = Device(
+        "imac003",
+        "personal computer",
+        "in_use",
+        "19.02",
+        100,
+        True,
+        current_configuration
+    )
+    dev_inventory.add(device7)
+    device7_health_result = HealthCheckResult(device7.device_id)
+
+    requested_configuration = {
+        "os_version": "28,01a",
+        "locale": "en_US",
+        "timezone": "America/New York",
+        "test_profile": "smoke-test",
+    }
+    print(device7.device_id, device7.device_type, device7.device_state, device7.os_version)
+    print(f"Device7 current configuration: {device7.configuration}")
+    print(f"health status: {device7_health_result.healthy}")
+    print(f"reasons: {device7_health_result.reasons}")
+    print(f"device state: {device7.device_state}")
+    
+    provisioned_device7 = provision_device(device7, requested_configuration)
+    print("provisioned results:\n", 
+          "device_id:", provisioned_device7.device_id, 
+          "\nrequested config:", provisioned_device7.requested_configuration, 
+          "\nsuccess/fail:", provisioned_device7.success, 
+          "\nmessage:", provisioned_device7.message)
+    
+    print(f"device7 os version: ", device7.os_version)
+    print(f"device7 configuration", device7.configuration)
     

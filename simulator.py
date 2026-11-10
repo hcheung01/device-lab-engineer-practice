@@ -131,6 +131,13 @@ def provision_device(device: Device, config: DeviceConfig) -> ProvisioningResult
             False,
             "Device must be available"
         )
+    if device.device_state == IN_USE:
+        return ProvisioningResult(
+            device.device_id,
+            config,
+            False,
+            "Deivce must be available"
+        )
     if "os_version" not in config or not config["os_version"]:
         return ProvisioningResult(
             device.device_id,
