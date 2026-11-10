@@ -145,17 +145,11 @@ if __name__ == "__main__":
     dev_inventory.add(device5)
     device5_health_result = HealthCheckResult(device5.device_id)
     
-    # requested_configuration = {
-    #     "os_version": "27.11b",
-    #     "locale": "en_US",
-    #     "timezone": "America/Los_Angeles",
-    #     "test_profile": "smoke-test",
-    # }
     requested_configuration = {
         "os_version": "27.11b",
-        # "locale": "en_US",
-        # "timezone": "America/Los_Angeles",
-        # "test_profile": "smoke-test",
+        "locale": "en_US",
+        "timezone": "America/Los_Angeles",
+        "test_profile": "smoke-test",
     }
     print(device5.device_id, device5.device_type, device5.device_state, device5.os_version)
     print(f"Device5 current configuration: {device5.configuration}")
@@ -172,4 +166,50 @@ if __name__ == "__main__":
     
     print(f"device5 os version: ", device5.os_version)
     print(f"device5 configuration", device5.configuration)
+    
+
+
+
+
+
+
+
+    current_configuration = {
+        "locale": "cn_CHINA",
+        "timezone": "somewhere/China",
+        "test_profile": "no-test",
+    }
+    device6 = Device(
+        "imac002",
+        "personal computer",
+        "available",
+        "18.01",
+        100,
+        True,
+        current_configuration
+    )
+    dev_inventory.add(device6)
+    device6_health_result = HealthCheckResult(device6.device_id)
+
+    requested_configuration = {
+        "os_version": "27.11b",
+        # "locale": "en_US",
+        # "timezone": "America/Los_Angeles",
+        # "test_profile": "smoke-test",
+    }
+    print(device6.device_id, device6.device_type, device6.device_state, device6.os_version)
+    print(f"Device6 current configuration: {device6.configuration}")
+    print(f"health status: {device6_health_result.healthy}")
+    print(f"reasons: {device6_health_result.reasons}")
+    print(f"device state: {device6.device_state}")
+    
+    provisioned_device6 = provision_device(device6, requested_configuration)
+    print("provisioned results:\n", 
+          "device_id:", provisioned_device6.device_id, 
+          "\nrequested config:", provisioned_device6.requested_configuration, 
+          "\nsuccess/fail:", provisioned_device6.success, 
+          "\nmessage:", provisioned_device6.message)
+    
+    print(f"device6 os version: ", device6.os_version)
+    print(f"device6 configuration", device6.configuration)
     
