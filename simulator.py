@@ -15,6 +15,10 @@ ALLOWED_TRANSITIONS = {
     RETIRED: set(),
 }
 
+# DeviceSettings = dict[str, str]
+# DeviceConfig = dict[str, str | DeviceSettings]
+DeviceConfig = dict[str, str]
+
 class Device:
     """Represent one managed lab device."""
 
@@ -25,7 +29,7 @@ class Device:
                  os_version: str,
                  battery_level: int | None = 100,
                  is_connected: bool = True,
-                 configuration: dict[str, str] | None = None
+                 configuration: DeviceConfig | None = None
                  ):
         
         self.device_id = device_id
@@ -105,11 +109,12 @@ class HealthCheckResult:
             self.reasons.append(f"device connected: {device.is_connected}")
             self.healthy = False
         return self
-    
+
+
 class ProvisioningResult:
     def __init__(self,
                  device_id: str,
-                 requested_configuration: dict[str, str],
+                 requested_configuration: DeviceConfig,
                  success: bool,
                  message: str
                  ) -> None:
@@ -117,6 +122,40 @@ class ProvisioningResult:
         self.requested_configuration = requested_configuration
         self.success = success
         self.message = message
-        
-    def provision_device(self, device: Device, requested_configuration: dict[str, str]):
-        pass
+
+def provision_device(device: Device, config: DeviceConfig) -> ProvisioningResult:
+    if device.device_state != AVAILABLE:
+        return ProvisioningResult(
+            device.device_id,
+            config,
+            False,
+            "Device must be available"
+        )
+    if "os_version" not in config or not config["os_version"]:
+        return ProvisioningResult(
+            device.device_id,
+            config,
+            False,
+            "Missing os version"
+        )
+    settings_required = ["locale", "timezone", "test_profile"]
+    missed_settings = [setting for setting in settings_required if not config.get(setting)]
+    if missed_settings:
+        return ProvisioningResult(
+            device.device_id,
+            config,
+            False,
+            f"Missed settings: {', '.join(missed_settings)}"
+        )
+    device.os_version = config["os_version"]
+    device.configuration = {
+        key: value
+        for key, value in config.items()
+        if key != "os_version"
+    }
+    return ProvisioningResult(
+        device.device_id,
+        config,
+        True,
+        "Provisioning completed"
+    )

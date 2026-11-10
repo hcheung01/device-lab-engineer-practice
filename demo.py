@@ -1,4 +1,4 @@
-from simulator import Device, DeviceInventory, HealthCheckResult
+from simulator import Device, DeviceInventory, HealthCheckResult, ProvisioningResult, provision_device
 
 
 if __name__ == "__main__":
@@ -129,12 +129,9 @@ if __name__ == "__main__":
     
 
     current_configuration = {
-        "os_version": "18.01a",
-        "settings": {
-        "locale": "en_US",
-        "timezone": "central/Austin",
-        "test_profile": "smoke-test",
-        },
+        "locale": "cn_CHINA",
+        "timezone": "somewhere/China",
+        "test_profile": "no-test",
     }
     device5 = Device(
         "imac001",
@@ -147,18 +144,32 @@ if __name__ == "__main__":
     )
     dev_inventory.add(device5)
     device5_health_result = HealthCheckResult(device5.device_id)
+    
+    # requested_configuration = {
+    #     "os_version": "27.11b",
+    #     "locale": "en_US",
+    #     "timezone": "America/Los_Angeles",
+    #     "test_profile": "smoke-test",
+    # }
+    requested_configuration = {
+        "os_version": "27.11b",
+        # "locale": "en_US",
+        # "timezone": "America/Los_Angeles",
+        # "test_profile": "smoke-test",
+    }
     print(device5.device_id, device5.device_type, device5.device_state, device5.os_version)
-    print(f"Device5 current configuration: {current_configuration}")
+    print(f"Device5 current configuration: {device5.configuration}")
     print(f"health status: {device5_health_result.healthy}")
     print(f"reasons: {device5_health_result.reasons}")
     print(f"device state: {device5.device_state}")
-
     
-    requestion_configuration = {
-        "os_version": "27.11b",
-        "settings": {
-        "locale": "en_US",
-        "timezone": "America/Los_Angeles",
-        "test_profile": "smoke-test",
-        },
-    }
+    provisioned_device5 = provision_device(device5, requested_configuration)
+    print("provisioned results:\n", 
+          "device_id:", provisioned_device5.device_id, 
+          "\nrequested config:", provisioned_device5.requested_configuration, 
+          "\nsuccess/fail:", provisioned_device5.success, 
+          "\nmessage:", provisioned_device5.message)
+    
+    print(f"device5 os version: ", device5.os_version)
+    print(f"device5 configuration", device5.configuration)
+    
