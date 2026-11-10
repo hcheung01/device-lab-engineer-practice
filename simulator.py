@@ -145,7 +145,7 @@ def provision_device(device: Device, config: DeviceConfig) -> ProvisioningResult
             device.device_id,
             config,
             False,
-            f"Missed settings: {', '.join(missed_settings)}"
+            f"Missing settings: {', '.join(missed_settings)}"
         )
     device.os_version = config["os_version"]
     device.configuration = {
