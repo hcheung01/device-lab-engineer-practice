@@ -1,0 +1,12 @@
+2026-11-12 09:00:01 MAC001 INFO Device connected
+2026-11-12 09:00:03 MAC001 INFO Test started
+2026-11-12 09:00:05 MAC001 ERROR SSH connection timeout
+2026-11-12 09:00:08 MAC001 WARNING Retry attempt 1
+2026-11-12 09:00:10 MAC001 ERROR Provisioning failed
+
+2026-11-12 09:01:01 MAC002 INFO Device connected
+2026-11-12 09:01:03 MAC002 INFO Test started
+2026-11-12 09:01:05 MAC002 INFO Test completed
+
+2026-11-12 09:02:01 MAC003 ERROR Device not responding
+2026-11-12 09:02:05 MAC003 ERROR Heartbeat timeout
