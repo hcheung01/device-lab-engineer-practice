@@ -1,5 +1,12 @@
-2026-11-15 23:26:40,585 INFO __main__ Simulator started
-2026-11-15 23:26:40,586 INFO __main__ devices json file path: /Users/heindrickcheung/MyProjects/device-lab-engineer-practice/devices.json
-2026-11-15 23:26:40,586 INFO __main__ operation=health_check device_id=mac-004 healthy=False reasons=['battery level: 12']
-2026-11-15 23:26:40,586 INFO __main__ operation=provision device_id=iphone-001 success=True message=Provisioning completed
-2026-11-15 23:26:40,586 INFO __main__ telemetry={'operation_counts': {'health_check': 1, 'provision': 1}, 'duration_totals': {'health_check': 2.625005436129868e-06, 'provision': 4.250003257766366e-06}}
+2026-11-15 23:32:02,792 INFO __main__ Simulator started
+2026-11-15 23:32:02,792 INFO __main__ devices json file path: /Users/heindrickcheung/MyProjects/device-lab-engineer-practice/devices.json
+2026-11-15 23:32:02,792 INFO __main__ operation=health_check device_id=iphone-001 healthy=True reasons=[]
+2026-11-15 23:32:02,792 INFO __main__ operation=health_check device_id=ipad-002 healthy=False reasons=['battery level: None', 'device connected: False']
+2026-11-15 23:32:02,792 INFO __main__ operation=health_check device_id=iphone-003 healthy=True reasons=[]
+2026-11-15 23:32:02,792 INFO __main__ operation=health_check device_id=mac-004 healthy=False reasons=['battery level: 12']
+2026-11-15 23:32:02,792 INFO __main__ operation=health_check device_id=iphone-005 healthy=True reasons=[]
+2026-11-15 23:32:02,792 INFO __main__ operation=health_check device_id=mac-006 healthy=True reasons=[]
+2026-11-15 23:32:02,792 INFO __main__ operation=health_check device_id=watch-007 healthy=False reasons=['battery level: 18', 'device connected: False']
+2026-11-15 23:32:02,792 INFO __main__ operation=health_check device_id=ipad-008 healthy=False reasons=['battery level: None', 'device connected: False']
+2026-11-15 23:32:02,792 INFO __main__ operation=provision device_id=iphone-001 success=True message=Provisioning completed
+2026-11-15 23:32:02,792 INFO __main__ telemetry={'operation_counts': {'health_check': 8, 'provision': 1}, 'duration_totals': {'health_check': 1.0915980965364724e-05, 'provision': 4.208995960652828e-06}}

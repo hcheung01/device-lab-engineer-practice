@@ -17,34 +17,35 @@ def main():
     devices_fpath = Path.cwd() / "devices.json"
     logger.info(f'devices json file path: {devices_fpath}')
     
+    telemetry = Telemetry()
     inventory = DeviceInventory()
+    
     with open(devices_fpath, "r") as json_file:
         device_data = json.load(json_file)
         for record in device_data:
             device = Device(**record)
             inventory.add(device)
     
-    telemetry = Telemetry()
 
-    device = inventory.lookup("mac-004")
-    started_at = time.perf_counter()
-    health_result = HealthCheckResult(device.device_id).check_health(
-        device.device_id, inventory
-    )
-    telemetry.record("health_check", time.perf_counter() - started_at)
-    
-    if health_result is None:
-        logger.error(
-            "operation=health_check device_id=%s outcome=not_found",
-            device.device_id,
+    for device in inventory.device_inventory.values():
+        started_at = time.perf_counter()
+        health_result = HealthCheckResult(device.device_id).check_health(
+            device.device_id, inventory
         )
-    else:
-        logger.info(
-            "operation=health_check device_id=%s healthy=%s reasons=%s",
-            device.device_id,
-            health_result.healthy,
-            health_result.reasons,
-        )
+        telemetry.record("health_check", time.perf_counter() - started_at)
+
+        if health_result is None:
+            logger.error(
+                "operation=health_check device_id=%s outcome=not_found",
+                device.device_id,
+            )
+        else:
+            logger.info(
+                "operation=health_check device_id=%s healthy=%s reasons=%s",
+                device.device_id,
+                health_result.healthy,
+                health_result.reasons,
+            )
     
     provision_target = inventory.lookup("iphone-001")
     started_at = time.perf_counter()
