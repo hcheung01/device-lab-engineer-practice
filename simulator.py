@@ -3,6 +3,10 @@
 Implement device identity, lifecycle transitions, and inventory.
 """
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 AVAILABLE = "available"
 IN_USE = "in_use"
 MAINTENANCE = "maintenance"
@@ -158,3 +162,4 @@ def provision_device(device: Device, config: DeviceConfig) -> ProvisioningResult
         True,
         "Provisioning completed"
     )
+    
