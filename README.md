@@ -2,9 +2,7 @@
 
 A hands-on Python project for practicing device-lab infrastructure concepts for Lab Engineer role.
 
-## Learning path
-
-Build this in small steps. Each exercise adds one operational capability:
+## Goal
 
 1. Device identity, lifecycle states, and inventory
 2. Device health checks
@@ -16,8 +14,6 @@ Build this in small steps. Each exercise adds one operational capability:
 8. Reliability and scale trade-offs
 
 The simulator uses in-memory devices and simulated operations. It does not connect to or change real devices.
-
-Interview prompts for each exercise are collected in [INTERVIEW_QUESTIONS.md](INTERVIEW_QUESTIONS.md).
 
 ## Exercise 1: Model a device and its lifecycle
 
@@ -36,15 +32,13 @@ Implement the starter in `simulator.py`.
   - `retired` → no other state
 - Raise a clear exception for an unknown device or an invalid transition.
 
-### Before coding
-
-Write down your answers to these questions:
+### Considerations
 
 1. Which data belongs on a `Device`, and which belongs in the inventory?
 2. Why should the inventory reject duplicate IDs?
 3. What should happen if a device is retired and someone tries to make it available again?
 
-### Your task
+### Task
 
 Implement the TODOs without adding health checks, provisioning, persistence, or concurrency yet. Try a few manual examples in a Python REPL and review your design choices.
 
@@ -59,7 +53,7 @@ Add a simulated health check that reports whether a device is healthy and why. K
 - Treat missing or out-of-range readings as unhealthy instead of silently accepting them.
 - Do not change lifecycle state as a side effect of checking health.
 
-### Your task
+### Task
 
 Add health-check behavior and try healthy, unhealthy, and invalid-reading examples. Decide which data belongs to the device and which belongs in the health-check result.
 
@@ -75,7 +69,7 @@ Simulate preparing an available device for use. Provisioning should be an explic
 - Return a result that identifies success or failure and explains any failure.
 - Keep the operation simulated: do not call real devices or external services.
 
-### Your task
+### Task
 
 Implement provisioning and try valid configuration, invalid configuration, and a device in a disallowed state. Avoid leaving the device partially updated when validation fails.
 
@@ -90,7 +84,7 @@ Make simulator operations observable so an operator can understand what happened
 - Keep log messages structured and consistent; do not include secrets or unnecessary device data.
 - Record basic operation counts or durations in a small in-memory telemetry component.
 
-### Your task
+### Task
 
 Add logging and telemetry around health checks and provisioning. Show how a caller can configure logging and inspect the collected metrics.
 
@@ -106,7 +100,7 @@ Make simulated operations resilient to temporary failures while ensuring permane
 - Return or raise an error that includes the final outcome and attempt count.
 - Do not retry an operation that could apply the same change twice unless it is made safe to repeat.
 
-### Your task
+### Task
 
 Add a simulated operation that can fail temporarily, then demonstrate eventual success, exhausted retries, and a permanent failure. Keep recovery behavior explicit and observable.
 
@@ -122,7 +116,7 @@ Run an operation across many devices without creating an unbounded number of wor
 - Ensure one device's failure does not prevent results from other devices from being collected.
 - Avoid sharing mutable result data without a safe coordination strategy.
 
-### Your task
+### Task
 
 Apply a health check or provisioning operation to a small fleet. Try different worker limits and include a deliberate failure to confirm the other results are still returned.
 
@@ -148,6 +142,6 @@ Review the simulator as if it were the prototype for a larger device-lab service
 - Explain how persistence, multiple service instances, and partial failures would change the design.
 - Propose one reliability improvement and describe its cost or trade-off before implementing it.
 
-### Your task
+### Task
 
-Write a short design note with the failure scenario, proposed change, expected benefit, and trade-off. Keep this exercise focused on reasoning; do not add a database or external service to the simulator.
+Short design note with the failure scenario, proposed change, expected benefit, and trade-off. 
