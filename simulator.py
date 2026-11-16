@@ -159,3 +159,19 @@ def provision_device(device: Device, config: DeviceConfig) -> ProvisioningResult
         "Provisioning completed"
     )
     
+
+class RetryableDeviceError(Exception):
+    pass
+
+class PermanentDeviceError(Exception):
+    pass
+
+class SimulatedDeviceAgent:
+    def __init__(self, failures_before_success: int = 0):
+        # Store the configured failure count here.
+        self.failures_before_success = failures_before_success
+        
+
+    def probe(self, device):
+        # Simulate one probe attempt here.
+        pass

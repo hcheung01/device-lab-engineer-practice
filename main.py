@@ -1,4 +1,4 @@
-from simulator import Device, DeviceInventory, HealthCheckResult, provision_device
+from simulator import Device, DeviceInventory, HealthCheckResult, SimulatedDeviceAgent, provision_device
 from pathlib import Path
 from telemetry import Telemetry
 import json
@@ -26,7 +26,11 @@ def main():
             device = Device(**record)
             inventory.add(device)
     
-
+    
+    probe_target = inventory.lookup("iphone-001")
+    agent = SimulatedDeviceAgent(failures_before_success=0)
+    agent.probe(probe_target)
+    
     for device in inventory.device_inventory.values():
         started_at = time.perf_counter()
         health_result = HealthCheckResult(device.device_id).check_health(
