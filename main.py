@@ -36,6 +36,20 @@ def main():
             health_result.reasons,
     )
     
+    logger.info("\nProvisioning device\n")
+    provision_target = inventory.lookup("iphone-001")
+    provision_result = provision_device(provision_target, {
+        "os_version": "18.2",
+        "locale": "en_US",
+        "timezone": "America/Los_Angeles",
+        "test_profile": "ios-smoke",
+    })
+    logger.info(
+        "operation=provision device_id=%s success=%s message=%s",
+        provision_result.device_id,
+        provision_result.success,
+        provision_result.message
+    )
 
 if __name__ == "__main__":
     main()

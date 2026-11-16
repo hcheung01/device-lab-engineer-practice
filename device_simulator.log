@@ -331,3 +331,22 @@ INFO:__main__:device record: {record}
 INFO:__main__:Inventory
 INFO:__main__:{'iphone-001': <simulator.Device object at 0x1063d1be0>, 'ipad-002': <simulator.Device object at 0x10633bd90>, 'iphone-003': <simulator.Device object at 0x10633bed0>, 'mac-004': <simulator.Device object at 0x106337360>, 'iphone-005': <simulator.Device object at 0x106337820>, 'mac-006': <simulator.Device object at 0x10635b770>, 'watch-007': <simulator.Device object at 0x1063a5040>, 'ipad-008': <simulator.Device object at 0x1063a6140>}
 INFO:__main__:operation=health_check device_id=mac-004 healthy=False reasons=['battery level: 12']
+INFO:__main__:Started
+INFO:__main__:devices json file path: /Users/heindrickcheung/MyProjects/device-lab-engineer-practice/devices.json
+INFO:__main__:operation=health_check device_id=mac-004 healthy=False reasons=['battery level: 12']
+INFO:root:
+Provisioning devic
+
+INFO:__main__:Started
+INFO:__main__:devices json file path: /Users/heindrickcheung/MyProjects/device-lab-engineer-practice/devices.json
+INFO:__main__:operation=health_check device_id=mac-004 healthy=False reasons=['battery level: 12']
+INFO:root:
+Provisioning device
+
+INFO:__main__:Started
+INFO:__main__:devices json file path: /Users/heindrickcheung/MyProjects/device-lab-engineer-practice/devices.json
+INFO:__main__:operation=health_check device_id=mac-004 healthy=False reasons=['battery level: 12']
+INFO:root:
+Provisioning device
+
+INFO:__main__:operation=provision device_id=iphone-001 success=True message=Provisioning completed
