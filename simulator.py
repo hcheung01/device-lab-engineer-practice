@@ -3,11 +3,6 @@
 Implement device identity, lifecycle transitions, and inventory.
 """
 
-import logging
-
-logger = logging.getLogger(__name__)
-logger.info("simulator.py started")
-
 AVAILABLE = "available"
 IN_USE = "in_use"
 MAINTENANCE = "maintenance"
