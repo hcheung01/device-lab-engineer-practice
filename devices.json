@@ -1,0 +1,86 @@
+[
+  {
+    "device_id": "iphone-001",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.1",
+    "battery_level": 92,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "ipad-002",
+    "device_type": "tablet",
+    "device_state": "maintenance",
+    "os_version": "18.0",
+    "battery_level": null,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "iphone-003",
+    "device_type": "phone",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": 76,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "ios-smoke"
+    }
+  },
+  {
+    "device_id": "mac-004",
+    "device_type": "laptop",
+    "device_state": "available",
+    "os_version": "15.0",
+    "battery_level": 12,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "iphone-005",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 88,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "ios-regression"
+    }
+  },
+  {
+    "device_id": "mac-006",
+    "device_type": "laptop",
+    "device_state": "in_use",
+    "os_version": "15.1",
+    "battery_level": 64,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "macos-build-validation"
+    }
+  },
+  {
+    "device_id": "watch-007",
+    "device_type": "watch",
+    "device_state": "maintenance",
+    "os_version": "11.0",
+    "battery_level": 18,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "ipad-008",
+    "device_type": "tablet",
+    "device_state": "retired",
+    "os_version": "17.6",
+    "battery_level": null,
+    "is_connected": false,
+    "configuration": {}
+  }
+]
