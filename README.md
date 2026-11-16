@@ -40,7 +40,7 @@ Implement the starter in `simulator.py`.
 
 ### Task
 
-Implement the TODOs without adding health checks, provisioning, persistence, or concurrency yet. Try a few manual examples in a Python REPL and review your design choices.
+Implement the TODOs without adding health checks, provisioning, persistence, or concurrency yet. Try a few manual examples in a Python REPL and review design choices.
 
 ## Exercise 2: Check device health
 

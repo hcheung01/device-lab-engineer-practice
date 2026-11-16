@@ -15,24 +15,27 @@ def main():
     with open(devices_fpath, "r") as json_file:
         device_data = json.load(json_file)
         for record in device_data:
-            logger.info("device record: {record}")
             device = Device(**record)
             inventory.add(device)
+    
+    device = inventory.lookup("mac-004")
+    health_result = HealthCheckResult(device.device_id).check_health(
+        device.device_id, inventory
+    )
+    
+    if health_result is None:
+        logger.error(
+            "operation=health_check device_id=%s outcome=not_found",
+            device.device_id,
+        )
+    else:
+        logger.info(
+            "operation=health_check device_id=%s healthy=%s reasons=%s",
+            device.device_id,
+            health_result.healthy,
+            health_result.reasons,
+    )
+    
 
-    logger.info("Inventory")
-    logger.info(inventory.device_inventory)
-    
-    device = inventory.lookup("iphone-001")
-    
-    device_health = HealthCheckResult(device.device_id)
-    logger.info(f"device_id: {device.device_id}, healthy: {device_health.healthy}, reason: {device_health.reasons}, os_version: {device.os_version}, configuration: {device.configuration}")
-    
-    result = provision_device(device, {
-        "os_version": "18.2",
-        "locale": "en_US",
-        "timezone": "America/Los_Angeles",
-        "test_profile": "ios-smoke",
-    })
-    logger.info(f"device_id: {device.device_id}, healthy: {device_health.healthy}, reason: {device_health.reasons}, os_version: {device.os_version}, configuration: {device.configuration}")
 if __name__ == "__main__":
     main()

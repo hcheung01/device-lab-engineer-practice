@@ -205,3 +205,129 @@ INFO:__main__:Inventory
 INFO:__main__:{'iphone-001': <simulator.Device object at 0x1056a9d30>, 'ipad-002': <simulator.Device object at 0x105613d90>, 'iphone-003': <simulator.Device object at 0x105613ed0>, 'mac-004': <simulator.Device object at 0x10560f360>, 'iphone-005': <simulator.Device object at 0x10560f820>, 'mac-006': <simulator.Device object at 0x105633770>, 'watch-007': <simulator.Device object at 0x10567d040>, 'ipad-008': <simulator.Device object at 0x10567e140>}
 INFO:__main__:device_id: iphone-001, healthy: True, reason: [], os_version: 18.1, configuration: {}
 INFO:__main__:device_id: iphone-001, healthy: True, reason: [], os_version: 18.2, configuration: {'locale': 'en_US', 'timezone': 'America/Los_Angeles', 'test_profile': 'ios-smoke'}
+INFO:__main__:Started
+INFO:__main__:devices json file path: /Users/heindrickcheung/MyProjects/device-lab-engineer-practice/devices.json
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:Inventory
+INFO:__main__:{'iphone-001': <simulator.Device object at 0x105909d30>, 'ipad-002': <simulator.Device object at 0x105873d90>, 'iphone-003': <simulator.Device object at 0x105873ed0>, 'mac-004': <simulator.Device object at 0x10586f360>, 'iphone-005': <simulator.Device object at 0x10586f820>, 'mac-006': <simulator.Device object at 0x105893770>, 'watch-007': <simulator.Device object at 0x1058dd040>, 'ipad-008': <simulator.Device object at 0x1058de140>}
+INFO:__main__:device_id: iphone-001, healthy: True, reason: [], os_version: 18.1, configuration: {}
+INFO:__main__:device_id: iphone-001, healthy: True, reason: [], os_version: 18.2, configuration: {'locale': 'en_US', 'timezone': 'America/Los_Angeles', 'test_profile': 'ios-smoke'}
+INFO:__main__:<simulator.HealthCheckResult object at 0x105909e80>
+INFO:__main__:Started
+INFO:__main__:devices json file path: /Users/heindrickcheung/MyProjects/device-lab-engineer-practice/devices.json
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:Inventory
+INFO:__main__:{'iphone-001': <simulator.Device object at 0x109aa1d30>, 'ipad-002': <simulator.Device object at 0x109a0bd90>, 'iphone-003': <simulator.Device object at 0x109a0bed0>, 'mac-004': <simulator.Device object at 0x109a07360>, 'iphone-005': <simulator.Device object at 0x109a07820>, 'mac-006': <simulator.Device object at 0x109a2b770>, 'watch-007': <simulator.Device object at 0x109a75040>, 'ipad-008': <simulator.Device object at 0x109a76140>}
+INFO:__main__:device_id: iphone-001, healthy: True, reason: [], os_version: 18.1, configuration: {}
+INFO:__main__:device_id: iphone-001, healthy: True, reason: [], os_version: 18.2, configuration: {'locale': 'en_US', 'timezone': 'America/Los_Angeles', 'test_profile': 'ios-smoke'}
+INFO:__main__:Started
+INFO:__main__:devices json file path: /Users/heindrickcheung/MyProjects/device-lab-engineer-practice/devices.json
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:Inventory
+INFO:__main__:{'iphone-001': <simulator.Device object at 0x109759d30>, 'ipad-002': <simulator.Device object at 0x1096c3d90>, 'iphone-003': <simulator.Device object at 0x1096c3ed0>, 'mac-004': <simulator.Device object at 0x1096bf360>, 'iphone-005': <simulator.Device object at 0x1096bf820>, 'mac-006': <simulator.Device object at 0x1096e3770>, 'watch-007': <simulator.Device object at 0x10972d040>, 'ipad-008': <simulator.Device object at 0x10972e140>}
+INFO:__main__:device_id: iphone-001, healthy: True, reason: [], os_version: 18.1, configuration: {}
+INFO:__main__:device_id: iphone-001, healthy: True, reason: [], os_version: 18.2, configuration: {'locale': 'en_US', 'timezone': 'America/Los_Angeles', 'test_profile': 'ios-smoke'}
+INFO:__main__:Started
+INFO:__main__:devices json file path: /Users/heindrickcheung/MyProjects/device-lab-engineer-practice/devices.json
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:Inventory
+INFO:__main__:{'iphone-001': <simulator.Device object at 0x1077f1d30>, 'ipad-002': <simulator.Device object at 0x10775bd90>, 'iphone-003': <simulator.Device object at 0x10775bed0>, 'mac-004': <simulator.Device object at 0x107757360>, 'iphone-005': <simulator.Device object at 0x107757820>, 'mac-006': <simulator.Device object at 0x10777b770>, 'watch-007': <simulator.Device object at 0x1077c5040>, 'ipad-008': <simulator.Device object at 0x1077c6140>}
+INFO:__main__:device_id: iphone-001, healthy: True, reason: [], os_version: 18.1, configuration: {}
+INFO:__main__:device_id: iphone-001, healthy: True, reason: [], os_version: 18.2, configuration: {'locale': 'en_US', 'timezone': 'America/Los_Angeles', 'test_profile': 'ios-smoke'}
+INFO:__main__:Started
+INFO:__main__:devices json file path: /Users/heindrickcheung/MyProjects/device-lab-engineer-practice/devices.json
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:Inventory
+INFO:__main__:{'iphone-001': <simulator.Device object at 0x105e89d30>, 'ipad-002': <simulator.Device object at 0x105df3d90>, 'iphone-003': <simulator.Device object at 0x105df3ed0>, 'mac-004': <simulator.Device object at 0x105def360>, 'iphone-005': <simulator.Device object at 0x105def820>, 'mac-006': <simulator.Device object at 0x105e13770>, 'watch-007': <simulator.Device object at 0x105e5d040>, 'ipad-008': <simulator.Device object at 0x105e5e140>}
+INFO:__main__:device_id: iphone-001, healthy: True, reason: [], os_version: 18.1, configuration: {}
+INFO:__main__:device_id: iphone-001, healthy: True, reason: [], os_version: 18.2, configuration: {'locale': 'en_US', 'timezone': 'America/Los_Angeles', 'test_profile': 'ios-smoke'}
+INFO:__main__:Started
+INFO:__main__:devices json file path: /Users/heindrickcheung/MyProjects/device-lab-engineer-practice/devices.json
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:Inventory
+INFO:__main__:{'iphone-001': <simulator.Device object at 0x10569dd30>, 'ipad-002': <simulator.Device object at 0x105607d90>, 'iphone-003': <simulator.Device object at 0x105607ed0>, 'mac-004': <simulator.Device object at 0x105603360>, 'iphone-005': <simulator.Device object at 0x105603820>, 'mac-006': <simulator.Device object at 0x105627770>, 'watch-007': <simulator.Device object at 0x105671040>, 'ipad-008': <simulator.Device object at 0x105672140>}
+INFO:__main__:device_id: iphone-001, healthy: True, reason: [], os_version: 18.1, configuration: {}
+INFO:__main__:device_id: iphone-001, healthy: True, reason: [], os_version: 18.2, configuration: {'locale': 'en_US', 'timezone': 'America/Los_Angeles', 'test_profile': 'ios-smoke'}
+INFO:__main__:Started
+INFO:__main__:devices json file path: /Users/heindrickcheung/MyProjects/device-lab-engineer-practice/devices.json
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:Inventory
+INFO:__main__:{'iphone-001': <simulator.Device object at 0x107e1dd30>, 'ipad-002': <simulator.Device object at 0x107d87d90>, 'iphone-003': <simulator.Device object at 0x107d87ed0>, 'mac-004': <simulator.Device object at 0x107d83360>, 'iphone-005': <simulator.Device object at 0x107d83820>, 'mac-006': <simulator.Device object at 0x107da7770>, 'watch-007': <simulator.Device object at 0x107df1040>, 'ipad-008': <simulator.Device object at 0x107df2140>}
+INFO:__main__:device_id: iphone-001, healthy: True, reason: [], os_version: 18.1, configuration: {}
+INFO:__main__:device_id: iphone-001, healthy: True, reason: [], os_version: 18.2, configuration: {'locale': 'en_US', 'timezone': 'America/Los_Angeles', 'test_profile': 'ios-smoke'}
+INFO:__main__:Started
+INFO:__main__:devices json file path: /Users/heindrickcheung/MyProjects/device-lab-engineer-practice/devices.json
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:Inventory
+INFO:__main__:{'iphone-001': <simulator.Device object at 0x105ef5d30>, 'ipad-002': <simulator.Device object at 0x105e5fd90>, 'iphone-003': <simulator.Device object at 0x105e5fed0>, 'mac-004': <simulator.Device object at 0x105e5b360>, 'iphone-005': <simulator.Device object at 0x105e5b820>, 'mac-006': <simulator.Device object at 0x105e7f770>, 'watch-007': <simulator.Device object at 0x105ec9040>, 'ipad-008': <simulator.Device object at 0x105eca140>}
+INFO:__main__:device_id: iphone-001, healthy: True, reason: [], os_version: 18.1, configuration: {}
+INFO:__main__:device_id: iphone-001, healthy: False, reason: ['battery level: 0'], os_version: 18.2, configuration: {'locale': 'en_US', 'timezone': 'America/Los_Angeles', 'test_profile': 'ios-smoke'}
+INFO:__main__:Started
+INFO:__main__:devices json file path: /Users/heindrickcheung/MyProjects/device-lab-engineer-practice/devices.json
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:device record: {record}
+INFO:__main__:Inventory
+INFO:__main__:{'iphone-001': <simulator.Device object at 0x1063d1be0>, 'ipad-002': <simulator.Device object at 0x10633bd90>, 'iphone-003': <simulator.Device object at 0x10633bed0>, 'mac-004': <simulator.Device object at 0x106337360>, 'iphone-005': <simulator.Device object at 0x106337820>, 'mac-006': <simulator.Device object at 0x10635b770>, 'watch-007': <simulator.Device object at 0x1063a5040>, 'ipad-008': <simulator.Device object at 0x1063a6140>}
+INFO:__main__:operation=health_check device_id=mac-004 healthy=False reasons=['battery level: 12']
