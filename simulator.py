@@ -2,6 +2,10 @@
 
 Implement device identity, lifecycle transitions, and inventory.
 """
+import time
+import logging
+
+logger = logging.getLogger(__name__)
 
 AVAILABLE = "available"
 IN_USE = "in_use"
@@ -168,10 +172,44 @@ class PermanentDeviceError(Exception):
 
 class SimulatedDeviceAgent:
     def __init__(self, failures_before_success: int = 0):
-        # Store the configured failure count here.
-        self.failures_before_success = failures_before_success
-        
+        if failures_before_success < 0:
+            raise ValueError("failures_before_success cannot be negative")
+        self.failures_remaining = failures_before_success     
+           
+    def probe(self, device: Device) -> str:
+        if self.failures_remaining > 0:
+            self.failures_remaining -= 1
+            raise RetryableDeviceError(
+                f"Temporary probe failure for {device.device_id}"
+            )
 
-    def probe(self, device):
-        # Simulate one probe attempt here.
-        pass
+        return f"Probe succeeded for {device.device_id}"
+
+    def probe_with_retries(
+        self, device: Device, max_attempts: int, delay_seconds: float = 0.1
+        ):
+        for attempt in range(1, max_attempts + 1):
+            try:
+                result = self.probe(device)
+            except RetryableDeviceError:
+                if attempt == max_attempts:
+                    logger.error(
+                        "operation=probe device_id=%s outcome=exhausted attempts=%s",
+                        device.device_id,
+                        attempt,
+                    )
+                    raise
+
+                logger.warning(
+                    "operation=probe device_id=%s outcome=retrying attempt=%s",
+                    device.device_id,
+                    attempt,
+                )
+                time.sleep(delay_seconds)
+            else:
+                logger.info(
+                    "operation=probe device_id=%s outcome=success attempts=%s",
+                    device.device_id,
+                    attempt,
+                )
+                return result

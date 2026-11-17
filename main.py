@@ -28,8 +28,8 @@ def main():
     
     
     probe_target = inventory.lookup("iphone-001")
-    agent = SimulatedDeviceAgent(failures_before_success=0)
-    agent.probe(probe_target)
+    agent = SimulatedDeviceAgent(failures_before_success=2)
+    agent.probe_with_retries(probe_target, max_attempts=3)
     
     for device in inventory.device_inventory.values():
         started_at = time.perf_counter()
