@@ -1,4 +1,4 @@
-from simulator import Device, DeviceInventory, HealthCheckResult, SimulatedDeviceAgent, RetryExhaustedError, provision_device
+from simulator import Device, DeviceInventory, HealthCheckResult, SimulatedDeviceAgent, RetryExhaustedError, PermanentDeviceError, provision_device
 from pathlib import Path
 from telemetry import Telemetry
 import json
@@ -34,6 +34,14 @@ def main() -> None:
     except RetryExhaustedError as error:
         logger.error("operation=probe device_id=%s outcome=exhausted error=%s",
                     probe_target.device_id, error)
+        
+    probe_target2 = inventory.lookup("mypad-008")
+    agent2 = SimulatedDeviceAgent(failures_before_success=3)    
+    try:
+        probe_result2 = agent2.probe_with_retries(probe_target2, max_attempts=3)
+    except PermanentDeviceError as error:
+        logger.error("operation=probe device_id=%s outcome=permanent_failure error=%s",
+                    probe_target2.device_id, error)
         
     for device in inventory.device_inventory.values():
         started_at = time.perf_counter()

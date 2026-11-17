@@ -187,6 +187,10 @@ class SimulatedDeviceAgent:
         self.failures_remaining = failures_before_success     
            
     def probe(self, device: Device) -> str:
+        if device.device_state == RETIRED:
+            raise PermanentDeviceError(
+                f"Cannot probe retired device {device.device_id}"
+            )
         if self.failures_remaining > 0:
             self.failures_remaining -= 1
             raise RetryableDeviceError(
