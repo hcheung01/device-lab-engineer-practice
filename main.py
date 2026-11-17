@@ -1,4 +1,4 @@
-from simulator import Device, DeviceInventory, HealthCheckResult, SimulatedDeviceAgent, provision_device
+from simulator import Device, DeviceInventory, HealthCheckResult, SimulatedDeviceAgent, RetryExhaustedError, provision_device
 from pathlib import Path
 from telemetry import Telemetry
 import json
@@ -7,9 +7,10 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-def main():
+def main() -> None:
     logging.basicConfig(
         filename="device_simulator.log",
+        filemode="w",
         level=logging.INFO,
         format="%(asctime)s %(levelname)s %(name)s %(message)s",
     )
@@ -26,11 +27,14 @@ def main():
             device = Device(**record)
             inventory.add(device)
     
-    
-    probe_target = inventory.lookup("iphone-001")
-    agent = SimulatedDeviceAgent(failures_before_success=2)
-    agent.probe_with_retries(probe_target, max_attempts=3)
-    
+    probe_target = inventory.lookup("hiphone-001")
+    agent = SimulatedDeviceAgent(failures_before_success=3)    
+    try:
+        probe_result = agent.probe_with_retries(probe_target, max_attempts=3)
+    except RetryExhaustedError as error:
+        logger.error("operation=probe device_id=%s outcome=exhausted error=%s",
+                    probe_target.device_id, error)
+        
     for device in inventory.device_inventory.values():
         started_at = time.perf_counter()
         health_result = HealthCheckResult(device.device_id).check_health(
@@ -51,13 +55,13 @@ def main():
                 health_result.reasons,
             )
     
-    provision_target = inventory.lookup("iphone-001")
+    provision_target = inventory.lookup("hiphone-001")
     started_at = time.perf_counter()
     provision_result = provision_device(provision_target, {
         "os_version": "18.2",
         "locale": "en_US",
         "timezone": "America/Los_Angeles",
-        "test_profile": "ios-smoke",
+        "test_profile": "mobile-smoke",
     })
     telemetry.record("provision", time.perf_counter() - started_at)
     logger.info(

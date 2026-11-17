@@ -1,6 +1,6 @@
 [
   {
-    "device_id": "iphone-001",
+    "device_id": "hiphone-001",
     "device_type": "phone",
     "device_state": "available",
     "os_version": "18.1",
@@ -9,7 +9,7 @@
     "configuration": {}
   },
   {
-    "device_id": "ipad-002",
+    "device_id": "mypad-002",
     "device_type": "tablet",
     "device_state": "maintenance",
     "os_version": "18.0",
@@ -18,7 +18,7 @@
     "configuration": {}
   },
   {
-    "device_id": "iphone-003",
+    "device_id": "hiphone-003",
     "device_type": "phone",
     "device_state": "in_use",
     "os_version": "18.1",
@@ -27,11 +27,11 @@
     "configuration": {
       "locale": "en_US",
       "timezone": "America/Los_Angeles",
-      "test_profile": "ios-smoke"
+      "test_profile": "mobile-smoke"
     }
   },
   {
-    "device_id": "mac-004",
+    "device_id": "bigmac-004",
     "device_type": "laptop",
     "device_state": "available",
     "os_version": "15.0",
@@ -40,7 +40,7 @@
     "configuration": {}
   },
   {
-    "device_id": "iphone-005",
+    "device_id": "hiphone-005",
     "device_type": "phone",
     "device_state": "available",
     "os_version": "18.2",
@@ -49,11 +49,11 @@
     "configuration": {
       "locale": "en_US",
       "timezone": "America/Los_Angeles",
-      "test_profile": "ios-regression"
+      "test_profile": "mobile-regression"
     }
   },
   {
-    "device_id": "mac-006",
+    "device_id": "bigmac-006",
     "device_type": "laptop",
     "device_state": "in_use",
     "os_version": "15.1",
@@ -62,11 +62,11 @@
     "configuration": {
       "locale": "en_US",
       "timezone": "America/Los_Angeles",
-      "test_profile": "macos-build-validation"
+      "test_profile": "desktop-build-validation"
     }
   },
   {
-    "device_id": "watch-007",
+    "device_id": "swatch-007",
     "device_type": "watch",
     "device_state": "maintenance",
     "os_version": "11.0",
@@ -75,7 +75,7 @@
     "configuration": {}
   },
   {
-    "device_id": "ipad-008",
+    "device_id": "mypad-008",
     "device_type": "tablet",
     "device_state": "retired",
     "os_version": "17.6",

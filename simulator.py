@@ -2,6 +2,8 @@
 
 Implement device identity, lifecycle transitions, and inventory.
 """
+from __future__ import annotations
+
 import time
 import logging
 
@@ -32,7 +34,7 @@ class Device:
                  battery_level: int | None = 100,
                  is_connected: bool = True,
                  configuration: DeviceConfig | None = None
-                 ):
+                 ) -> None:
         
         self.device_id = device_id
         self.device_type = device_type
@@ -53,8 +55,8 @@ class Device:
 class DeviceInventory:
     """Store and query the devices managed by the simulator."""
 
-    def __init__(self):
-        self.device_inventory = {}
+    def __init__(self) -> None:
+        self.device_inventory: dict[str, Device] = {}
     
     def add(self, device: Device) -> None:
         if device.device_id in self.device_inventory:
@@ -80,26 +82,32 @@ class HealthCheckResult:
                  device_id: str,
                  healthy: bool = True,
                  reasons: list[str] | None = None
-                 ):
+                 ) -> None:
         self.device_id = device_id
         self.healthy = healthy
         self.reasons = [] if reasons is None else reasons
         
-    def get_device_battery(self, device_id: str, inventory: DeviceInventory):
+    def get_device_battery(
+        self, device_id: str, inventory: DeviceInventory
+    ) -> int | None:
         try:
             device = inventory.lookup(device_id)
         except KeyError:
             return None            
         return device.battery_level
     
-    def is_connected(self, device_id: str, inventory: DeviceInventory):
+    def is_connected(
+        self, device_id: str, inventory: DeviceInventory
+    ) -> bool | None:
         try:
             device = inventory.lookup(device_id)
         except KeyError:
             return None
         return device.is_connected
 
-    def check_health(self, device_id: str, inventory: DeviceInventory):
+    def check_health(
+        self, device_id: str, inventory: DeviceInventory
+    ) -> HealthCheckResult | None:
         try:
             device = inventory.lookup(device_id)
         except KeyError:
@@ -170,8 +178,10 @@ class RetryableDeviceError(Exception):
 class PermanentDeviceError(Exception):
     pass
 
+class RetryExhaustedError(Exception):
+    pass
 class SimulatedDeviceAgent:
-    def __init__(self, failures_before_success: int = 0):
+    def __init__(self, failures_before_success: int = 0) -> None:
         if failures_before_success < 0:
             raise ValueError("failures_before_success cannot be negative")
         self.failures_remaining = failures_before_success     
@@ -187,18 +197,15 @@ class SimulatedDeviceAgent:
 
     def probe_with_retries(
         self, device: Device, max_attempts: int, delay_seconds: float = 0.1
-        ):
+    ) -> str | None:
         for attempt in range(1, max_attempts + 1):
             try:
                 result = self.probe(device)
-            except RetryableDeviceError:
+            except RetryableDeviceError as error:
                 if attempt == max_attempts:
-                    logger.error(
-                        "operation=probe device_id=%s outcome=exhausted attempts=%s",
-                        device.device_id,
-                        attempt,
-                    )
-                    raise
+                    raise RetryExhaustedError(
+                        f"Probe for {device.device_id} failed after {attempt} attempts"
+                    ) from error
 
                 logger.warning(
                     "operation=probe device_id=%s outcome=retrying attempt=%s",

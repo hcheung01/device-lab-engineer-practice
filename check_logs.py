@@ -3,7 +3,7 @@ from pathlib import Path
 import re
 from io import StringIO
 
-def find_errors(fpath: Path):
+def find_errors(fpath: Path) -> None:
     with open(fpath, "r") as file:
         for line in file:
             # print(line)
@@ -11,7 +11,7 @@ def find_errors(fpath: Path):
                 print(line.strip())
         print("\n")
 
-def find_errors_in_memory(fpath: Path):
+def find_errors_in_memory(fpath: Path) -> None:
     log_content = fpath.read_text()
     memory_log = StringIO(log_content)
     for line in memory_log:
@@ -19,7 +19,7 @@ def find_errors_in_memory(fpath: Path):
             print(line.strip())
     print("\n")
     
-def find_errors_with_regex(fpath: Path):
+def find_errors_with_regex(fpath: Path) -> None:
     log_content = fpath.read_text()
     results = re.findall(f".*ERROR.*", log_content)
     for result in results:

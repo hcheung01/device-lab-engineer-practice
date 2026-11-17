@@ -35,7 +35,9 @@ class TestProvisioning:
             ),
         ],
     )
-    def test_provisions_available_device(self, config, expected_success):
+    def test_provisions_available_device(
+        self, config: dict[str, str], expected_success: bool
+    ) -> None:
         """Apply valid config and leave the device unchanged for invalid config."""
         device = Device("test-1", "phone", AVAILABLE, "18.0")
         original_configuration = device.configuration.copy()

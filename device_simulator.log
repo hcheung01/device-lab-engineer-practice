@@ -1,15 +1,15 @@
-2026-11-16 15:59:39,934 INFO __main__ Simulator started
-2026-11-16 15:59:39,934 INFO __main__ devices json file path: /Users/heindrickcheung/MyProjects/device-lab-engineer-practice/devices.json
-2026-11-16 15:59:39,934 WARNING simulator operation=probe device_id=iphone-001 outcome=retrying attempt=1
-2026-11-16 15:59:40,039 WARNING simulator operation=probe device_id=iphone-001 outcome=retrying attempt=2
-2026-11-16 15:59:40,141 INFO simulator operation=probe device_id=iphone-001 outcome=success attempts=3
-2026-11-16 15:59:40,141 INFO __main__ operation=health_check device_id=iphone-001 healthy=True reasons=[]
-2026-11-16 15:59:40,141 INFO __main__ operation=health_check device_id=ipad-002 healthy=False reasons=['battery level: None', 'device connected: False']
-2026-11-16 15:59:40,141 INFO __main__ operation=health_check device_id=iphone-003 healthy=True reasons=[]
-2026-11-16 15:59:40,141 INFO __main__ operation=health_check device_id=mac-004 healthy=False reasons=['battery level: 12']
-2026-11-16 15:59:40,141 INFO __main__ operation=health_check device_id=iphone-005 healthy=True reasons=[]
-2026-11-16 15:59:40,141 INFO __main__ operation=health_check device_id=mac-006 healthy=True reasons=[]
-2026-11-16 15:59:40,141 INFO __main__ operation=health_check device_id=watch-007 healthy=False reasons=['battery level: 18', 'device connected: False']
-2026-11-16 15:59:40,141 INFO __main__ operation=health_check device_id=ipad-008 healthy=False reasons=['battery level: None', 'device connected: False']
-2026-11-16 15:59:40,141 INFO __main__ operation=provision device_id=iphone-001 success=True message=Provisioning completed
-2026-11-16 15:59:40,141 INFO __main__ telemetry={'operation_counts': {'health_check': 8, 'provision': 1}, 'duration_totals': {'health_check': 1.7667029169388115e-05, 'provision': 6.709000444971025e-06}}
+2026-11-16 16:23:51,068 INFO __main__ Simulator started
+2026-11-16 16:23:51,069 INFO __main__ devices json file path: /Users/heindrickcheung/MyProjects/device-lab-engineer-practice/devices.json
+2026-11-16 16:23:51,069 WARNING simulator operation=probe device_id=hiphone-001 outcome=retrying attempt=1
+2026-11-16 16:23:51,174 WARNING simulator operation=probe device_id=hiphone-001 outcome=retrying attempt=2
+2026-11-16 16:23:51,279 ERROR __main__ operation=probe device_id=hiphone-001 outcome=exhausted error=Probe for hiphone-001 failed after 3 attempts
+2026-11-16 16:23:51,279 INFO __main__ operation=health_check device_id=hiphone-001 healthy=True reasons=[]
+2026-11-16 16:23:51,279 INFO __main__ operation=health_check device_id=mypad-002 healthy=False reasons=['battery level: None', 'device connected: False']
+2026-11-16 16:23:51,279 INFO __main__ operation=health_check device_id=hiphone-003 healthy=True reasons=[]
+2026-11-16 16:23:51,279 INFO __main__ operation=health_check device_id=bigmac-004 healthy=False reasons=['battery level: 12']
+2026-11-16 16:23:51,279 INFO __main__ operation=health_check device_id=hiphone-005 healthy=True reasons=[]
+2026-11-16 16:23:51,279 INFO __main__ operation=health_check device_id=bigmac-006 healthy=True reasons=[]
+2026-11-16 16:23:51,279 INFO __main__ operation=health_check device_id=swatch-007 healthy=False reasons=['battery level: 18', 'device connected: False']
+2026-11-16 16:23:51,279 INFO __main__ operation=health_check device_id=mypad-008 healthy=False reasons=['battery level: None', 'device connected: False']
+2026-11-16 16:23:51,279 INFO __main__ operation=provision device_id=hiphone-001 success=True message=Provisioning completed
+2026-11-16 16:23:51,279 INFO __main__ telemetry={'operation_counts': {'health_check': 8, 'provision': 1}, 'duration_totals': {'health_check': 1.628999598324299e-05, 'provision': 5.833004252053797e-06}}

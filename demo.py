@@ -2,7 +2,7 @@ from simulator import Device, DeviceInventory, HealthCheckResult, ProvisioningRe
 
 
 if __name__ == "__main__":
-    device_id = "iphone5g"
+    device_id = "hiphone5g"
     device_type = "phone"
     device_state = "available"
     new_device_state = "in_use"
@@ -24,7 +24,7 @@ if __name__ == "__main__":
     # device1.change_state("bad state")
     print("\n")
     
-    device_id = "ipadprom4"
+    device_id = "mypadprom4"
     device_type = "tablet"
     device_state = "available"
     new_device_state = "in_use"
@@ -77,7 +77,7 @@ if __name__ == "__main__":
     dev_inventory.add(device4)
     print(dev_inventory.device_inventory)
     
-    device = dev_inventory.lookup("ipadprom4")
+    device = dev_inventory.lookup("mypadprom4")
     print(device.device_id, "\n")
     print("LISTING BY DEVICE STATE:")
     devices = dev_inventory.list_by_state("in_use")
