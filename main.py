@@ -131,6 +131,8 @@ def main() -> None:
                 provision_result.message,
             )
             telemetry.record("provision", time.perf_counter() - started_at)
+        
+        # Final Telemetry snapshot
         logger.info("telemetry=%s", telemetry.snapshot())
                                      
 if __name__ == "__main__":
