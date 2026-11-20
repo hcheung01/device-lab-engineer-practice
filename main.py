@@ -35,6 +35,34 @@ def check_one_device(
     )
     return device_id, health_result, duration
 
+def probe_one_device(device: Device):
+    started_at = time.perf_counter()
+
+    delay_seconds = random.uniform(0.05, 3.5)
+    logger.info(
+        "operation=probing device_id=%s status=started simulated_delay=%.3fs",
+        device.device_id,
+        delay_seconds,
+    )
+    time.sleep(delay_seconds)
+    
+    agent = SimulatedDeviceAgent(failures_before_success=1)    
+    try:
+        probe_result = agent.probe_with_retries(device, max_attempts=3)
+    except RetryExhaustedError as error:
+        logger.error("operation=probe device_id=%s outcome=exhausted error=%s",
+                    device.device_id, error)
+    except PermanentDeviceError as error:
+        logger.error("operation=probe device_id=%s outcome=permanent device error=%s",
+                     device.device_id, error)
+    
+    duration = time.perf_counter() - started_at
+    logger.info(
+        "operation=probing device_id=%s status=finished duration=%.3fs",
+        device.device_id,
+        duration,
+    )
+
 def main() -> None:
     logging.basicConfig(
         filename="device_simulator.log",
@@ -55,21 +83,28 @@ def main() -> None:
             device = Device(**record)
             inventory.add(device)
     
-    probe_target = inventory.lookup("hiphone-001")
-    agent = SimulatedDeviceAgent(failures_before_success=3)    
-    try:
-        probe_result = agent.probe_with_retries(probe_target, max_attempts=3)
-    except RetryExhaustedError as error:
-        logger.error("operation=probe device_id=%s outcome=exhausted error=%s",
-                    probe_target.device_id, error)
+    # with ThreadPoolExecutor(max_workers=3, thread_name_prefix="probe") as executor:
+    #     futures = {
+    #         executor.submit(probe_one_device,
+    #                         )
+    #     }
+    #         probe_one_device(device)
+    
+    # probe_target = inventory.lookup("hiphone-001")
+    # agent = SimulatedDeviceAgent(failures_before_success=3)    
+    # try:
+    #     probe_result = agent.probe_with_retries(probe_target, max_attempts=3)
+    # except RetryExhaustedError as error:
+    #     logger.error("operation=probe device_id=%s outcome=exhausted error=%s",
+    #                 probe_target.device_id, error)
         
-    probe_target2 = inventory.lookup("mypad-008")
-    agent2 = SimulatedDeviceAgent(failures_before_success=3)    
-    try:
-        probe_result2 = agent2.probe_with_retries(probe_target2, max_attempts=3)
-    except PermanentDeviceError as error:
-        logger.error("operation=probe device_id=%s outcome=permanent_failure error=%s",
-                    probe_target2.device_id, error)
+    # probe_target2 = inventory.lookup("mypad-008")
+    # agent2 = SimulatedDeviceAgent(failures_before_success=3)    
+    # try:
+    #     probe_result2 = agent2.probe_with_retries(probe_target2, max_attempts=3)
+    # except PermanentDeviceError as error:
+    #     logger.error("operation=probe device_id=%s outcome=permanent_failure error=%s",
+    #                 probe_target2.device_id, error)
     
     with ThreadPoolExecutor(max_workers=3) as executor:
         futures = {
@@ -136,4 +171,7 @@ def main() -> None:
         logger.info("telemetry=%s", telemetry.snapshot())
                                      
 if __name__ == "__main__":
+    start = time.perf_counter()
     main()
+    end = time.perf_counter()
+    logger.info(f"Final time: {end - start}")
