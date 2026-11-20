@@ -79,8 +79,8 @@ Make simulator operations observable so an operator can understand what happened
 
 ### Requirements
 
-- Use Python's `logging` module instead of printing operational messages from library code.
-- Include useful context such as device ID, operation, outcome, and failure reason.
+- Use Python's `logging` module
+- Useful context such as device ID, operation, outcome, and failure reason.
 - Keep log messages structured and consistent; do not include secrets or unnecessary device data.
 - Record basic operation counts or durations in a small in-memory telemetry component.
 

@@ -1,16 +1,1012 @@
-2026-11-16 16:32:53,117 INFO __main__ Simulator started
-2026-11-16 16:32:53,117 INFO __main__ devices json file path: /Users/heindrickcheung/MyProjects/device-lab-engineer-practice/devices.json
-2026-11-16 16:32:53,117 WARNING simulator operation=probe device_id=hiphone-001 outcome=retrying attempt=1
-2026-11-16 16:32:53,222 WARNING simulator operation=probe device_id=hiphone-001 outcome=retrying attempt=2
-2026-11-16 16:32:53,324 ERROR __main__ operation=probe device_id=hiphone-001 outcome=exhausted error=Probe for hiphone-001 failed after 3 attempts
-2026-11-16 16:32:53,324 ERROR __main__ operation=probe device_id=mypad-008 outcome=permanent_failure error=Cannot probe retired device mypad-008
-2026-11-16 16:32:53,324 INFO __main__ operation=health_check device_id=hiphone-001 healthy=True reasons=[]
-2026-11-16 16:32:53,324 INFO __main__ operation=health_check device_id=mypad-002 healthy=False reasons=['battery level: None', 'device connected: False']
-2026-11-16 16:32:53,324 INFO __main__ operation=health_check device_id=hiphone-003 healthy=True reasons=[]
-2026-11-16 16:32:53,324 INFO __main__ operation=health_check device_id=bigmac-004 healthy=False reasons=['battery level: 12']
-2026-11-16 16:32:53,324 INFO __main__ operation=health_check device_id=hiphone-005 healthy=True reasons=[]
-2026-11-16 16:32:53,324 INFO __main__ operation=health_check device_id=bigmac-006 healthy=True reasons=[]
-2026-11-16 16:32:53,324 INFO __main__ operation=health_check device_id=swatch-007 healthy=False reasons=['battery level: 18', 'device connected: False']
-2026-11-16 16:32:53,324 INFO __main__ operation=health_check device_id=mypad-008 healthy=False reasons=['battery level: None', 'device connected: False']
-2026-11-16 16:32:53,324 INFO __main__ operation=provision device_id=hiphone-001 success=True message=Provisioning completed
-2026-11-16 16:32:53,324 INFO __main__ telemetry={'operation_counts': {'health_check': 8, 'provision': 1}, 'duration_totals': {'health_check': 1.8292965251021087e-05, 'provision': 7.417009328491986e-06}}
+2026-11-19 22:38:41,326 INFO [MainThread] __main__ Device simulator started
+2026-11-19 22:38:41,326 INFO [MainThread] __main__ devices.json file path: /Users/heindrickcheung/MyProjects/device-lab-engineer-practice/devices.json
+2026-11-19 22:38:41,326 WARNING [MainThread] simulator operation=probe device_id=hiphone-001 outcome=retrying attempt=1
+2026-11-19 22:38:41,431 WARNING [MainThread] simulator operation=probe device_id=hiphone-001 outcome=retrying attempt=2
+2026-11-19 22:38:41,536 ERROR [MainThread] __main__ operation=probe device_id=hiphone-001 outcome=exhausted error=Probe for hiphone-001 failed after 3 attempts
+2026-11-19 22:38:41,536 ERROR [MainThread] __main__ operation=probe device_id=mypad-008 outcome=permanent_failure error=Cannot probe retired device mypad-008
+2026-11-19 22:38:41,536 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-001 status=started simulated_delay=3.248s
+2026-11-19 22:38:41,537 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-001 status=finished duration=0.000s
+2026-11-19 22:38:41,537 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-002 status=started simulated_delay=0.273s
+2026-11-19 22:38:41,537 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-002 status=finished duration=0.000s
+2026-11-19 22:38:41,537 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-005 status=started simulated_delay=1.538s
+2026-11-19 22:38:41,537 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-005 status=finished duration=0.000s
+2026-11-19 22:38:41,537 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-006 status=started simulated_delay=1.702s
+2026-11-19 22:38:41,537 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-006 status=finished duration=0.000s
+2026-11-19 22:38:41,537 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-007 status=started simulated_delay=1.747s
+2026-11-19 22:38:41,537 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-007 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-008 status=started simulated_delay=2.990s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-008 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-009 status=started simulated_delay=3.313s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-009 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-010 status=started simulated_delay=2.027s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-010 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-011 status=started simulated_delay=2.078s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-011 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-012 status=started simulated_delay=2.634s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-012 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-013 status=started simulated_delay=1.156s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-013 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-014 status=started simulated_delay=3.278s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-014 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-015 status=started simulated_delay=2.331s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-015 status=finished duration=0.000s
+2026-11-19 22:38:41,537 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-003 status=started simulated_delay=0.173s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-003 status=finished duration=0.001s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-017 status=started simulated_delay=1.053s
+2026-11-19 22:38:41,537 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-004 status=started simulated_delay=2.997s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-004 status=finished duration=0.001s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-018 status=started simulated_delay=2.852s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-018 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-019 status=started simulated_delay=0.404s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-019 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-020 status=started simulated_delay=1.321s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-020 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-021 status=started simulated_delay=2.403s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-021 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-022 status=started simulated_delay=3.277s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-022 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-023 status=started simulated_delay=0.720s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-023 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-024 status=started simulated_delay=1.614s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-024 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-025 status=started simulated_delay=0.472s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-025 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-026 status=started simulated_delay=2.166s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-026 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-027 status=started simulated_delay=0.469s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-027 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-028 status=started simulated_delay=0.764s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-028 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-029 status=started simulated_delay=1.273s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-029 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-030 status=started simulated_delay=0.407s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-030 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-031 status=started simulated_delay=1.049s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-031 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-032 status=started simulated_delay=1.308s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-032 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-033 status=started simulated_delay=1.077s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-033 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-034 status=started simulated_delay=3.240s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-034 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-035 status=started simulated_delay=2.494s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-035 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-036 status=started simulated_delay=0.855s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-036 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-037 status=started simulated_delay=0.357s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-037 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-038 status=started simulated_delay=0.448s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-038 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-039 status=started simulated_delay=0.155s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-039 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-040 status=started simulated_delay=0.517s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-040 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-041 status=started simulated_delay=1.421s
+2026-11-19 22:38:41,537 ERROR [MainThread] __main__ operation=health_check device_id=hiphone-001 outcome=failed
+Traceback (most recent call last):
+  File "/Users/heindrickcheung/MyProjects/device-lab-engineer-practice/main.py", line 86, in main
+    raise RuntimeError("Simulated worker failure")
+RuntimeError: Simulated worker failure
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-017 status=finished duration=0.000s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-042 status=started simulated_delay=2.822s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-016 status=started simulated_delay=3.454s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-016 status=finished duration=0.001s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-043 status=started simulated_delay=2.802s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-043 status=finished duration=0.000s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-044 status=started simulated_delay=2.430s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-044 status=finished duration=0.000s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-045 status=started simulated_delay=1.158s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-045 status=finished duration=0.000s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-046 status=started simulated_delay=2.589s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-046 status=finished duration=0.000s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-047 status=started simulated_delay=3.283s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-047 status=finished duration=0.000s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-048 status=started simulated_delay=0.293s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-048 status=finished duration=0.000s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-049 status=started simulated_delay=1.586s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-049 status=finished duration=0.000s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-050 status=started simulated_delay=2.960s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-050 status=finished duration=0.000s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-051 status=started simulated_delay=3.447s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-051 status=finished duration=0.000s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-052 status=started simulated_delay=0.332s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-052 status=finished duration=0.000s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-053 status=started simulated_delay=0.803s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-053 status=finished duration=0.000s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-054 status=started simulated_delay=2.748s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-054 status=finished duration=0.000s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-055 status=started simulated_delay=2.581s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-055 status=finished duration=0.000s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-056 status=started simulated_delay=2.151s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-056 status=finished duration=0.000s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-057 status=started simulated_delay=1.799s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-057 status=finished duration=0.000s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-058 status=started simulated_delay=0.557s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-058 status=finished duration=0.000s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-059 status=started simulated_delay=2.509s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-059 status=finished duration=0.000s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-060 status=started simulated_delay=3.213s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-060 status=finished duration=0.000s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-061 status=started simulated_delay=2.864s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-061 status=finished duration=0.000s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-062 status=started simulated_delay=0.723s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-062 status=finished duration=0.000s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-063 status=started simulated_delay=2.589s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-063 status=finished duration=0.000s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-064 status=started simulated_delay=2.533s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-064 status=finished duration=0.000s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-065 status=started simulated_delay=0.794s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-065 status=finished duration=0.000s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-066 status=started simulated_delay=1.100s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-066 status=finished duration=0.000s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-067 status=started simulated_delay=3.299s
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-067 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-068 status=started simulated_delay=3.216s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-068 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-069 status=started simulated_delay=2.994s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-069 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-070 status=started simulated_delay=2.286s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-070 status=finished duration=0.000s
+2026-11-19 22:38:41,538 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-041 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-072 status=started simulated_delay=2.966s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-072 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-073 status=started simulated_delay=1.347s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-073 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-074 status=started simulated_delay=3.202s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-074 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-075 status=started simulated_delay=2.333s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-075 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-076 status=started simulated_delay=2.584s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-076 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-077 status=started simulated_delay=1.994s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-077 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-078 status=started simulated_delay=0.744s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-078 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-079 status=started simulated_delay=0.516s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-079 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-080 status=started simulated_delay=1.105s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-080 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-081 status=started simulated_delay=1.208s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-081 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-082 status=started simulated_delay=1.857s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-082 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-083 status=started simulated_delay=0.669s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-083 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-084 status=started simulated_delay=0.658s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-084 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-085 status=started simulated_delay=1.179s
+2026-11-19 22:38:41,539 INFO [MainThread] __main__ operation=health_check device_id=mypad-002 healthy=False reasons=['battery level: None', 'device connected: False'] healthcheck_duration=0.00014495800132863224
+2026-11-19 22:38:41,540 INFO [MainThread] __main__ operation=health_check device_id=hiphone-005 healthy=True reasons=[] healthcheck_duration=3.9875012589618564e-05
+2026-11-19 22:38:41,540 INFO [MainThread] __main__ operation=health_check device_id=bigmac-006 healthy=True reasons=[] healthcheck_duration=1.6250007320195436e-05
+2026-11-19 22:38:41,539 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-042 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-086 status=started simulated_delay=1.135s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-086 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-087 status=started simulated_delay=2.481s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-087 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-088 status=started simulated_delay=2.983s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-088 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-089 status=started simulated_delay=1.815s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-089 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-090 status=started simulated_delay=2.550s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-090 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-091 status=started simulated_delay=1.815s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-091 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-092 status=started simulated_delay=3.093s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-092 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-093 status=started simulated_delay=1.246s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-093 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-094 status=started simulated_delay=1.699s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-094 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-095 status=started simulated_delay=1.095s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-095 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-096 status=started simulated_delay=1.362s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-096 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-097 status=started simulated_delay=2.378s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-097 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-098 status=started simulated_delay=0.247s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-098 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-099 status=started simulated_delay=2.986s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-099 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-100 status=started simulated_delay=3.392s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-100 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-101 status=started simulated_delay=0.086s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-101 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-102 status=started simulated_delay=2.017s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-102 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-103 status=started simulated_delay=1.316s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-103 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-104 status=started simulated_delay=0.547s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-104 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-105 status=started simulated_delay=2.967s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-105 status=finished duration=0.000s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-106 status=started simulated_delay=0.998s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-106 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-107 status=started simulated_delay=2.753s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-107 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-108 status=started simulated_delay=0.271s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-108 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-109 status=started simulated_delay=3.061s
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-071 status=started simulated_delay=1.911s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-071 status=finished duration=0.001s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-110 status=started simulated_delay=2.943s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-110 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-111 status=started simulated_delay=2.347s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-111 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-112 status=started simulated_delay=0.596s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-112 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-113 status=started simulated_delay=3.496s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-113 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-114 status=started simulated_delay=1.355s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-114 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-115 status=started simulated_delay=0.857s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-115 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-116 status=started simulated_delay=1.525s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-116 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-117 status=started simulated_delay=2.311s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-117 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-118 status=started simulated_delay=2.702s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-118 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-119 status=started simulated_delay=3.328s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-119 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-120 status=started simulated_delay=2.417s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-120 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-121 status=started simulated_delay=3.247s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-121 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-122 status=started simulated_delay=2.389s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-122 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-123 status=started simulated_delay=1.148s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-123 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-124 status=started simulated_delay=1.642s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-124 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-125 status=started simulated_delay=0.841s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-125 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-126 status=started simulated_delay=2.315s
+2026-11-19 22:38:41,540 INFO [MainThread] __main__ operation=health_check device_id=swatch-007 healthy=False reasons=['battery level: 18', 'device connected: False'] healthcheck_duration=1.575000351294875e-05
+2026-11-19 22:38:41,540 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-085 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-127 status=started simulated_delay=3.082s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-127 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-128 status=started simulated_delay=0.922s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-128 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-129 status=started simulated_delay=1.952s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-129 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-130 status=started simulated_delay=2.890s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-130 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-131 status=started simulated_delay=3.164s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-131 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-132 status=started simulated_delay=2.293s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-132 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-133 status=started simulated_delay=0.083s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-133 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-134 status=started simulated_delay=1.207s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-134 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-135 status=started simulated_delay=1.027s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-135 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-136 status=started simulated_delay=3.102s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-136 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-137 status=started simulated_delay=3.460s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-137 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-138 status=started simulated_delay=1.700s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-138 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-139 status=started simulated_delay=0.251s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-139 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-140 status=started simulated_delay=2.492s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-140 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-141 status=started simulated_delay=3.093s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-141 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-142 status=started simulated_delay=3.430s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-142 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-143 status=started simulated_delay=2.456s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-143 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-144 status=started simulated_delay=1.125s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-144 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-145 status=started simulated_delay=2.904s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-145 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-146 status=started simulated_delay=2.652s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-146 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-147 status=started simulated_delay=2.366s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-147 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-148 status=started simulated_delay=0.119s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-148 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-149 status=started simulated_delay=2.260s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-149 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-150 status=started simulated_delay=2.185s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-150 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-151 status=started simulated_delay=0.351s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-151 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-152 status=started simulated_delay=3.084s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-152 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-153 status=started simulated_delay=2.325s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-153 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-154 status=started simulated_delay=0.160s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-109 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-155 status=started simulated_delay=1.194s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-155 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-156 status=started simulated_delay=3.326s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-156 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-157 status=started simulated_delay=1.816s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-157 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-158 status=started simulated_delay=1.073s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-158 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-159 status=started simulated_delay=0.892s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-159 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-160 status=started simulated_delay=1.004s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-160 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-161 status=started simulated_delay=1.721s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-161 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-162 status=started simulated_delay=1.975s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-162 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-163 status=started simulated_delay=1.516s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-163 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-164 status=started simulated_delay=3.431s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-164 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-165 status=started simulated_delay=1.188s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-165 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-166 status=started simulated_delay=0.385s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-166 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-167 status=started simulated_delay=1.739s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-167 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-168 status=started simulated_delay=2.680s
+2026-11-19 22:38:41,541 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-126 status=finished duration=0.000s
+2026-11-19 22:38:41,541 INFO [MainThread] __main__ operation=health_check device_id=mypad-008 healthy=False reasons=['battery level: None', 'device connected: False'] healthcheck_duration=1.3041993952356279e-05
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=mypad-009 healthy=True reasons=[] healthcheck_duration=1.9416998839005828e-05
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=bigmac-010 healthy=False reasons=['device connected: False'] healthcheck_duration=1.7084006685763597e-05
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=swatch-011 healthy=True reasons=[] healthcheck_duration=1.1750002158805728e-05
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=hiphone-012 healthy=False reasons=['battery level: 19'] healthcheck_duration=1.2458011042326689e-05
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=mypad-013 healthy=False reasons=['battery level: None'] healthcheck_duration=1.3249999028630555e-05
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=bigmac-014 healthy=True reasons=[] healthcheck_duration=9.916999260894954e-06
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=swatch-015 healthy=False reasons=['device connected: False'] healthcheck_duration=1.2207994586788118e-05
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=hiphone-003 healthy=True reasons=[] healthcheck_duration=0.0010904160008067265
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=bigmac-004 healthy=False reasons=['battery level: 12'] healthcheck_duration=0.0011250829993514344
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=bigmac-018 healthy=True reasons=[] healthcheck_duration=1.3790995581075549e-05
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=swatch-019 healthy=True reasons=[] healthcheck_duration=1.0624993592500687e-05
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=hiphone-020 healthy=False reasons=['battery level: 19', 'device connected: False'] healthcheck_duration=1.1666998034343123e-05
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=mypad-021 healthy=False reasons=['battery level: None'] healthcheck_duration=1.2042000889778137e-05
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=bigmac-022 healthy=True reasons=[] healthcheck_duration=8.584000170230865e-06
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=swatch-023 healthy=True reasons=[] healthcheck_duration=1.0791991371661425e-05
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=hiphone-024 healthy=True reasons=[] healthcheck_duration=1.1458003427833319e-05
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=mypad-025 healthy=False reasons=['device connected: False'] healthcheck_duration=1.083400275092572e-05
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=bigmac-026 healthy=True reasons=[] healthcheck_duration=8.500006515532732e-06
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=swatch-027 healthy=True reasons=[] healthcheck_duration=9.958006558008492e-06
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=hiphone-028 healthy=False reasons=['battery level: 19'] healthcheck_duration=1.6291989595629275e-05
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=mypad-029 healthy=False reasons=['battery level: None'] healthcheck_duration=1.620801049284637e-05
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=bigmac-030 healthy=False reasons=['device connected: False'] healthcheck_duration=1.3666998711414635e-05
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=swatch-031 healthy=True reasons=[] healthcheck_duration=1.2250005966052413e-05
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=hiphone-032 healthy=True reasons=[] healthcheck_duration=8.957998943515122e-06
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=mypad-033 healthy=True reasons=[] healthcheck_duration=9.875002433545887e-06
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=bigmac-034 healthy=True reasons=[] healthcheck_duration=1.0916002793237567e-05
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=swatch-035 healthy=False reasons=['device connected: False'] healthcheck_duration=1.1541007552295923e-05
+2026-11-19 22:38:41,542 INFO [MainThread] __main__ operation=health_check device_id=hiphone-036 healthy=False reasons=['battery level: 19'] healthcheck_duration=8.70799703989178e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=mypad-037 healthy=False reasons=['battery level: None'] healthcheck_duration=9.500014130026102e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=bigmac-038 healthy=True reasons=[] healthcheck_duration=1.0624993592500687e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=swatch-039 healthy=True reasons=[] healthcheck_duration=1.3625001884065568e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=hiphone-040 healthy=False reasons=['device connected: False'] healthcheck_duration=9.208000847138464e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=mypad-017 healthy=True reasons=[] healthcheck_duration=1.620799594093114e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=hiphone-016 healthy=True reasons=[] healthcheck_duration=0.0011620840086834505
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=swatch-043 healthy=True reasons=[] healthcheck_duration=1.200000406242907e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=hiphone-044 healthy=False reasons=['battery level: 19'] healthcheck_duration=1.2375006917864084e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=mypad-045 healthy=False reasons=['battery level: None', 'device connected: False'] healthcheck_duration=1.0124989785254002e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=bigmac-046 healthy=True reasons=[] healthcheck_duration=8.83299799170345e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=swatch-047 healthy=True reasons=[] healthcheck_duration=8.915987564250827e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=hiphone-048 healthy=True reasons=[] healthcheck_duration=1.0957999620586634e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=mypad-049 healthy=True reasons=[] healthcheck_duration=1.0500007192604244e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=bigmac-050 healthy=False reasons=['device connected: False'] healthcheck_duration=8.917006198316813e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=swatch-051 healthy=True reasons=[] healthcheck_duration=1.0291012586094439e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=hiphone-052 healthy=False reasons=['battery level: 19'] healthcheck_duration=1.1166994227096438e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=mypad-053 healthy=False reasons=['battery level: None'] healthcheck_duration=9.541006875224411e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=bigmac-054 healthy=True reasons=[] healthcheck_duration=1.0625008144415915e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=swatch-055 healthy=False reasons=['device connected: False'] healthcheck_duration=1.0666990419849753e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=hiphone-056 healthy=True reasons=[] healthcheck_duration=9.791998309083283e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=mypad-057 healthy=True reasons=[] healthcheck_duration=8.874994819052517e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=bigmac-058 healthy=True reasons=[] healthcheck_duration=9.12499672267586e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=swatch-059 healthy=True reasons=[] healthcheck_duration=1.0584000847302377e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=hiphone-060 healthy=False reasons=['battery level: 19', 'device connected: False'] healthcheck_duration=1.1458003427833319e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=mypad-061 healthy=False reasons=['battery level: None'] healthcheck_duration=9.333001798950136e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=bigmac-062 healthy=True reasons=[] healthcheck_duration=1.7167010810226202e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=swatch-063 healthy=True reasons=[] healthcheck_duration=1.1082986020483077e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=hiphone-064 healthy=True reasons=[] healthcheck_duration=9.666997357271612e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=mypad-065 healthy=False reasons=['device connected: False'] healthcheck_duration=1.4000004739500582e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=bigmac-066 healthy=True reasons=[] healthcheck_duration=1.0791991371661425e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=swatch-067 healthy=True reasons=[] healthcheck_duration=1.1249998351559043e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=hiphone-068 healthy=False reasons=['battery level: 19'] healthcheck_duration=8.417002391070127e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=mypad-069 healthy=False reasons=['battery level: None'] healthcheck_duration=9.374998626299202e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=bigmac-070 healthy=False reasons=['device connected: False'] healthcheck_duration=2.104099257849157e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=mypad-041 healthy=True reasons=[] healthcheck_duration=1.6749996575526893e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=hiphone-072 healthy=True reasons=[] healthcheck_duration=9.41600592341274e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=mypad-073 healthy=True reasons=[] healthcheck_duration=1.0541989468038082e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=bigmac-074 healthy=True reasons=[] healthcheck_duration=1.0584000847302377e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=swatch-075 healthy=False reasons=['device connected: False'] healthcheck_duration=1.2207994586788118e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=hiphone-076 healthy=False reasons=['battery level: 19'] healthcheck_duration=1.3249999028630555e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=mypad-077 healthy=False reasons=['battery level: None'] healthcheck_duration=1.1833006283268332e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=bigmac-078 healthy=True reasons=[] healthcheck_duration=9.041003067977726e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=swatch-079 healthy=True reasons=[] healthcheck_duration=9.66701190918684e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=hiphone-080 healthy=False reasons=['device connected: False'] healthcheck_duration=1.0916992323473096e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=mypad-081 healthy=True reasons=[] healthcheck_duration=1.058299676515162e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=bigmac-082 healthy=True reasons=[] healthcheck_duration=8.125003660097718e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=swatch-083 healthy=True reasons=[] healthcheck_duration=8.08399636298418e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=hiphone-084 healthy=False reasons=['battery level: 19'] healthcheck_duration=8.374991011805832e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=bigmac-042 healthy=True reasons=[] healthcheck_duration=1.4667006325908005e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=bigmac-086 healthy=True reasons=[] healthcheck_duration=1.5415993402712047e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=swatch-087 healthy=True reasons=[] healthcheck_duration=1.0916992323473096e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=hiphone-088 healthy=True reasons=[] healthcheck_duration=8.83299799170345e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=mypad-089 healthy=True reasons=[] healthcheck_duration=9.750001481734216e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=bigmac-090 healthy=False reasons=['device connected: False'] healthcheck_duration=1.5416007954627275e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=swatch-091 healthy=True reasons=[] healthcheck_duration=9.249997674487531e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=hiphone-092 healthy=False reasons=['battery level: 19'] healthcheck_duration=8.458999218419194e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=mypad-093 healthy=False reasons=['battery level: None'] healthcheck_duration=1.0499992640689015e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=bigmac-094 healthy=True reasons=[] healthcheck_duration=1.0458010365255177e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=swatch-095 healthy=False reasons=['device connected: False'] healthcheck_duration=9.042007150128484e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=hiphone-096 healthy=True reasons=[] healthcheck_duration=1.0083007509820163e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=mypad-097 healthy=True reasons=[] healthcheck_duration=9.166993550024927e-06
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=bigmac-098 healthy=True reasons=[] healthcheck_duration=1.0749994544312358e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=swatch-099 healthy=True reasons=[] healthcheck_duration=1.016599708236754e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=hiphone-100 healthy=False reasons=['battery level: 19', 'device connected: False'] healthcheck_duration=1.1249998351559043e-05
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=mypad-101 healthy=False reasons=['battery level: None'] healthcheck_duration=1.2624994269572198e-05
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-154 status=finished duration=0.000s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-169 status=started simulated_delay=0.730s
+2026-11-19 22:38:41,543 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-169 status=finished duration=0.001s
+2026-11-19 22:38:41,542 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-168 status=finished duration=0.000s
+2026-11-19 22:38:41,543 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-172 status=started simulated_delay=0.917s
+2026-11-19 22:38:41,543 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-172 status=finished duration=0.000s
+2026-11-19 22:38:41,543 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-173 status=started simulated_delay=0.414s
+2026-11-19 22:38:41,543 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-173 status=finished duration=0.000s
+2026-11-19 22:38:41,543 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-174 status=started simulated_delay=2.370s
+2026-11-19 22:38:41,543 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-174 status=finished duration=0.000s
+2026-11-19 22:38:41,543 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-175 status=started simulated_delay=3.187s
+2026-11-19 22:38:41,543 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-175 status=finished duration=0.000s
+2026-11-19 22:38:41,543 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-176 status=started simulated_delay=2.144s
+2026-11-19 22:38:41,543 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-176 status=finished duration=0.000s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-177 status=started simulated_delay=3.391s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-177 status=finished duration=0.000s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-178 status=started simulated_delay=0.076s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-178 status=finished duration=0.000s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-179 status=started simulated_delay=0.610s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-179 status=finished duration=0.000s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-180 status=started simulated_delay=3.043s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-180 status=finished duration=0.000s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-181 status=started simulated_delay=1.586s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-181 status=finished duration=0.000s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-182 status=started simulated_delay=2.029s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-182 status=finished duration=0.000s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-183 status=started simulated_delay=2.553s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-183 status=finished duration=0.000s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-184 status=started simulated_delay=0.277s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-184 status=finished duration=0.000s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-185 status=started simulated_delay=0.651s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-185 status=finished duration=0.000s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-186 status=started simulated_delay=1.785s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-186 status=finished duration=0.000s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-187 status=started simulated_delay=0.065s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-187 status=finished duration=0.000s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-188 status=started simulated_delay=0.058s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-188 status=finished duration=0.000s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-189 status=started simulated_delay=2.681s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-189 status=finished duration=0.000s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-190 status=started simulated_delay=1.902s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-190 status=finished duration=0.000s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-191 status=started simulated_delay=0.355s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-191 status=finished duration=0.000s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-192 status=started simulated_delay=0.715s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-192 status=finished duration=0.000s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-193 status=started simulated_delay=2.210s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-193 status=finished duration=0.000s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-194 status=started simulated_delay=1.699s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-194 status=finished duration=0.000s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-195 status=started simulated_delay=0.514s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-195 status=finished duration=0.000s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-196 status=started simulated_delay=3.417s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-196 status=finished duration=0.000s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-197 status=started simulated_delay=0.867s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-197 status=finished duration=0.000s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-198 status=started simulated_delay=2.425s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-198 status=finished duration=0.000s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-199 status=started simulated_delay=1.013s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-199 status=finished duration=0.000s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-200 status=started simulated_delay=2.236s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-200 status=finished duration=0.000s
+2026-11-19 22:38:41,543 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-171 status=started simulated_delay=0.663s
+2026-11-19 22:38:41,544 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-171 status=finished duration=0.001s
+2026-11-19 22:38:41,543 INFO [MainThread] __main__ operation=health_check device_id=bigmac-102 healthy=True reasons=[] healthcheck_duration=9.625000529922545e-06
+2026-11-19 22:38:41,544 INFO [MainThread] __main__ operation=health_check device_id=swatch-103 healthy=True reasons=[] healthcheck_duration=8.125003660097718e-06
+2026-11-19 22:38:41,544 INFO [MainThread] __main__ operation=health_check device_id=hiphone-104 healthy=True reasons=[] healthcheck_duration=8.791990694589913e-06
+2026-11-19 22:38:41,544 INFO [MainThread] __main__ operation=health_check device_id=mypad-105 healthy=False reasons=['device connected: False'] healthcheck_duration=9.70800465438515e-06
+2026-11-19 22:38:41,544 INFO [MainThread] __main__ operation=health_check device_id=bigmac-106 healthy=True reasons=[] healthcheck_duration=1.0292002116329968e-05
+2026-11-19 22:38:41,543 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-170 status=started simulated_delay=1.464s
+2026-11-19 22:38:41,545 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-170 status=finished duration=0.001s
+2026-11-19 22:38:41,544 INFO [MainThread] __main__ operation=health_check device_id=swatch-107 healthy=True reasons=[] healthcheck_duration=2.21250083995983e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=hiphone-108 healthy=False reasons=['battery level: 19'] healthcheck_duration=3.100000321865082e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=swatch-071 healthy=True reasons=[] healthcheck_duration=0.0010544590040808544
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=bigmac-110 healthy=False reasons=['device connected: False'] healthcheck_duration=1.4707999071106315e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=swatch-111 healthy=True reasons=[] healthcheck_duration=1.0042000212706625e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=hiphone-112 healthy=True reasons=[] healthcheck_duration=1.0124989785254002e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=mypad-113 healthy=True reasons=[] healthcheck_duration=1.0709001799114048e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=bigmac-114 healthy=True reasons=[] healthcheck_duration=1.1084004654549062e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=swatch-115 healthy=False reasons=['device connected: False'] healthcheck_duration=8.916002116166055e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=hiphone-116 healthy=False reasons=['battery level: 19'] healthcheck_duration=9.625000529922545e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=mypad-117 healthy=False reasons=['battery level: None'] healthcheck_duration=1.0457995813339949e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=bigmac-118 healthy=True reasons=[] healthcheck_duration=1.170899486169219e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=swatch-119 healthy=True reasons=[] healthcheck_duration=9.12499672267586e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=hiphone-120 healthy=False reasons=['device connected: False'] healthcheck_duration=9.750001481734216e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=mypad-121 healthy=True reasons=[] healthcheck_duration=1.029099803417921e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=bigmac-122 healthy=True reasons=[] healthcheck_duration=1.1041993275284767e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=swatch-123 healthy=True reasons=[] healthcheck_duration=8.125003660097718e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=hiphone-124 healthy=False reasons=['battery level: 19'] healthcheck_duration=9.292009053751826e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=mypad-125 healthy=False reasons=['battery level: None', 'device connected: False'] healthcheck_duration=1.087499549612403e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=mypad-085 healthy=False reasons=['battery level: None', 'device connected: False'] healthcheck_duration=1.7457990907132626e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=swatch-127 healthy=True reasons=[] healthcheck_duration=1.2584001524373889e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=hiphone-128 healthy=True reasons=[] healthcheck_duration=1.0457995813339949e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=mypad-129 healthy=True reasons=[] healthcheck_duration=9.082999895326793e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=bigmac-130 healthy=False reasons=['device connected: False'] healthcheck_duration=1.1124997399747372e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=swatch-131 healthy=True reasons=[] healthcheck_duration=1.4792007277719676e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=hiphone-132 healthy=False reasons=['battery level: 19'] healthcheck_duration=1.1500000255182385e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=mypad-133 healthy=False reasons=['battery level: None'] healthcheck_duration=1.270900247618556e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=bigmac-134 healthy=True reasons=[] healthcheck_duration=8.37500556372106e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=swatch-135 healthy=False reasons=['device connected: False'] healthcheck_duration=9.709008736535907e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=hiphone-136 healthy=True reasons=[] healthcheck_duration=1.0499992640689015e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=mypad-137 healthy=True reasons=[] healthcheck_duration=1.1083990102633834e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=bigmac-138 healthy=True reasons=[] healthcheck_duration=8.292001439258456e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=swatch-139 healthy=True reasons=[] healthcheck_duration=9.249997674487531e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=hiphone-140 healthy=False reasons=['battery level: 19', 'device connected: False'] healthcheck_duration=1.6291989595629275e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=mypad-141 healthy=False reasons=['battery level: None'] healthcheck_duration=8.582996088080108e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=bigmac-142 healthy=True reasons=[] healthcheck_duration=9.333991329185665e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=swatch-143 healthy=True reasons=[] healthcheck_duration=1.0249990737065673e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=hiphone-144 healthy=True reasons=[] healthcheck_duration=1.0832998668774962e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=mypad-145 healthy=False reasons=['device connected: False'] healthcheck_duration=8.290997357107699e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=bigmac-146 healthy=True reasons=[] healthcheck_duration=9.249997674487531e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=swatch-147 healthy=True reasons=[] healthcheck_duration=1.0415998985990882e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=hiphone-148 healthy=False reasons=['battery level: 19'] healthcheck_duration=1.0832998668774962e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=mypad-149 healthy=False reasons=['battery level: None'] healthcheck_duration=9.707990102469921e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=bigmac-150 healthy=False reasons=['device connected: False'] healthcheck_duration=1.0792005923576653e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=swatch-151 healthy=True reasons=[] healthcheck_duration=1.0250005288980901e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=hiphone-152 healthy=True reasons=[] healthcheck_duration=8.916991646401584e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=mypad-153 healthy=True reasons=[] healthcheck_duration=1.0584000847302377e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=mypad-109 healthy=False reasons=['battery level: None'] healthcheck_duration=1.3957993360236287e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=swatch-155 healthy=False reasons=['device connected: False'] healthcheck_duration=1.375000283587724e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=hiphone-156 healthy=False reasons=['battery level: 19'] healthcheck_duration=1.1166994227096438e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=mypad-157 healthy=False reasons=['battery level: None'] healthcheck_duration=8.291986887343228e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=bigmac-158 healthy=True reasons=[] healthcheck_duration=8.957998943515122e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=swatch-159 healthy=True reasons=[] healthcheck_duration=9.83300560619682e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=hiphone-160 healthy=False reasons=['device connected: False'] healthcheck_duration=1.1500000255182385e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=mypad-161 healthy=True reasons=[] healthcheck_duration=7.83299037721008e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=bigmac-162 healthy=True reasons=[] healthcheck_duration=1.2624994269572198e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=swatch-163 healthy=True reasons=[] healthcheck_duration=1.1374999303370714e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=hiphone-164 healthy=False reasons=['battery level: 19'] healthcheck_duration=1.158300437964499e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=mypad-165 healthy=False reasons=['battery level: None', 'device connected: False'] healthcheck_duration=1.3957993360236287e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=bigmac-166 healthy=True reasons=[] healthcheck_duration=1.1208001524209976e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=swatch-167 healthy=True reasons=[] healthcheck_duration=1.0791001841425896e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=bigmac-126 healthy=True reasons=[] healthcheck_duration=1.591700129210949e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=bigmac-154 healthy=True reasons=[] healthcheck_duration=2.3333006538450718e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=mypad-169 healthy=True reasons=[] healthcheck_duration=0.0012209580017952248
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=hiphone-168 healthy=True reasons=[] healthcheck_duration=1.966700074262917e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=hiphone-172 healthy=False reasons=['battery level: 19'] healthcheck_duration=1.3541997759602964e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=mypad-173 healthy=False reasons=['battery level: None'] healthcheck_duration=1.1625001206994057e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=bigmac-174 healthy=True reasons=[] healthcheck_duration=9.625000529922545e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=swatch-175 healthy=False reasons=['device connected: False'] healthcheck_duration=1.1041003745049238e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=hiphone-176 healthy=True reasons=[] healthcheck_duration=1.0749994544312358e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=mypad-177 healthy=True reasons=[] healthcheck_duration=9.750001481734216e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=bigmac-178 healthy=True reasons=[] healthcheck_duration=1.2125005014240742e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=swatch-179 healthy=True reasons=[] healthcheck_duration=1.1333992006257176e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=hiphone-180 healthy=False reasons=['battery level: 19', 'device connected: False'] healthcheck_duration=5.820801015943289e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=mypad-181 healthy=False reasons=['battery level: None'] healthcheck_duration=1.999999221879989e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=bigmac-182 healthy=True reasons=[] healthcheck_duration=1.504199462942779e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=swatch-183 healthy=True reasons=[] healthcheck_duration=1.2584001524373889e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=hiphone-184 healthy=True reasons=[] healthcheck_duration=2.1665997337549925e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=mypad-185 healthy=False reasons=['device connected: False'] healthcheck_duration=1.1166994227096438e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=bigmac-186 healthy=True reasons=[] healthcheck_duration=9.208000847138464e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=swatch-187 healthy=True reasons=[] healthcheck_duration=1.1083000572398305e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=hiphone-188 healthy=False reasons=['battery level: 19'] healthcheck_duration=1.3167009456083179e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=mypad-189 healthy=False reasons=['battery level: None'] healthcheck_duration=1.0667004971764982e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=bigmac-190 healthy=False reasons=['device connected: False'] healthcheck_duration=1.1042007827199996e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=swatch-191 healthy=True reasons=[] healthcheck_duration=9.583993232809007e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=hiphone-192 healthy=True reasons=[] healthcheck_duration=8.750008419156075e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=mypad-193 healthy=True reasons=[] healthcheck_duration=8.916991646401584e-06
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=bigmac-194 healthy=True reasons=[] healthcheck_duration=2.4083012249320745e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=swatch-195 healthy=False reasons=['device connected: False'] healthcheck_duration=1.2084012269042432e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=hiphone-196 healthy=False reasons=['battery level: 19'] healthcheck_duration=1.1166994227096438e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=mypad-197 healthy=False reasons=['battery level: None'] healthcheck_duration=4.675000673159957e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=bigmac-198 healthy=True reasons=[] healthcheck_duration=3.112500417046249e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=swatch-199 healthy=True reasons=[] healthcheck_duration=1.737500133458525e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=hiphone-200 healthy=False reasons=['device connected: False'] healthcheck_duration=1.3958997442387044e-05
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=swatch-171 healthy=True reasons=[] healthcheck_duration=0.0010182919941144064
+2026-11-19 22:38:41,545 INFO [MainThread] __main__ operation=health_check device_id=bigmac-170 healthy=False reasons=['device connected: False'] healthcheck_duration=0.0011719169997377321
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ Provisioning devices started
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ provisioning_settings.json file path: /Users/heindrickcheung/MyProjects/device-lab-engineer-practice/provisioning_settings.json
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=hiphone-001 success=True message=Provisioning completed
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 1}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 2.270899130962789e-05}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=mypad-002 success=False message=Device must be available
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 2}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 3.5375996958464384e-05}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=hiphone-003 success=False message=Device must be available
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 3}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 4.529299621935934e-05}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=bigmac-004 success=True message=Provisioning completed
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 4}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 5.6625998695380986e-05}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=hiphone-005 success=True message=Provisioning completed
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 5}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 6.641799700446427e-05}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=bigmac-006 success=False message=Device must be available
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 6}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 7.483399531338364e-05}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=swatch-007 success=False message=Device must be available
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 7}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 8.304198854602873e-05}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=mypad-008 success=False message=Device must be available
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 8}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 9.14169941097498e-05}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=mypad-009 success=False message=Device must be available
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 9}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 9.970899554900825e-05}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=bigmac-010 success=False message=Device must be available
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 10}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00010766700142994523}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=swatch-011 success=False message=Device must be available
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 11}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00011583400191739202}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=hiphone-012 success=True message=Provisioning completed
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 12}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00012504200276453048}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=mypad-013 success=False message=Device must be available
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 13}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00013333400420378894}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=bigmac-014 success=False message=Device must be available
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 14}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00014300100156106055}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=swatch-015 success=False message=Device must be available
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 15}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00015104300109669566}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=hiphone-016 success=True message=Provisioning completed
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 16}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00015945998893585056}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=mypad-017 success=False message=Device must be available
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 17}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00016737700207158923}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=bigmac-018 success=False message=Device must be available
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 18}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0001752110110828653}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=swatch-019 success=False message=Device must be available
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 19}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.000183502008439973}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=hiphone-020 success=True message=Provisioning completed
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 20}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0001921270159073174}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=mypad-021 success=False message=Device must be available
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 21}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0001999600208364427}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=bigmac-022 success=False message=Device must be available
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 22}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00020808502449654043}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=swatch-023 success=False message=Device must be available
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 23}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00021658501646015793}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=hiphone-024 success=True message=Provisioning completed
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 24}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0002252520207548514}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=mypad-025 success=False message=Device must be available
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 25}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00023296002473216504}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=bigmac-026 success=False message=Device must be available
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 26}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00024096002744045109}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=swatch-027 success=False message=Device must be available
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 27}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0002494600194040686}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=hiphone-028 success=True message=Provisioning completed
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 28}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00025808501231949776}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=mypad-029 success=False message=Device must be available
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 29}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00026596001407597214}}
+2026-11-19 22:38:41,546 INFO [MainThread] __main__ operation=provision device_id=bigmac-030 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 30}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0002737520117079839}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=swatch-031 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 31}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0002819190121954307}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=hiphone-032 success=True message=Provisioning completed
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 32}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0002901690168073401}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=mypad-033 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 33}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00029804401856381446}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=bigmac-034 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 34}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00030571002571377903}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=swatch-035 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 35}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00031375202524941415}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=hiphone-036 success=True message=Provisioning completed
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 36}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00032233502133749425}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=mypad-037 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 37}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00033050202182494104}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=bigmac-038 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 38}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0003383770235814154}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=swatch-039 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 39}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0003466680209385231}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=hiphone-040 success=True message=Provisioning completed
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 40}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00035487701825331897}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=mypad-041 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 41}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00036262701905798167}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=bigmac-042 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 42}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.000370460023987107}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=swatch-043 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 43}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00037866902130190283}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=hiphone-044 success=True message=Provisioning completed
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 44}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00038696100818924606}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=mypad-045 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 45}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00039467001624871045}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=bigmac-046 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 46}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0004027110117021948}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=swatch-047 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 47}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.000411170010920614}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=hiphone-048 success=True message=Provisioning completed
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 48}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0004198360111331567}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=mypad-049 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 49}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00042750302236527205}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=bigmac-050 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 50}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00043550301052164286}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=swatch-051 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 51}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00044400300248526037}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=hiphone-052 success=True message=Provisioning completed
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 52}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0004524609976215288}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=mypad-053 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 53}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0004602940025506541}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=bigmac-054 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 54}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0004682520084315911}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=swatch-055 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 55}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0004766690108226612}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=hiphone-056 success=True message=Provisioning completed
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 56}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0004852940182900056}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=mypad-057 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 57}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00049316902004648}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=bigmac-058 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 58}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.000501169022754766}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=swatch-059 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 59}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.000509085031808354}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=hiphone-060 success=True message=Provisioning completed
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 60}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0005179600411793217}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=mypad-061 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 61}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.000525793046108447}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=bigmac-062 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 62}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0005335430469131097}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=swatch-063 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 63}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0005414590414147824}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=hiphone-064 success=True message=Provisioning completed
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 64}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0005498750397237018}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=mypad-065 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 65}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0005575830291491002}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=bigmac-066 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 66}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0005653330299537629}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=swatch-067 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 67}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0005732080317102373}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=hiphone-068 success=True message=Provisioning completed
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 68}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0005812920426251367}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=mypad-069 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 69}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0005890840548090637}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=bigmac-070 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 70}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.000596959056565538}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=swatch-071 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 71}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0006050000520190224}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=hiphone-072 success=True message=Provisioning completed
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 72}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0006131670525064692}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=mypad-073 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 73}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0006208340637385845}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=bigmac-074 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 74}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0006287920550676063}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=swatch-075 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 75}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0006370010523824021}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=hiphone-076 success=True message=Provisioning completed
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 76}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.000645585052552633}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=mypad-077 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 77}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.000653210052405484}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=bigmac-078 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 78}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0006610430573346093}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=swatch-079 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 79}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0006692510651191697}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=hiphone-080 success=True message=Provisioning completed
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 80}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0006778760580345988}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=mypad-081 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 81}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0006855010578874499}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=bigmac-082 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 82}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0006933760596439242}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=swatch-083 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 83}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0007014590664766729}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=hiphone-084 success=True message=Provisioning completed
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 84}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.000709834072040394}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=mypad-085 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 85}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0007175840728450567}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=bigmac-086 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 86}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0007252510695252568}}
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ operation=provision device_id=swatch-087 success=False message=Device must be available
+2026-11-19 22:38:41,547 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 87}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0007334590627579018}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=hiphone-088 success=True message=Provisioning completed
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 88}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0007420010661007836}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=mypad-089 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 89}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0007499170606024563}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=bigmac-090 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 90}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0007580000528832898}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=swatch-091 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 91}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0007657920505153015}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=hiphone-092 success=True message=Provisioning completed
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 92}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00077408405195456}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=mypad-093 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 93}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.000782042057835497}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=bigmac-094 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 94}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0007900830678408965}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=swatch-095 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 95}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0007981250673765317}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=hiphone-096 success=True message=Provisioning completed
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 96}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0008065830625128001}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=mypad-097 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 97}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0008142490551108494}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=bigmac-098 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 98}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0008219580631703138}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=swatch-099 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 99}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0008296250598505139}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=hiphone-100 success=True message=Provisioning completed
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 100}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0008378330676350743}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=mypad-101 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 101}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.000845583068439737}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=bigmac-102 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 102}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0008533750660717487}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=swatch-103 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 103}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0008612500678282231}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=hiphone-104 success=True message=Provisioning completed
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 104}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0008699170721229166}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=mypad-105 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 105}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00087800006440375}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=bigmac-106 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 106}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0008859160589054227}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=swatch-107 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 107}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0008936240483308211}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=hiphone-108 success=True message=Provisioning completed
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 108}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0009016240510391071}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=mypad-109 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 109}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0009096660505747423}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=bigmac-110 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 110}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0009175410523312166}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=swatch-111 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 111}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0009254160395357758}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=hiphone-112 success=True message=Provisioning completed
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 112}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0009340410470031202}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=mypad-113 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 113}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.000942041035159491}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=bigmac-114 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 114}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0009499160223640501}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=swatch-115 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 115}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0009574570140102878}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=hiphone-116 success=True message=Provisioning completed
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 116}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0009657490154495463}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=mypad-117 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 117}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0009736240026541054}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=bigmac-118 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 118}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0009814570075832307}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=swatch-119 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 119}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0009891240042634308}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=hiphone-120 success=True message=Provisioning completed
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 120}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0009974160057026893}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=mypad-121 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 121}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0010058740008389577}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=bigmac-122 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 122}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0010138740035472438}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=swatch-123 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 123}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0010216240043519065}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=hiphone-124 success=True message=Provisioning completed
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 124}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.00102970699663274}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=mypad-125 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 125}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0010374149860581383}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=bigmac-126 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 126}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.001045122990035452}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=swatch-127 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 127}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0010527889971854165}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=hiphone-128 success=True message=Provisioning completed
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 128}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0010609559976728633}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=mypad-129 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 129}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0010685809975257143}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=bigmac-130 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 130}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.001076289001503028}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=swatch-131 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 131}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0010838310117833316}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=hiphone-132 success=True message=Provisioning completed
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 132}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.001091914004064165}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=mypad-133 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 133}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0010994969925377518}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=bigmac-134 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 134}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0011071219923906028}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=swatch-135 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 135}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0011147059994982556}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=hiphone-136 success=True message=Provisioning completed
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 136}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0011229139927309006}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=mypad-137 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 137}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.001130788994487375}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=bigmac-138 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 138}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.001138413994340226}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=swatch-139 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 139}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0011462480033515021}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=hiphone-140 success=True message=Provisioning completed
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 140}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0011547070171218365}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=mypad-141 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 141}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0011624990147538483}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=bigmac-142 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 142}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0011704990174621344}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=swatch-143 success=False message=Device must be available
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 143}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0011781660141423345}}
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ operation=provision device_id=hiphone-144 success=True message=Provisioning completed
+2026-11-19 22:38:41,548 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 144}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0011869160080095753}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=mypad-145 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 145}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0011947910097660497}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=bigmac-146 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 146}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0012027490156469867}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=swatch-147 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 147}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0012107070215279236}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=hiphone-148 success=True message=Provisioning completed
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 148}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0012188740220153704}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=mypad-149 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 149}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0012267900310689583}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=bigmac-150 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 150}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0012344990245765075}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=swatch-151 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 151}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0012420820276020095}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=hiphone-152 success=True message=Provisioning completed
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 152}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0012501660239649937}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=mypad-153 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 153}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0012577910238178447}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=bigmac-154 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 154}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0012655830214498565}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=swatch-155 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 155}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0012735410273307934}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=hiphone-156 success=True message=Provisioning completed
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 156}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0012819160328945145}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=mypad-157 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 157}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0012897080305265263}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=bigmac-158 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 158}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0012979580351384357}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=swatch-159 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 159}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.001305875033722259}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=hiphone-160 success=True message=Provisioning completed
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 160}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.001314250024734065}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=mypad-161 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 161}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.001322125011938624}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=bigmac-162 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 162}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0013298330159159377}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=swatch-163 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 163}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0013378330186242238}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=hiphone-164 success=True message=Provisioning completed
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 164}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0013462490169331431}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=mypad-165 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 165}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0013543740205932409}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=bigmac-166 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 166}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0013621660182252526}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=swatch-167 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 167}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0013697910180781037}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=hiphone-168 success=True message=Provisioning completed
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 168}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0013781660090899095}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=mypad-169 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 169}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0013862910127500072}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=bigmac-170 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 170}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0013941240176791325}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=swatch-171 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 171}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0014019580266904086}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=hiphone-172 success=True message=Provisioning completed
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 172}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0014102080167504027}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=mypad-173 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 173}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0014178750134306028}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=bigmac-174 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 174}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0014260000025387853}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=swatch-175 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 175}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0014343330112751573}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=hiphone-176 success=True message=Provisioning completed
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 176}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0014427500136662275}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=mypad-177 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 177}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0014505000144708902}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=bigmac-178 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 178}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0014584580203518271}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=swatch-179 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 179}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.001466292014811188}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=hiphone-180 success=True message=Provisioning completed
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 180}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.001474875010899268}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=mypad-181 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 181}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0014827080012764782}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=bigmac-182 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 182}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0014903750125085935}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=swatch-183 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 183}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0014985000161686912}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=hiphone-184 success=True message=Provisioning completed
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 184}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0015067920176079497}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=mypad-185 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 185}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0015230420249281451}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=bigmac-186 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 186}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0015332080365624279}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=swatch-187 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 187}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0015423330332851037}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=hiphone-188 success=True message=Provisioning completed
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 188}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.001555125039885752}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=mypad-189 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 189}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0015639160410501063}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=bigmac-190 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 190}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.001571333035826683}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=swatch-191 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 191}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0015787080337759107}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=hiphone-192 success=True message=Provisioning completed
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 192}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0015867080364841968}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=mypad-193 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 193}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0015938330470817164}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=bigmac-194 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 194}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0016011250409064814}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=swatch-195 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 195}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0016083750379038975}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=hiphone-196 success=True message=Provisioning completed
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 196}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0016162090469151735}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=mypad-197 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 197}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.001625417047762312}}
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ operation=provision device_id=bigmac-198 success=False message=Device must be available
+2026-11-19 22:38:41,549 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 198}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0016356250562239438}}
+2026-11-19 22:38:41,550 INFO [MainThread] __main__ operation=provision device_id=swatch-199 success=False message=Device must be available
+2026-11-19 22:38:41,550 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 199}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0016452500567538664}}
+2026-11-19 22:38:41,550 INFO [MainThread] __main__ operation=provision device_id=hiphone-200 success=True message=Provisioning completed
+2026-11-19 22:38:41,550 INFO [MainThread] __main__ telemetry={'operation_counts': {'health_check': 199, 'provision': 200}, 'duration_totals': {'health_check': 0.010337960979086347, 'provision': 0.0016546660626772791}}

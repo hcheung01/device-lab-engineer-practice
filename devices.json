@@ -82,5 +82,1989 @@
     "battery_level": null,
     "is_connected": false,
     "configuration": {}
+  },
+  {
+    "device_id": "mypad-009",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": 92,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "bigmac-010",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 65,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-011",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 34,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-012",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 19,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "mypad-013",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": null,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-014",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 78,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-015",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 50,
+    "is_connected": false,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "hiphone-016",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 100,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-017",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": 92,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-018",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 65,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "swatch-019",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 34,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-020",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 19,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-021",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": null,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "bigmac-022",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 78,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-023",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 50,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-024",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 100,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "mypad-025",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": 92,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-026",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 65,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-027",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 34,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "hiphone-028",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 19,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-029",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": null,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-030",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 78,
+    "is_connected": false,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "swatch-031",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 50,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-032",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 100,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-033",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": 92,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "bigmac-034",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 65,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-035",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 34,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-036",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 19,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "mypad-037",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": null,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-038",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 78,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-039",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 50,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "hiphone-040",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 100,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-041",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": 92,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-042",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 65,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "swatch-043",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 34,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-044",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 19,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-045",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": null,
+    "is_connected": false,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "bigmac-046",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 78,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-047",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 50,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-048",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 100,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "mypad-049",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": 92,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-050",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 65,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-051",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 34,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "hiphone-052",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 19,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-053",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": null,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-054",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 78,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "swatch-055",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 50,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-056",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 100,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-057",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": 92,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "bigmac-058",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 65,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-059",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 34,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-060",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 19,
+    "is_connected": false,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "mypad-061",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": null,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-062",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 78,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-063",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 50,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "hiphone-064",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 100,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-065",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": 92,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-066",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 65,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "swatch-067",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 34,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-068",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 19,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-069",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": null,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "bigmac-070",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 78,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-071",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 50,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-072",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 100,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "mypad-073",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": 92,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-074",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 65,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-075",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 34,
+    "is_connected": false,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "hiphone-076",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 19,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-077",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": null,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-078",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 78,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "swatch-079",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 50,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-080",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 100,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-081",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": 92,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "bigmac-082",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 65,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-083",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 34,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-084",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 19,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "mypad-085",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": null,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-086",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 78,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-087",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 50,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "hiphone-088",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 100,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-089",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": 92,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-090",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 65,
+    "is_connected": false,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "swatch-091",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 34,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-092",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 19,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-093",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": null,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "bigmac-094",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 78,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-095",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 50,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-096",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 100,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "mypad-097",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": 92,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-098",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 65,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-099",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 34,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "hiphone-100",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 19,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-101",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": null,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-102",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 78,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "swatch-103",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 50,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-104",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 100,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-105",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": 92,
+    "is_connected": false,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "bigmac-106",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 65,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-107",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 34,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-108",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 19,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "mypad-109",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": null,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-110",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 78,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-111",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 50,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "hiphone-112",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 100,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-113",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": 92,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-114",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 65,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "swatch-115",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 34,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-116",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 19,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-117",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": null,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "bigmac-118",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 78,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-119",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 50,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-120",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 100,
+    "is_connected": false,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "mypad-121",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": 92,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-122",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 65,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-123",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 34,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "hiphone-124",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 19,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-125",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": null,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-126",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 78,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "swatch-127",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 50,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-128",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 100,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-129",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": 92,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "bigmac-130",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 65,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-131",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 34,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-132",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 19,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "mypad-133",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": null,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-134",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 78,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-135",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 50,
+    "is_connected": false,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "hiphone-136",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 100,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-137",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": 92,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-138",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 65,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "swatch-139",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 34,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-140",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 19,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-141",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": null,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "bigmac-142",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 78,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-143",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 50,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-144",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 100,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "mypad-145",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": 92,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-146",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 65,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-147",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 34,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "hiphone-148",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 19,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-149",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": null,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-150",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 78,
+    "is_connected": false,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "swatch-151",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 50,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-152",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 100,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-153",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": 92,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "bigmac-154",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 65,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-155",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 34,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-156",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 19,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "mypad-157",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": null,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-158",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 78,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-159",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 50,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "hiphone-160",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 100,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-161",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": 92,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-162",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 65,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "swatch-163",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 34,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-164",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 19,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-165",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": null,
+    "is_connected": false,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "bigmac-166",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 78,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-167",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 50,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-168",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 100,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "mypad-169",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": 92,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-170",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 65,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-171",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 34,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "hiphone-172",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 19,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-173",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": null,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-174",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 78,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "swatch-175",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 50,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-176",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 100,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-177",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": 92,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "bigmac-178",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 65,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-179",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 34,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-180",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 19,
+    "is_connected": false,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "mypad-181",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": null,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-182",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 78,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-183",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 50,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "hiphone-184",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 100,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-185",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": 92,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-186",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 65,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "swatch-187",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 34,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-188",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 19,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-189",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": null,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "bigmac-190",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 78,
+    "is_connected": false,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-191",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 50,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-192",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 100,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "mobile-smoke"
+    }
+  },
+  {
+    "device_id": "mypad-193",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": 92,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-194",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 65,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "swatch-195",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 34,
+    "is_connected": false,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "hiphone-196",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 19,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "mypad-197",
+    "device_type": "tablet",
+    "device_state": "in_use",
+    "os_version": "18.1",
+    "battery_level": null,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "bigmac-198",
+    "device_type": "laptop",
+    "device_state": "maintenance",
+    "os_version": "15.1",
+    "battery_level": 78,
+    "is_connected": true,
+    "configuration": {
+      "locale": "en_US",
+      "timezone": "America/Los_Angeles",
+      "test_profile": "desktop-validation"
+    }
+  },
+  {
+    "device_id": "swatch-199",
+    "device_type": "watch",
+    "device_state": "retired",
+    "os_version": "11.0",
+    "battery_level": 50,
+    "is_connected": true,
+    "configuration": {}
+  },
+  {
+    "device_id": "hiphone-200",
+    "device_type": "phone",
+    "device_state": "available",
+    "os_version": "18.2",
+    "battery_level": 100,
+    "is_connected": false,
+    "configuration": {}
   }
 ]
