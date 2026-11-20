@@ -114,15 +114,15 @@ def main() -> None:
         provisioning_data = json.load(file)
         for data in provisioning_data:
             started_at = time.perf_counter()
-            device = inventory.lookup(data.get("device_id", None))
-            config = {
+            device = inventory.lookup(data["device_id"])
+            provisioning_config = {
                 key: value
                 for key, value in data.items()
                 if key != "device_id"
             }
             provision_result = provision_device(
                 device, 
-                data
+                provisioning_config
             )
             logger.info(
                 "operation=provision device_id=%s success=%s message=%s",
@@ -131,7 +131,7 @@ def main() -> None:
                 provision_result.message,
             )
             telemetry.record("provision", time.perf_counter() - started_at)
-            logger.info("telemetry=%s", telemetry.snapshot())
+        logger.info("telemetry=%s", telemetry.snapshot())
                                      
 if __name__ == "__main__":
     main()
