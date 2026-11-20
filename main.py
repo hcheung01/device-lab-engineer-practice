@@ -21,7 +21,7 @@ def check_one_device(
         delay_seconds,
     )
 
-    # time.sleep(delay_seconds)
+    time.sleep(delay_seconds)
 
     health_result = HealthCheckResult(device_id).check_health(
         device_id, inventory
