@@ -13,6 +13,7 @@ logger = logging.getLogger(__name__)
 
 def main() -> None:
     """Run the device-lab simulation and log operation results and telemetry."""
+
     logging.basicConfig(
         filename="device_simulator.log",
         filemode="w",

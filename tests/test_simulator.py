@@ -1,6 +1,5 @@
 """Tests for device simulator behavior. python -m pytest -v tests/test_simulator.py"""
 
-
 from simulator import AVAILABLE, Device, provision_device
 import pytest
 
@@ -39,6 +38,7 @@ class TestProvisioning:
         self, config: dict[str, str], expected_success: bool
     ) -> None:
         """Apply valid config and leave the device unchanged for invalid config."""
+
         device = Device("test-1", "phone", AVAILABLE, "18.0")
         original_configuration = device.configuration.copy()
 

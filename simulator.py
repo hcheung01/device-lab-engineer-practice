@@ -1,4 +1,5 @@
 """Device models and simulated operations for the device lab."""
+
 from __future__ import annotations
 
 import time
@@ -33,6 +34,7 @@ class Device:
                  configuration: DeviceConfig | None = None
                  ) -> None:
         """Create a device, rejecting lifecycle states the simulator doesn't know."""
+
         self.device_id = device_id
         self.device_type = device_type
         if device_state not in ALLOWED_TRANSITIONS:
@@ -45,32 +47,50 @@ class Device:
         
     def change_state(self, new_state: str) -> None:
         """Move to an allowed lifecycle state or raise ``ValueError``."""
+
         allow_states = ALLOWED_TRANSITIONS[self.device_state]
         if new_state not in allow_states:
             raise ValueError(f"New device state not allowed: {new_state}")
+        old_state = self.device_state
         self.device_state = new_state
+        logger.info(
+            "operation=state_change device_id=%s old_state=%s new_state=%s",
+            self.device_id,
+            old_state,
+            new_state,
+        )
 
 class DeviceInventory:
     """Store and query the devices managed by the simulator."""
 
     def __init__(self) -> None:
         """Create an empty inventory keyed by device ID."""
+
         self.device_inventory: dict[str, Device] = {}
     
     def add(self, device: Device) -> None:
         """Add a device; raise ``ValueError`` if its ID is already present."""
+
         if device.device_id in self.device_inventory:
             raise ValueError(f"Duplicate ID: {device.device_id}")
         self.device_inventory[device.device_id] = device
+        logger.debug(
+            "operation=inventory_add device_id=%s device_type=%s inventory_size=%s",
+            device.device_id,
+            device.device_type,
+            len(self.device_inventory),
+        )
     
     def lookup(self, device_id: str) -> Device:
         """Return the device with this ID or raise ``KeyError`` if absent."""
+
         if device_id not in self.device_inventory:
             raise KeyError(f"Device ID not in inventory: {device_id}")
         return self.device_inventory[device_id]
     
     def list_by_state(self, state: str) -> list[Device]:
         """Return all inventory devices currently in ``state``."""
+
         devices = []
         for device in self.device_inventory.values():
             if device.device_state == state:
@@ -79,13 +99,14 @@ class DeviceInventory:
 
 class HealthCheckResult:
     """Store a device's health status and reasons it failed a check."""
-    
+
     def __init__(self,
                  device_id: str,
                  healthy: bool = True,
                  reasons: list[str] | None = None
                  ) -> None:
         """Initialize a healthy result, optionally with existing findings."""
+
         self.device_id = device_id
         self.healthy = healthy
         self.reasons = [] if reasons is None else reasons
@@ -94,6 +115,7 @@ class HealthCheckResult:
         self, device_id: str, inventory: DeviceInventory
     ) -> int | None:
         """Return battery level, or ``None`` when the device is not found."""
+
         try:
             device = inventory.lookup(device_id)
         except KeyError:
@@ -104,6 +126,7 @@ class HealthCheckResult:
         self, device_id: str, inventory: DeviceInventory
     ) -> bool | None:
         """Return connection status, or ``None`` when the device is not found."""
+
         try:
             device = inventory.lookup(device_id)
         except KeyError:
@@ -114,9 +137,11 @@ class HealthCheckResult:
         self, device_id: str, inventory: DeviceInventory
     ) -> HealthCheckResult | None:
         """Check battery and connectivity; return ``None`` for an unknown ID."""
+
         try:
             device = inventory.lookup(device_id)
         except KeyError:
+            logger.debug("operation=health_check device_id=%s outcome=not_found", device_id)
             return None
         if device.battery_level is None or not 20 <= device.battery_level <= 100:
             self.reasons.append(f"battery level: {device.battery_level}")
@@ -124,6 +149,12 @@ class HealthCheckResult:
         if device.is_connected is None or device.is_connected is False:
             self.reasons.append(f"device connected: {device.is_connected}")
             self.healthy = False
+        logger.debug(
+            "operation=health_check device_id=%s healthy=%s reasons=%s",
+            device_id,
+            self.healthy,
+            self.reasons,
+        )
         return self
 
 
@@ -137,6 +168,7 @@ class ProvisioningResult:
                  message: str
                  ) -> None:
         """Store the target device, requested settings, and operation outcome."""
+
         self.device_id = device_id
         self.requested_configuration = requested_configuration
         self.success = success
@@ -148,7 +180,13 @@ def provision_device(device: Device, config: DeviceConfig) -> ProvisioningResult
     The settings must include an OS version, locale, timezone, and test profile.
     A device that is not available or has incomplete settings is left unchanged.
     """
+
     if device.device_state != AVAILABLE:
+        logger.debug(
+            "operation=provision device_id=%s outcome=rejected reason=device_not_available state=%s",
+            device.device_id,
+            device.device_state,
+        )
         return ProvisioningResult(
             device.device_id,
             config,
@@ -157,6 +195,10 @@ def provision_device(device: Device, config: DeviceConfig) -> ProvisioningResult
         )
 
     if "os_version" not in config or not config["os_version"]:
+        logger.debug(
+            "operation=provision device_id=%s outcome=rejected reason=missing_os_version",
+            device.device_id,
+        )
         return ProvisioningResult(
             device.device_id,
             config,
@@ -166,6 +208,11 @@ def provision_device(device: Device, config: DeviceConfig) -> ProvisioningResult
     settings_required = ["locale", "timezone", "test_profile"]
     missed_settings = [setting for setting in settings_required if not config.get(setting)]
     if missed_settings:
+        logger.debug(
+            "operation=provision device_id=%s outcome=rejected missing_settings=%s",
+            device.device_id,
+            missed_settings,
+        )
         return ProvisioningResult(
             device.device_id,
             config,
@@ -178,6 +225,11 @@ def provision_device(device: Device, config: DeviceConfig) -> ProvisioningResult
         for key, value in config.items()
         if key != "os_version"
     }
+    logger.debug(
+        "operation=provision device_id=%s outcome=success os_version=%s",
+        device.device_id,
+        device.os_version,
+    )
     return ProvisioningResult(
         device.device_id,
         config,
@@ -206,12 +258,14 @@ class SimulatedDeviceAgent:
 
     def __init__(self, failures_before_success: int = 0) -> None:
         """Create an agent; reject a negative transient-failure count."""
+
         if failures_before_success < 0:
             raise ValueError("failures_before_success cannot be negative")
         self.failures_remaining = failures_before_success     
            
     def probe(self, device: Device) -> str:
         """Probe once, raising a permanent or retryable error when appropriate."""
+
         if device.device_state == RETIRED:
             raise PermanentDeviceError(
                 f"Cannot probe retired device {device.device_id}"
@@ -233,6 +287,7 @@ class SimulatedDeviceAgent:
             PermanentDeviceError: The device is retired.
             RetryExhaustedError: Every allowed attempt failed transiently.
         """
+
         for attempt in range(1, max_attempts + 1):
             try:
                 result = self.probe(device)

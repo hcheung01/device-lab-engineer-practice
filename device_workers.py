@@ -21,6 +21,7 @@ def check_one_device(
 
     The elapsed time includes the randomly simulated device response delay.
     """
+
     started_at = time.perf_counter()
 
     delay_seconds = random.uniform(0.05, 3.5)
@@ -50,6 +51,7 @@ def probe_one_device(device: Device) -> None:
     Each worker creates its own agent. Retired devices are logged as permanent
     failures, while exhausted transient failures are logged separately.
     """
+
     started_at = time.perf_counter()
     delay_seconds = random.uniform(0.05, 3.5)
     logger.info(
