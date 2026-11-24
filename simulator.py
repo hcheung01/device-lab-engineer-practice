@@ -177,8 +177,13 @@ class ProvisioningResult:
 def provision_device(device: Device, config: DeviceConfig) -> ProvisioningResult:
     """Apply configuration to an available device and return the outcome.
 
-    The settings must include an OS version, locale, timezone, and test profile.
-    A device that is not available or has incomplete settings is left unchanged.
+    Args:
+        device: Device to configure.
+        config: Requested settings: OS version, locale, timezone, and test profile.
+
+    Returns:
+        A result indicating success or why provisioning was rejected. The device
+        is unchanged when it is unavailable or the configuration is incomplete.
     """
 
     if device.device_state != AVAILABLE:
@@ -282,6 +287,14 @@ class SimulatedDeviceAgent:
         self, device: Device, max_attempts: int, delay_seconds: float = 0.1
     ) -> str | None:
         """Probe until success, a permanent error, or retry attempts are exhausted.
+
+        Args:
+            device: Device to probe.
+            max_attempts: Maximum number of attempts; use at least one.
+            delay_seconds: Wait time between retryable attempts.
+
+        Returns:
+            The success message, or ``None`` if no attempts are made.
 
         Raises:
             PermanentDeviceError: The device is retired.

@@ -44,12 +44,14 @@ def main() -> None:
         for future in as_completed(futures):
             device_id = futures[future]
             try:
-                future.result()
+                duration = future.result()
             except Exception:
                 logger.exception(
                     "operation=probe device_id=%s outcome=failed",
                     device_id
                 )
+            else:
+                telemetry.record("probe", duration)
     
     # Health checks use the same bounded-concurrency pattern as probes.
     with ThreadPoolExecutor(max_workers=3) as executor:

@@ -45,11 +45,14 @@ def check_one_device(
     )
     return device_id, health_result, duration
 
-def probe_one_device(device: Device) -> None:
-    """Probe one device with retries and log its outcome and elapsed time.
+def probe_one_device(device: Device) -> float:
+    """Probe one device and return the elapsed time in seconds.
 
     Each worker creates its own agent. Retired devices are logged as permanent
     failures, while exhausted transient failures are logged separately.
+
+    Returns:
+        Elapsed seconds, including simulated latency and retry delays.
     """
 
     started_at = time.perf_counter()
@@ -78,3 +81,4 @@ def probe_one_device(device: Device) -> None:
         device.device_id,
         duration,
     )
+    return duration
