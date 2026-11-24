@@ -1,131 +1,164 @@
-2026-11-19 23:30:00,332 INFO [MainThread] __main__ Device simulator started
-2026-11-19 23:30:00,333 INFO [MainThread] __main__ devices.json file path: /Users/heindrickcheung/MyProjects/device-lab-engineer-practice/devices.json
-2026-11-19 23:30:00,333 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-001 status=started simulated_delay=2.615s
-2026-11-19 23:30:00,333 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-003 status=started simulated_delay=0.869s
-2026-11-19 23:30:00,333 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-002 status=started simulated_delay=1.868s
-2026-11-19 23:30:01,207 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-003 status=finished duration=0.873s
-2026-11-19 23:30:01,207 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-004 status=started simulated_delay=2.419s
-2026-11-19 23:30:01,207 INFO [MainThread] __main__ operation=health_check device_id=hiphone-003 healthy=True reasons=[] healthcheck_duration=0.8734383329865523
-2026-11-19 23:30:02,202 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-002 status=finished duration=1.869s
-2026-11-19 23:30:02,202 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-005 status=started simulated_delay=2.419s
-2026-11-19 23:30:02,202 INFO [MainThread] __main__ operation=health_check device_id=mypad-002 healthy=False reasons=['battery level: None', 'device connected: False'] healthcheck_duration=1.8688141250022454
-2026-11-19 23:30:02,952 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-001 status=finished duration=2.619s
-2026-11-19 23:30:02,953 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-006 status=started simulated_delay=1.074s
-2026-11-19 23:30:02,953 ERROR [MainThread] __main__ operation=health_check device_id=hiphone-001 outcome=failed
-Traceback (most recent call last):
-  File "/Users/heindrickcheung/MyProjects/device-lab-engineer-practice/main.py", line 121, in main
-    raise RuntimeError("Simulated worker failure")
-RuntimeError: Simulated worker failure
-2026-11-19 23:30:03,628 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-004 status=finished duration=2.421s
-2026-11-19 23:30:03,629 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-007 status=started simulated_delay=1.051s
-2026-11-19 23:30:03,629 INFO [MainThread] __main__ operation=health_check device_id=bigmac-004 healthy=False reasons=['battery level: 12'] healthcheck_duration=2.421247416001279
-2026-11-19 23:30:04,032 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-006 status=finished duration=1.079s
-2026-11-19 23:30:04,032 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-008 status=started simulated_delay=3.110s
-2026-11-19 23:30:04,032 INFO [MainThread] __main__ operation=health_check device_id=bigmac-006 healthy=True reasons=[] healthcheck_duration=1.0790278750064317
-2026-11-19 23:30:04,624 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-005 status=finished duration=2.422s
-2026-11-19 23:30:04,625 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-009 status=started simulated_delay=2.958s
-2026-11-19 23:30:04,625 INFO [MainThread] __main__ operation=health_check device_id=hiphone-005 healthy=True reasons=[] healthcheck_duration=2.422171707992675
-2026-11-19 23:30:04,681 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-007 status=finished duration=1.052s
-2026-11-19 23:30:04,681 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-010 status=started simulated_delay=2.532s
-2026-11-19 23:30:04,682 INFO [MainThread] __main__ operation=health_check device_id=swatch-007 healthy=False reasons=['battery level: 18', 'device connected: False'] healthcheck_duration=1.052216790994862
-2026-11-19 23:30:07,147 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-008 status=finished duration=3.115s
-2026-11-19 23:30:07,147 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-011 status=started simulated_delay=0.922s
-2026-11-19 23:30:07,148 INFO [MainThread] __main__ operation=health_check device_id=mypad-008 healthy=False reasons=['battery level: None', 'device connected: False'] healthcheck_duration=3.1148055410012603
-2026-11-19 23:30:07,217 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-010 status=finished duration=2.536s
-2026-11-19 23:30:07,217 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-012 status=started simulated_delay=2.593s
-2026-11-19 23:30:07,217 INFO [MainThread] __main__ operation=health_check device_id=bigmac-010 healthy=False reasons=['device connected: False'] healthcheck_duration=2.535645875002956
-2026-11-19 23:30:07,589 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-009 status=finished duration=2.964s
-2026-11-19 23:30:07,589 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-013 status=started simulated_delay=1.701s
-2026-11-19 23:30:07,589 INFO [MainThread] __main__ operation=health_check device_id=mypad-009 healthy=True reasons=[] healthcheck_duration=2.963757749996148
-2026-11-19 23:30:08,075 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-011 status=finished duration=0.927s
-2026-11-19 23:30:08,075 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-014 status=started simulated_delay=1.451s
-2026-11-19 23:30:08,075 INFO [MainThread] __main__ operation=health_check device_id=swatch-011 healthy=True reasons=[] healthcheck_duration=0.927182792001986
-2026-11-19 23:30:09,295 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-013 status=finished duration=1.706s
-2026-11-19 23:30:09,295 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-015 status=started simulated_delay=2.644s
-2026-11-19 23:30:09,296 INFO [MainThread] __main__ operation=health_check device_id=mypad-013 healthy=False reasons=['battery level: None'] healthcheck_duration=1.7059251669998048
-2026-11-19 23:30:09,529 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-014 status=finished duration=1.454s
-2026-11-19 23:30:09,529 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-016 status=started simulated_delay=1.198s
-2026-11-19 23:30:09,529 INFO [MainThread] __main__ operation=health_check device_id=bigmac-014 healthy=True reasons=[] healthcheck_duration=1.4540448339976138
-2026-11-19 23:30:09,813 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-012 status=finished duration=2.596s
-2026-11-19 23:30:09,814 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-017 status=started simulated_delay=3.182s
-2026-11-19 23:30:09,814 INFO [MainThread] __main__ operation=health_check device_id=hiphone-012 healthy=False reasons=['battery level: 19'] healthcheck_duration=2.5959918750013458
-2026-11-19 23:30:10,732 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-016 status=finished duration=1.202s
-2026-11-19 23:30:10,732 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-018 status=started simulated_delay=2.002s
-2026-11-19 23:30:10,732 INFO [MainThread] __main__ operation=health_check device_id=hiphone-016 healthy=True reasons=[] healthcheck_duration=1.2023909999988973
-2026-11-19 23:30:11,944 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-015 status=finished duration=2.649s
-2026-11-19 23:30:11,945 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-019 status=started simulated_delay=0.690s
-2026-11-19 23:30:11,945 INFO [MainThread] __main__ operation=health_check device_id=swatch-015 healthy=False reasons=['device connected: False'] healthcheck_duration=2.6490347500075586
-2026-11-19 23:30:12,640 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-019 status=finished duration=0.695s
-2026-11-19 23:30:12,641 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-020 status=started simulated_delay=3.165s
-2026-11-19 23:30:12,641 INFO [MainThread] __main__ operation=health_check device_id=swatch-019 healthy=True reasons=[] healthcheck_duration=0.6951275419996819
-2026-11-19 23:30:12,739 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-018 status=finished duration=2.007s
-2026-11-19 23:30:12,739 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-021 status=started simulated_delay=0.608s
-2026-11-19 23:30:12,739 INFO [MainThread] __main__ operation=health_check device_id=bigmac-018 healthy=True reasons=[] healthcheck_duration=2.0065968749986496
-2026-11-19 23:30:13,001 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-017 status=finished duration=3.187s
-2026-11-19 23:30:13,001 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-022 status=started simulated_delay=0.351s
-2026-11-19 23:30:13,001 INFO [MainThread] __main__ operation=health_check device_id=mypad-017 healthy=True reasons=[] healthcheck_duration=3.186687791996519
-2026-11-19 23:30:13,352 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=mypad-021 status=finished duration=0.613s
-2026-11-19 23:30:13,352 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-023 status=started simulated_delay=1.140s
-2026-11-19 23:30:13,352 INFO [MainThread] __main__ operation=health_check device_id=mypad-021 healthy=False reasons=['battery level: None'] healthcheck_duration=0.6125027919915738
-2026-11-19 23:30:13,357 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-022 status=finished duration=0.356s
-2026-11-19 23:30:13,357 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-024 status=started simulated_delay=0.165s
-2026-11-19 23:30:13,357 INFO [MainThread] __main__ operation=health_check device_id=bigmac-022 healthy=True reasons=[] healthcheck_duration=0.3562041249970207
-2026-11-19 23:30:13,528 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-024 status=finished duration=0.171s
-2026-11-19 23:30:13,528 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-025 status=started simulated_delay=1.370s
-2026-11-19 23:30:13,528 INFO [MainThread] __main__ operation=health_check device_id=hiphone-024 healthy=True reasons=[] healthcheck_duration=0.17061704200750683
-2026-11-19 23:30:14,496 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-023 status=finished duration=1.144s
-2026-11-19 23:30:14,497 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-026 status=started simulated_delay=2.916s
-2026-11-19 23:30:14,497 INFO [MainThread] __main__ operation=health_check device_id=swatch-023 healthy=True reasons=[] healthcheck_duration=1.1444880409981124
-2026-11-19 23:30:14,904 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-025 status=finished duration=1.375s
-2026-11-19 23:30:14,904 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-027 status=started simulated_delay=1.465s
-2026-11-19 23:30:14,904 INFO [MainThread] __main__ operation=health_check device_id=mypad-025 healthy=False reasons=['device connected: False'] healthcheck_duration=1.3753659580106614
-2026-11-19 23:30:15,811 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-020 status=finished duration=3.170s
-2026-11-19 23:30:15,811 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-028 status=started simulated_delay=1.147s
-2026-11-19 23:30:15,811 INFO [MainThread] __main__ operation=health_check device_id=hiphone-020 healthy=False reasons=['battery level: 19', 'device connected: False'] healthcheck_duration=3.1702354160079267
-2026-11-19 23:30:16,370 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-027 status=finished duration=1.467s
-2026-11-19 23:30:16,371 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-029 status=started simulated_delay=1.887s
-2026-11-19 23:30:16,371 INFO [MainThread] __main__ operation=health_check device_id=swatch-027 healthy=True reasons=[] healthcheck_duration=1.466777625013492
-2026-11-19 23:30:16,962 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-028 status=finished duration=1.151s
-2026-11-19 23:30:16,962 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-030 status=started simulated_delay=0.799s
-2026-11-19 23:30:16,962 INFO [MainThread] __main__ operation=health_check device_id=hiphone-028 healthy=False reasons=['battery level: 19'] healthcheck_duration=1.1513517499988666
-2026-11-19 23:30:17,423 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-026 status=finished duration=2.926s
-2026-11-19 23:30:17,423 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-031 status=started simulated_delay=3.406s
-2026-11-19 23:30:17,423 INFO [MainThread] __main__ operation=health_check device_id=bigmac-026 healthy=True reasons=[] healthcheck_duration=2.925927749995026
-2026-11-19 23:30:17,764 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=bigmac-030 status=finished duration=0.801s
-2026-11-19 23:30:17,764 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-032 status=started simulated_delay=1.335s
-2026-11-19 23:30:17,764 INFO [MainThread] __main__ operation=health_check device_id=bigmac-030 healthy=False reasons=['device connected: False'] healthcheck_duration=0.8012263329874258
-2026-11-19 23:30:18,263 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-029 status=finished duration=1.892s
-2026-11-19 23:30:18,263 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-033 status=started simulated_delay=0.832s
-2026-11-19 23:30:18,263 INFO [MainThread] __main__ operation=health_check device_id=mypad-029 healthy=False reasons=['battery level: None'] healthcheck_duration=1.8921653340075864
-2026-11-19 23:30:19,098 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-033 status=finished duration=0.835s
-2026-11-19 23:30:19,098 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-034 status=started simulated_delay=1.400s
-2026-11-19 23:30:19,098 INFO [MainThread] __main__ operation=health_check device_id=mypad-033 healthy=True reasons=[] healthcheck_duration=0.8349894999992102
-2026-11-19 23:30:19,104 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-032 status=finished duration=1.340s
-2026-11-19 23:30:19,104 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-035 status=started simulated_delay=1.447s
-2026-11-19 23:30:19,104 INFO [MainThread] __main__ operation=health_check device_id=hiphone-032 healthy=True reasons=[] healthcheck_duration=1.3400735839968547
-2026-11-19 23:30:20,501 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=bigmac-034 status=finished duration=1.403s
-2026-11-19 23:30:20,502 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-036 status=started simulated_delay=3.465s
-2026-11-19 23:30:20,502 INFO [MainThread] __main__ operation=health_check device_id=bigmac-034 healthy=True reasons=[] healthcheck_duration=1.4033337500004563
-2026-11-19 23:30:20,556 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-035 status=finished duration=1.452s
-2026-11-19 23:30:20,556 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-037 status=started simulated_delay=0.610s
-2026-11-19 23:30:20,556 INFO [MainThread] __main__ operation=health_check device_id=swatch-035 healthy=False reasons=['device connected: False'] healthcheck_duration=1.4520010410051327
-2026-11-19 23:30:20,832 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=swatch-031 status=finished duration=3.409s
-2026-11-19 23:30:20,832 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-038 status=started simulated_delay=0.517s
-2026-11-19 23:30:20,832 INFO [MainThread] __main__ operation=health_check device_id=swatch-031 healthy=True reasons=[] healthcheck_duration=3.408977125000092
-2026-11-19 23:30:21,170 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-037 status=finished duration=0.614s
-2026-11-19 23:30:21,170 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-039 status=started simulated_delay=0.184s
-2026-11-19 23:30:21,170 INFO [MainThread] __main__ operation=health_check device_id=mypad-037 healthy=False reasons=['battery level: None'] healthcheck_duration=0.613675125001464
-2026-11-19 23:30:21,354 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-038 status=finished duration=0.522s
-2026-11-19 23:30:21,354 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-040 status=started simulated_delay=1.539s
-2026-11-19 23:30:21,355 INFO [MainThread] __main__ operation=health_check device_id=bigmac-038 healthy=True reasons=[] healthcheck_duration=0.5224116249883082
-2026-11-19 23:30:21,356 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=swatch-039 status=finished duration=0.186s
-2026-11-19 23:30:21,356 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-041 status=started simulated_delay=3.175s
-2026-11-19 23:30:21,356 INFO [MainThread] __main__ operation=health_check device_id=swatch-039 healthy=True reasons=[] healthcheck_duration=0.18624729200382717
-2026-11-19 23:30:22,896 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=hiphone-040 status=finished duration=1.541s
-2026-11-19 23:30:22,896 INFO [ThreadPoolExecutor-0_0] __main__ operation=health_check device_id=bigmac-042 status=started simulated_delay=3.311s
-2026-11-19 23:30:23,967 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=hiphone-036 status=finished duration=3.465s
-2026-11-19 23:30:23,968 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-043 status=started simulated_delay=1.478s
-2026-11-19 23:30:24,535 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=mypad-041 status=finished duration=3.178s
-2026-11-19 23:30:24,535 INFO [ThreadPoolExecutor-0_1] __main__ operation=health_check device_id=hiphone-044 status=started simulated_delay=1.476s
-2026-11-19 23:30:25,451 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=swatch-043 status=finished duration=1.484s
-2026-11-19 23:30:25,451 INFO [ThreadPoolExecutor-0_2] __main__ operation=health_check device_id=mypad-045 status=started simulated_delay=1.570s
+2026-11-24 15:16:56,257 INFO [MainThread] __main__ Device simulator started
+2026-11-24 15:16:56,257 INFO [MainThread] __main__ devices.json file path: /Users/heindrickcheung/MyProjects/device-lab-engineer-practice/devices.json
+2026-11-24 15:16:56,258 INFO [probe_0] device_workers operation=probing device_id=hiphone-001 status=started simulated_delay=1.517s
+2026-11-24 15:16:56,258 INFO [probe_2] device_workers operation=probing device_id=hiphone-003 status=started simulated_delay=2.824s
+2026-11-24 15:16:56,258 INFO [probe_1] device_workers operation=probing device_id=mypad-002 status=started simulated_delay=2.361s
+2026-11-24 15:16:57,779 WARNING [probe_0] simulator operation=probe device_id=hiphone-001 outcome=retrying attempt=1
+2026-11-24 15:16:57,883 INFO [probe_0] simulator operation=probe device_id=hiphone-001 outcome=success attempts=2
+2026-11-24 15:16:57,883 INFO [probe_0] device_workers operation=probing device_id=hiphone-001 status=finished duration=1.626s
+2026-11-24 15:16:57,883 INFO [probe_0] device_workers operation=probing device_id=bigmac-004 status=started simulated_delay=2.131s
+2026-11-24 15:16:58,624 WARNING [probe_1] simulator operation=probe device_id=mypad-002 outcome=retrying attempt=1
+2026-11-24 15:16:58,725 INFO [probe_1] simulator operation=probe device_id=mypad-002 outcome=success attempts=2
+2026-11-24 15:16:58,725 INFO [probe_1] device_workers operation=probing device_id=mypad-002 status=finished duration=2.468s
+2026-11-24 15:16:58,726 INFO [probe_1] device_workers operation=probing device_id=hiphone-005 status=started simulated_delay=3.117s
+2026-11-24 15:16:59,083 WARNING [probe_2] simulator operation=probe device_id=hiphone-003 outcome=retrying attempt=1
+2026-11-24 15:16:59,188 INFO [probe_2] simulator operation=probe device_id=hiphone-003 outcome=success attempts=2
+2026-11-24 15:16:59,188 INFO [probe_2] device_workers operation=probing device_id=hiphone-003 status=finished duration=2.931s
+2026-11-24 15:16:59,188 INFO [probe_2] device_workers operation=probing device_id=bigmac-006 status=started simulated_delay=1.268s
+2026-11-24 15:17:00,018 WARNING [probe_0] simulator operation=probe device_id=bigmac-004 outcome=retrying attempt=1
+2026-11-24 15:17:00,124 INFO [probe_0] simulator operation=probe device_id=bigmac-004 outcome=success attempts=2
+2026-11-24 15:17:00,124 INFO [probe_0] device_workers operation=probing device_id=bigmac-004 status=finished duration=2.240s
+2026-11-24 15:17:00,124 INFO [probe_0] device_workers operation=probing device_id=swatch-007 status=started simulated_delay=2.916s
+2026-11-24 15:17:00,461 WARNING [probe_2] simulator operation=probe device_id=bigmac-006 outcome=retrying attempt=1
+2026-11-24 15:17:00,566 INFO [probe_2] simulator operation=probe device_id=bigmac-006 outcome=success attempts=2
+2026-11-24 15:17:00,566 INFO [probe_2] device_workers operation=probing device_id=bigmac-006 status=finished duration=1.378s
+2026-11-24 15:17:00,566 INFO [probe_2] device_workers operation=probing device_id=mypad-008 status=started simulated_delay=1.547s
+2026-11-24 15:17:01,844 WARNING [probe_1] simulator operation=probe device_id=hiphone-005 outcome=retrying attempt=1
+2026-11-24 15:17:01,948 INFO [probe_1] simulator operation=probe device_id=hiphone-005 outcome=success attempts=2
+2026-11-24 15:17:01,948 INFO [probe_1] device_workers operation=probing device_id=hiphone-005 status=finished duration=3.223s
+2026-11-24 15:17:01,948 INFO [probe_1] device_workers operation=probing device_id=mypad-009 status=started simulated_delay=1.020s
+2026-11-24 15:17:02,116 ERROR [probe_2] device_workers operation=probe device_id=mypad-008 outcome=permanent device error=Cannot probe retired device mypad-008
+2026-11-24 15:17:02,117 INFO [probe_2] device_workers operation=probing device_id=mypad-008 status=finished duration=1.550s
+2026-11-24 15:17:02,117 INFO [probe_2] device_workers operation=probing device_id=bigmac-010 status=started simulated_delay=1.146s
+2026-11-24 15:17:02,969 WARNING [probe_1] simulator operation=probe device_id=mypad-009 outcome=retrying attempt=1
+2026-11-24 15:17:03,045 WARNING [probe_0] simulator operation=probe device_id=swatch-007 outcome=retrying attempt=1
+2026-11-24 15:17:03,074 INFO [probe_1] simulator operation=probe device_id=mypad-009 outcome=success attempts=2
+2026-11-24 15:17:03,074 INFO [probe_1] device_workers operation=probing device_id=mypad-009 status=finished duration=1.126s
+2026-11-24 15:17:03,074 INFO [probe_1] device_workers operation=probing device_id=swatch-011 status=started simulated_delay=0.687s
+2026-11-24 15:17:03,150 INFO [probe_0] simulator operation=probe device_id=swatch-007 outcome=success attempts=2
+2026-11-24 15:17:03,150 INFO [probe_0] device_workers operation=probing device_id=swatch-007 status=finished duration=3.026s
+2026-11-24 15:17:03,150 INFO [probe_0] device_workers operation=probing device_id=hiphone-012 status=started simulated_delay=1.727s
+2026-11-24 15:17:03,263 WARNING [probe_2] simulator operation=probe device_id=bigmac-010 outcome=retrying attempt=1
+2026-11-24 15:17:03,368 INFO [probe_2] simulator operation=probe device_id=bigmac-010 outcome=success attempts=2
+2026-11-24 15:17:03,368 INFO [probe_2] device_workers operation=probing device_id=bigmac-010 status=finished duration=1.252s
+2026-11-24 15:17:03,368 INFO [probe_2] device_workers operation=probing device_id=mypad-013 status=started simulated_delay=2.748s
+2026-11-24 15:17:03,767 ERROR [probe_1] device_workers operation=probe device_id=swatch-011 outcome=permanent device error=Cannot probe retired device swatch-011
+2026-11-24 15:17:03,767 INFO [probe_1] device_workers operation=probing device_id=swatch-011 status=finished duration=0.693s
+2026-11-24 15:17:03,767 INFO [probe_1] device_workers operation=probing device_id=bigmac-014 status=started simulated_delay=1.323s
+2026-11-24 15:17:04,877 WARNING [probe_0] simulator operation=probe device_id=hiphone-012 outcome=retrying attempt=1
+2026-11-24 15:17:04,983 INFO [probe_0] simulator operation=probe device_id=hiphone-012 outcome=success attempts=2
+2026-11-24 15:17:04,983 INFO [probe_0] device_workers operation=probing device_id=hiphone-012 status=finished duration=1.833s
+2026-11-24 15:17:04,983 INFO [probe_0] device_workers operation=probing device_id=swatch-015 status=started simulated_delay=1.849s
+2026-11-24 15:17:05,095 WARNING [probe_1] simulator operation=probe device_id=bigmac-014 outcome=retrying attempt=1
+2026-11-24 15:17:05,199 INFO [probe_1] simulator operation=probe device_id=bigmac-014 outcome=success attempts=2
+2026-11-24 15:17:05,199 INFO [probe_1] device_workers operation=probing device_id=bigmac-014 status=finished duration=1.432s
+2026-11-24 15:17:05,199 INFO [probe_1] device_workers operation=probing device_id=hiphone-016 status=started simulated_delay=2.459s
+2026-11-24 15:17:06,121 WARNING [probe_2] simulator operation=probe device_id=mypad-013 outcome=retrying attempt=1
+2026-11-24 15:17:06,226 INFO [probe_2] simulator operation=probe device_id=mypad-013 outcome=success attempts=2
+2026-11-24 15:17:06,227 INFO [probe_2] device_workers operation=probing device_id=mypad-013 status=finished duration=2.858s
+2026-11-24 15:17:06,227 INFO [probe_2] device_workers operation=probing device_id=mypad-017 status=started simulated_delay=0.620s
+2026-11-24 15:17:06,835 ERROR [probe_0] device_workers operation=probe device_id=swatch-015 outcome=permanent device error=Cannot probe retired device swatch-015
+2026-11-24 15:17:06,835 INFO [probe_0] device_workers operation=probing device_id=swatch-015 status=finished duration=1.852s
+2026-11-24 15:17:06,835 INFO [probe_0] device_workers operation=probing device_id=bigmac-018 status=started simulated_delay=2.828s
+2026-11-24 15:17:06,852 WARNING [probe_2] simulator operation=probe device_id=mypad-017 outcome=retrying attempt=1
+2026-11-24 15:17:06,956 INFO [probe_2] simulator operation=probe device_id=mypad-017 outcome=success attempts=2
+2026-11-24 15:17:06,956 INFO [probe_2] device_workers operation=probing device_id=mypad-017 status=finished duration=0.729s
+2026-11-24 15:17:06,956 INFO [probe_2] device_workers operation=probing device_id=swatch-019 status=started simulated_delay=0.109s
+2026-11-24 15:17:07,069 ERROR [probe_2] device_workers operation=probe device_id=swatch-019 outcome=permanent device error=Cannot probe retired device swatch-019
+2026-11-24 15:17:07,070 INFO [probe_2] device_workers operation=probing device_id=swatch-019 status=finished duration=0.113s
+2026-11-24 15:17:07,070 INFO [probe_2] device_workers operation=probing device_id=hiphone-020 status=started simulated_delay=2.282s
+2026-11-24 15:17:07,663 WARNING [probe_1] simulator operation=probe device_id=hiphone-016 outcome=retrying attempt=1
+2026-11-24 15:17:07,768 INFO [probe_1] simulator operation=probe device_id=hiphone-016 outcome=success attempts=2
+2026-11-24 15:17:07,768 INFO [probe_1] device_workers operation=probing device_id=hiphone-016 status=finished duration=2.569s
+2026-11-24 15:17:07,768 INFO [probe_1] device_workers operation=probing device_id=mypad-021 status=started simulated_delay=2.150s
+2026-11-24 15:17:09,356 WARNING [probe_2] simulator operation=probe device_id=hiphone-020 outcome=retrying attempt=1
+2026-11-24 15:17:09,461 INFO [probe_2] simulator operation=probe device_id=hiphone-020 outcome=success attempts=2
+2026-11-24 15:17:09,461 INFO [probe_2] device_workers operation=probing device_id=hiphone-020 status=finished duration=2.392s
+2026-11-24 15:17:09,461 INFO [probe_2] device_workers operation=probing device_id=bigmac-022 status=started simulated_delay=3.221s
+2026-11-24 15:17:09,667 WARNING [probe_0] simulator operation=probe device_id=bigmac-018 outcome=retrying attempt=1
+2026-11-24 15:17:09,771 INFO [probe_0] simulator operation=probe device_id=bigmac-018 outcome=success attempts=2
+2026-11-24 15:17:09,771 INFO [probe_0] device_workers operation=probing device_id=bigmac-018 status=finished duration=2.936s
+2026-11-24 15:17:09,771 INFO [probe_0] device_workers operation=probing device_id=swatch-023 status=started simulated_delay=0.724s
+2026-11-24 15:17:09,921 WARNING [probe_1] simulator operation=probe device_id=mypad-021 outcome=retrying attempt=1
+2026-11-24 15:17:10,021 INFO [probe_1] simulator operation=probe device_id=mypad-021 outcome=success attempts=2
+2026-11-24 15:17:10,021 INFO [probe_1] device_workers operation=probing device_id=mypad-021 status=finished duration=2.253s
+2026-11-24 15:17:10,021 INFO [probe_1] device_workers operation=probing device_id=hiphone-024 status=started simulated_delay=0.588s
+2026-11-24 15:17:10,497 ERROR [probe_0] device_workers operation=probe device_id=swatch-023 outcome=permanent device error=Cannot probe retired device swatch-023
+2026-11-24 15:17:10,497 INFO [probe_0] device_workers operation=probing device_id=swatch-023 status=finished duration=0.726s
+2026-11-24 15:17:10,497 INFO [probe_0] device_workers operation=probing device_id=mypad-025 status=started simulated_delay=0.092s
+2026-11-24 15:17:10,591 WARNING [probe_0] simulator operation=probe device_id=mypad-025 outcome=retrying attempt=1
+2026-11-24 15:17:10,612 WARNING [probe_1] simulator operation=probe device_id=hiphone-024 outcome=retrying attempt=1
+2026-11-24 15:17:10,696 INFO [probe_0] simulator operation=probe device_id=mypad-025 outcome=success attempts=2
+2026-11-24 15:17:10,696 INFO [probe_0] device_workers operation=probing device_id=mypad-025 status=finished duration=0.199s
+2026-11-24 15:17:10,696 INFO [probe_0] device_workers operation=probing device_id=bigmac-026 status=started simulated_delay=0.361s
+2026-11-24 15:17:10,713 INFO [probe_1] simulator operation=probe device_id=hiphone-024 outcome=success attempts=2
+2026-11-24 15:17:10,713 INFO [probe_1] device_workers operation=probing device_id=hiphone-024 status=finished duration=0.692s
+2026-11-24 15:17:10,713 INFO [probe_1] device_workers operation=probing device_id=swatch-027 status=started simulated_delay=3.432s
+2026-11-24 15:17:11,062 WARNING [probe_0] simulator operation=probe device_id=bigmac-026 outcome=retrying attempt=1
+2026-11-24 15:17:11,163 INFO [probe_0] simulator operation=probe device_id=bigmac-026 outcome=success attempts=2
+2026-11-24 15:17:11,163 INFO [probe_0] device_workers operation=probing device_id=bigmac-026 status=finished duration=0.467s
+2026-11-24 15:17:11,163 INFO [probe_0] device_workers operation=probing device_id=hiphone-028 status=started simulated_delay=1.749s
+2026-11-24 15:17:12,684 WARNING [probe_2] simulator operation=probe device_id=bigmac-022 outcome=retrying attempt=1
+2026-11-24 15:17:12,788 INFO [probe_2] simulator operation=probe device_id=bigmac-022 outcome=success attempts=2
+2026-11-24 15:17:12,788 INFO [probe_2] device_workers operation=probing device_id=bigmac-022 status=finished duration=3.327s
+2026-11-24 15:17:12,788 INFO [probe_2] device_workers operation=probing device_id=mypad-029 status=started simulated_delay=3.265s
+2026-11-24 15:17:12,917 WARNING [probe_0] simulator operation=probe device_id=hiphone-028 outcome=retrying attempt=1
+2026-11-24 15:17:13,021 INFO [probe_0] simulator operation=probe device_id=hiphone-028 outcome=success attempts=2
+2026-11-24 15:17:13,021 INFO [probe_0] device_workers operation=probing device_id=hiphone-028 status=finished duration=1.858s
+2026-11-24 15:17:13,021 INFO [probe_0] device_workers operation=probing device_id=bigmac-030 status=started simulated_delay=2.669s
+2026-11-24 15:17:14,145 ERROR [probe_1] device_workers operation=probe device_id=swatch-027 outcome=permanent device error=Cannot probe retired device swatch-027
+2026-11-24 15:17:14,146 INFO [probe_1] device_workers operation=probing device_id=swatch-027 status=finished duration=3.433s
+2026-11-24 15:17:14,146 INFO [probe_1] device_workers operation=probing device_id=swatch-031 status=started simulated_delay=0.688s
+2026-11-24 15:17:14,838 ERROR [probe_1] device_workers operation=probe device_id=swatch-031 outcome=permanent device error=Cannot probe retired device swatch-031
+2026-11-24 15:17:14,838 INFO [probe_1] device_workers operation=probing device_id=swatch-031 status=finished duration=0.692s
+2026-11-24 15:17:14,838 INFO [probe_1] device_workers operation=probing device_id=hiphone-032 status=started simulated_delay=1.516s
+2026-11-24 15:17:15,693 WARNING [probe_0] simulator operation=probe device_id=bigmac-030 outcome=retrying attempt=1
+2026-11-24 15:17:15,793 INFO [probe_0] simulator operation=probe device_id=bigmac-030 outcome=success attempts=2
+2026-11-24 15:17:15,793 INFO [probe_0] device_workers operation=probing device_id=bigmac-030 status=finished duration=2.773s
+2026-11-24 15:17:15,793 INFO [probe_0] device_workers operation=probing device_id=mypad-033 status=started simulated_delay=2.341s
+2026-11-24 15:17:16,054 WARNING [probe_2] simulator operation=probe device_id=mypad-029 outcome=retrying attempt=1
+2026-11-24 15:17:16,155 INFO [probe_2] simulator operation=probe device_id=mypad-029 outcome=success attempts=2
+2026-11-24 15:17:16,155 INFO [probe_2] device_workers operation=probing device_id=mypad-029 status=finished duration=3.368s
+2026-11-24 15:17:16,156 INFO [probe_2] device_workers operation=probing device_id=bigmac-034 status=started simulated_delay=2.560s
+2026-11-24 15:17:16,356 WARNING [probe_1] simulator operation=probe device_id=hiphone-032 outcome=retrying attempt=1
+2026-11-24 15:17:16,461 INFO [probe_1] simulator operation=probe device_id=hiphone-032 outcome=success attempts=2
+2026-11-24 15:17:16,461 INFO [probe_1] device_workers operation=probing device_id=hiphone-032 status=finished duration=1.623s
+2026-11-24 15:17:16,461 INFO [probe_1] device_workers operation=probing device_id=swatch-035 status=started simulated_delay=1.856s
+2026-11-24 15:17:18,140 WARNING [probe_0] simulator operation=probe device_id=mypad-033 outcome=retrying attempt=1
+2026-11-24 15:17:18,244 INFO [probe_0] simulator operation=probe device_id=mypad-033 outcome=success attempts=2
+2026-11-24 15:17:18,244 INFO [probe_0] device_workers operation=probing device_id=mypad-033 status=finished duration=2.451s
+2026-11-24 15:17:18,245 INFO [probe_0] device_workers operation=probing device_id=hiphone-036 status=started simulated_delay=1.849s
+2026-11-24 15:17:18,318 ERROR [probe_1] device_workers operation=probe device_id=swatch-035 outcome=permanent device error=Cannot probe retired device swatch-035
+2026-11-24 15:17:18,318 INFO [probe_1] device_workers operation=probing device_id=swatch-035 status=finished duration=1.857s
+2026-11-24 15:17:18,319 INFO [probe_1] device_workers operation=probing device_id=mypad-037 status=started simulated_delay=0.969s
+2026-11-24 15:17:18,718 WARNING [probe_2] simulator operation=probe device_id=bigmac-034 outcome=retrying attempt=1
+2026-11-24 15:17:18,820 INFO [probe_2] simulator operation=probe device_id=bigmac-034 outcome=success attempts=2
+2026-11-24 15:17:18,820 INFO [probe_2] device_workers operation=probing device_id=bigmac-034 status=finished duration=2.664s
+2026-11-24 15:17:18,820 INFO [probe_2] device_workers operation=probing device_id=bigmac-038 status=started simulated_delay=3.022s
+2026-11-24 15:17:19,291 WARNING [probe_1] simulator operation=probe device_id=mypad-037 outcome=retrying attempt=1
+2026-11-24 15:17:19,395 INFO [probe_1] simulator operation=probe device_id=mypad-037 outcome=success attempts=2
+2026-11-24 15:17:19,395 INFO [probe_1] device_workers operation=probing device_id=mypad-037 status=finished duration=1.077s
+2026-11-24 15:17:19,395 INFO [probe_1] device_workers operation=probing device_id=swatch-039 status=started simulated_delay=3.170s
+2026-11-24 15:17:20,099 WARNING [probe_0] simulator operation=probe device_id=hiphone-036 outcome=retrying attempt=1
+2026-11-24 15:17:20,203 INFO [probe_0] simulator operation=probe device_id=hiphone-036 outcome=success attempts=2
+2026-11-24 15:17:20,203 INFO [probe_0] device_workers operation=probing device_id=hiphone-036 status=finished duration=1.958s
+2026-11-24 15:17:20,203 INFO [probe_0] device_workers operation=probing device_id=hiphone-040 status=started simulated_delay=2.005s
+2026-11-24 15:17:21,847 WARNING [probe_2] simulator operation=probe device_id=bigmac-038 outcome=retrying attempt=1
+2026-11-24 15:17:21,951 INFO [probe_2] simulator operation=probe device_id=bigmac-038 outcome=success attempts=2
+2026-11-24 15:17:21,952 INFO [probe_2] device_workers operation=probing device_id=bigmac-038 status=finished duration=3.132s
+2026-11-24 15:17:21,952 INFO [probe_2] device_workers operation=probing device_id=mypad-041 status=started simulated_delay=3.315s
+2026-11-24 15:17:22,213 WARNING [probe_0] simulator operation=probe device_id=hiphone-040 outcome=retrying attempt=1
+2026-11-24 15:17:22,318 INFO [probe_0] simulator operation=probe device_id=hiphone-040 outcome=success attempts=2
+2026-11-24 15:17:22,319 INFO [probe_0] device_workers operation=probing device_id=hiphone-040 status=finished duration=2.116s
+2026-11-24 15:17:22,319 INFO [probe_0] device_workers operation=probing device_id=bigmac-042 status=started simulated_delay=0.196s
+2026-11-24 15:17:22,516 WARNING [probe_0] simulator operation=probe device_id=bigmac-042 outcome=retrying attempt=1
+2026-11-24 15:17:22,568 ERROR [probe_1] device_workers operation=probe device_id=swatch-039 outcome=permanent device error=Cannot probe retired device swatch-039
+2026-11-24 15:17:22,568 INFO [probe_1] device_workers operation=probing device_id=swatch-039 status=finished duration=3.173s
+2026-11-24 15:17:22,568 INFO [probe_1] device_workers operation=probing device_id=swatch-043 status=started simulated_delay=0.459s
+2026-11-24 15:17:22,621 INFO [probe_0] simulator operation=probe device_id=bigmac-042 outcome=success attempts=2
+2026-11-24 15:17:22,622 INFO [probe_0] device_workers operation=probing device_id=bigmac-042 status=finished duration=0.303s
+2026-11-24 15:17:22,622 INFO [probe_0] device_workers operation=probing device_id=hiphone-044 status=started simulated_delay=2.940s
+2026-11-24 15:17:23,029 ERROR [probe_1] device_workers operation=probe device_id=swatch-043 outcome=permanent device error=Cannot probe retired device swatch-043
+2026-11-24 15:17:23,029 INFO [probe_1] device_workers operation=probing device_id=swatch-043 status=finished duration=0.460s
+2026-11-24 15:17:23,029 INFO [probe_1] device_workers operation=probing device_id=mypad-045 status=started simulated_delay=0.893s
+2026-11-24 15:17:23,924 WARNING [probe_1] simulator operation=probe device_id=mypad-045 outcome=retrying attempt=1
