@@ -1,5 +1,13 @@
-from simulator import Device, DeviceInventory, HealthCheckResult, SimulatedDeviceAgent, RetryExhaustedError, PermanentDeviceError, provision_device
-from concurrent.futures import ThreadPoolExecutor, as_completed
+"""Per-device worker functions submitted to the fleet's thread pools."""
+
+from simulator import (
+    Device,
+    DeviceInventory,
+    HealthCheckResult,
+    SimulatedDeviceAgent,
+    RetryExhaustedError,
+    PermanentDeviceError,
+)
 import random
 import time
 import logging
@@ -9,6 +17,10 @@ logger = logging.getLogger(__name__)
 def check_one_device(
     device_id: str, inventory: DeviceInventory
 ) -> tuple[str, HealthCheckResult | None, float]:
+    """Run one health check and return its ID, result, and elapsed seconds.
+
+    The elapsed time includes the randomly simulated device response delay.
+    """
     started_at = time.perf_counter()
 
     delay_seconds = random.uniform(0.05, 3.5)
@@ -33,7 +45,11 @@ def check_one_device(
     return device_id, health_result, duration
 
 def probe_one_device(device: Device) -> None:
-    
+    """Probe one device with retries and log its outcome and elapsed time.
+
+    Each worker creates its own agent. Retired devices are logged as permanent
+    failures, while exhausted transient failures are logged separately.
+    """
     started_at = time.perf_counter()
     delay_seconds = random.uniform(0.05, 3.5)
     logger.info(
@@ -43,6 +59,7 @@ def probe_one_device(device: Device) -> None:
     )
     time.sleep(delay_seconds)
     
+    # Isolate retry state so concurrent devices do not share a failure counter.
     agent = SimulatedDeviceAgent(failures_before_success=1)    
     try:
         agent.probe_with_retries(device, max_attempts=3)

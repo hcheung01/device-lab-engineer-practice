@@ -1,70 +1,18 @@
-from simulator import Device, DeviceInventory, HealthCheckResult, SimulatedDeviceAgent, RetryExhaustedError, PermanentDeviceError, provision_device
+"""Load the simulated fleet and coordinate probes, health checks, and provisioning."""
+
+from simulator import Device, DeviceInventory, provision_device
 from device_workers import check_one_device, probe_one_device
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from telemetry import Telemetry
-import random
 import json
 import time
 import logging
 
 logger = logging.getLogger(__name__)
 
-# def check_one_device(
-#     device_id: str, inventory: DeviceInventory
-# ) -> tuple[str, HealthCheckResult | None, float]:
-#     started_at = time.perf_counter()
-
-#     delay_seconds = random.uniform(0.05, 3.5)
-#     logger.info(
-#         "operation=health_check device_id=%s status=started simulated_delay=%.3fs",
-#         device_id,
-#         delay_seconds,
-#     )
-
-#     time.sleep(delay_seconds)
-
-#     health_result = HealthCheckResult(device_id).check_health(
-#         device_id, inventory
-#     )
-#     duration = time.perf_counter() - started_at
-
-#     logger.info(
-#         "operation=health_check device_id=%s status=finished duration=%.3fs",
-#         device_id,
-#         duration,
-#     )
-#     return device_id, health_result, duration
-
-# def probe_one_device(device: Device) -> None:
-    
-#     started_at = time.perf_counter()
-#     delay_seconds = random.uniform(0.05, 3.5)
-#     logger.info(
-#         "operation=probing device_id=%s status=started simulated_delay=%.3fs",
-#         device.device_id,
-#         delay_seconds,
-#     )
-#     time.sleep(delay_seconds)
-    
-#     agent = SimulatedDeviceAgent(failures_before_success=1)    
-#     try:
-#         agent.probe_with_retries(device, max_attempts=3)
-#     except RetryExhaustedError as error:
-#         logger.error("operation=probe device_id=%s outcome=exhausted error=%s",
-#                     device.device_id, error)
-#     except PermanentDeviceError as error:
-#         logger.error("operation=probe device_id=%s outcome=permanent device error=%s",
-#                      device.device_id, error)
-    
-#     duration = time.perf_counter() - started_at
-#     logger.info(
-#         "operation=probing device_id=%s status=finished duration=%.3fs",
-#         device.device_id,
-#         duration,
-#     )
-
 def main() -> None:
+    """Run the device-lab simulation and log operation results and telemetry."""
     logging.basicConfig(
         filename="device_simulator.log",
         filemode="w",
@@ -78,12 +26,14 @@ def main() -> None:
     telemetry = Telemetry()
     inventory = DeviceInventory()
     
+    # Load the full inventory before submitting work for individual devices.
     with open(devices_fpath, "r") as json_file:
         device_data = json.load(json_file)
         for record in device_data:
             device = Device(**record)
             inventory.add(device)
     
+    # Probe tasks run concurrently; each worker creates an independent agent.
     with ThreadPoolExecutor(max_workers=3, thread_name_prefix="probe") as executor:
         futures = {
             executor.submit(probe_one_device, device): device.device_id
@@ -100,6 +50,7 @@ def main() -> None:
                     device_id
                 )
     
+    # Health checks use the same bounded-concurrency pattern as probes.
     with ThreadPoolExecutor(max_workers=3) as executor:
         futures = {
             executor.submit(check_one_device, device.device_id, inventory):
@@ -111,8 +62,6 @@ def main() -> None:
             expected_device_id = futures[future]
             try:
                 device_id, health_result, duration = future.result()
-                if device_id == "hiphone-001":
-                    raise RuntimeError("Simulated worker failure")
             except Exception:
                 logger.exception(
                     "operation=health_check device_id=%s outcome=failed",
@@ -136,6 +85,7 @@ def main() -> None:
                     duration
                 )
     
+    # Apply the settings record that matches each device ID.
     logger.info('Provisioning devices started')
     provisioning_settings_fpath = Path.cwd() / "provisioning_settings.json"
     logger.info(f'provisioning_settings.json file path: {provisioning_settings_fpath}')
