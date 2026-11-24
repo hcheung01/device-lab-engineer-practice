@@ -3,6 +3,8 @@
 import logging
 
 logger = logging.getLogger(__name__)
+
+
 class Telemetry:
     """Aggregate operation counts and durations for one simulator run."""
 
