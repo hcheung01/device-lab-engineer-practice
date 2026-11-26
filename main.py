@@ -25,15 +25,15 @@ def main() -> None:
             "%(name)s %(message)s"
         ),
     )
-    logger.info("Device simulator started")
-    devices_fpath = Path.cwd() / "devices.json"
-    logger.info("devices.json file path: %s", devices_fpath)
+    logger.info("Device Simulator Started\n")
+    devices_path = Path.cwd() / "configurations" / "devices.json"
+    logger.info("devices.json file path: %s", devices_path)
 
     telemetry = Telemetry()
     inventory = DeviceInventory()
 
     # Load the full inventory before submitting work for individual devices.
-    with open(devices_fpath, "r") as json_file:
+    with open(devices_path, "r") as json_file:
         device_data = json.load(json_file)
         for record in device_data:
             device = Device(**record)
@@ -98,12 +98,12 @@ def main() -> None:
 
     # Apply the settings record that matches each device ID.
     logger.info("Provisioning devices started")
-    provisioning_settings_fpath = Path.cwd() / "provisioning_settings.json"
+    provisioning_settings_path = Path.cwd() / "configurations" / "provisioning_settings.json"
     logger.info(
         "provisioning_settings.json file path: %s",
-        provisioning_settings_fpath,
+        provisioning_settings_path,
     )
-    with open(provisioning_settings_fpath, "r") as settings_file:
+    with open(provisioning_settings_path, "r") as settings_file:
         provisioning_data = json.load(settings_file)
         for data in provisioning_data:
             started_at = time.perf_counter()
