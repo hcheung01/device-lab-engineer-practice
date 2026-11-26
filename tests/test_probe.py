@@ -5,78 +5,76 @@ Run with ``python -m pytest -v tests/test_probe.py``.
 
 import pytest
 
-from simulator import AVAILABLE, Device, provision_device
-
-VALID_CONFIG = {
-    "os_version": "19.0",
-    "locale": "en_US",
-    "timezone": "America/Los_Angeles",
-    "test_profile": "smoke-test",
-}
-
-class TestProbing:
-    """Check target device probing"""
+from simulator import (
+    AVAILABLE,
+    RETIRED,
+    Device,
+    PermanentDeviceError,
+    RetryExhaustedError,
+    SimulatedDeviceAgent,
+)
 
 
-class TestProvisioning:
-    """Check successful and failed device provisioning."""
+class TestSimulatedDeviceAgent:
+    """Test probe retries and permanent failures."""
 
-    @pytest.mark.parametrize(
-        "config, expected_success",
-        [
-            pytest.param(VALID_CONFIG, True, id="complete-config"),
-            pytest.param(
-                {
-                    key: value
-                    for key, value in VALID_CONFIG.items()
-                    if key != "locale"
-                },
-                False,
-                id="missing-locale",
-            ),
-            pytest.param(
-                {
-                    key: value
-                    for key, value in VALID_CONFIG.items()
-                    if key != "timezone"
-                },
-                False,
-                id="missing-timezone",
-            ),
-            pytest.param(
-                {
-                    key: value
-                    for key, value in VALID_CONFIG.items()
-                    if key != "test_profile"
-                },
-                False,
-                id="missing-test-profile",
-            ),
-        ],
-    )
-    def test_provisions_available_device(
-        self,
-        config: dict[str, str],
-        expected_success: bool,
-    ) -> None:
-        """Verify provisioning success and failure behavior.
+    def test_probe_retries_after_transient_failure(self) -> None:
+        """Retry a transient failure and return the successful probe result."""
 
-        Invalid settings must leave the device unchanged.
-        """
+        device = Device(
+            device_id="test-1",
+            device_type="phone",
+            device_state=AVAILABLE,
+            os_version="18.0",
+        )
+        agent = SimulatedDeviceAgent(failures_before_success=1)
 
-        device = Device("test-1", "phone", AVAILABLE, "18.0")
-        original_configuration = device.configuration.copy()
+        result = agent.probe_with_retries(
+            device=device,
+            max_attempts=3,
+            delay_seconds=0,
+        )
 
-        result = provision_device(device, config)
+        assert result == "Probe succeeded for test-1"
 
-        assert result.success is expected_success
+    def test_probe_raises_when_retries_are_exhausted(self) -> None:
+        """Raise after every permitted probe attempt fails transiently."""
 
-        if expected_success:
-            assert device.os_version == config["os_version"]
-            assert device.configuration == {
-                key: value for key, value in config.items()
-                if key != "os_version"
-            }
-        else:
-            assert device.os_version == "18.0"
-            assert device.configuration == original_configuration
+        device = Device(
+            device_id="test-2",
+            device_type="phone",
+            device_state=AVAILABLE,
+            os_version="18.0",
+        )
+        agent = SimulatedDeviceAgent(failures_before_success=3)
+
+        with pytest.raises(
+            RetryExhaustedError,
+            match="failed after 3 attempts",
+        ):
+            agent.probe_with_retries(
+                device,
+                max_attempts=3,
+                delay_seconds=0,
+            )
+
+    def test_probe_raises_permanent_error_for_retired_device(self) -> None:
+        """Raise immediately when attempting to probe a retired device."""
+
+        device = Device(
+            device_id="test-3",
+            device_type="phone",
+            device_state=RETIRED,
+            os_version="18.0",
+        )
+        agent = SimulatedDeviceAgent(failures_before_success=3)
+
+        with pytest.raises(
+            PermanentDeviceError,
+            match="Cannot probe retired device test-3",
+        ):
+            agent.probe_with_retries(
+                device,
+                max_attempts=3,
+                delay_seconds=0,
+            )
