@@ -23,6 +23,14 @@ class Telemetry:
         self.duration_totals[operation] = (
             self.duration_totals.get(operation, 0.0) + duration_seconds
         )
+        logger.debug(
+            "telemetry_recorded operation=%s count=%s duration_seconds=%.6f "
+            "total_duration_seconds=%.6f",
+            operation,
+            self.operation_counts[operation],
+            duration_seconds,
+            self.duration_totals[operation],
+        )
 
     def snapshot(self) -> dict[str, dict[str, int | float]]:
         """Return copies of the current aggregates for logging or reporting."""

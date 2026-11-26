@@ -62,7 +62,7 @@ def probe_one_device(device: Device) -> float:
     started_at = time.perf_counter()
     delay_seconds = random.uniform(0.05, 1.5)
     logger.info(
-        "operation=probing device_id=%s status=started simulated_delay=%.3fs",
+        "operation=probe device_id=%s status=started simulated_delay=%.3fs",
         device.device_id,
         delay_seconds,
     )
@@ -88,7 +88,7 @@ def probe_one_device(device: Device) -> float:
 
     duration = time.perf_counter() - started_at
     logger.info(
-        "operation=probing device_id=%s status=finished duration=%.3fs",
+        "operation=probe device_id=%s status=finished duration=%.3fs",
         device.device_id,
         duration,
     )

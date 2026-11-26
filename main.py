@@ -25,7 +25,7 @@ def main() -> None:
             "%(name)s %(message)s"
         ),
     )
-    logger.info("Device Simulator Started\n")
+    logger.info("Device simulator started")
     devices_path = Path.cwd() / "configurations" / "devices.json"
     logger.info("devices.json file path: %s", devices_path)
 
@@ -33,11 +33,22 @@ def main() -> None:
     inventory = DeviceInventory()
 
     # Load the full inventory before submitting work for individual devices.
-    with open(devices_path, "r") as json_file:
-        device_data = json.load(json_file)
-        for record in device_data:
-            device = Device(**record)
-            inventory.add(device)
+    try:
+        with open(devices_path, "r", encoding="utf-8") as json_file:
+            device_data = json.load(json_file)
+            for record in device_data:
+                device = Device(**record)
+                inventory.add(device)
+    except (OSError, json.JSONDecodeError, TypeError, ValueError):
+        logger.exception(
+            "operation=inventory_load outcome=failed path=%s",
+            devices_path,
+        )
+        raise
+    logger.info(
+        "operation=inventory_load outcome=success device_count=%s",
+        len(inventory.device_inventory),
+    )
 
     # Probe tasks run concurrently; each worker creates an independent agent.
     with ThreadPoolExecutor(
@@ -98,33 +109,47 @@ def main() -> None:
 
     # Apply the settings record that matches each device ID.
     logger.info("Provisioning devices started")
-    provisioning_settings_path = Path.cwd() / "configurations" / "provisioning_settings.json"
+    provisioning_settings_path = (
+        Path.cwd() / "configurations" / "provisioning_settings.json"
+    )
     logger.info(
         "provisioning_settings.json file path: %s",
         provisioning_settings_path,
     )
-    with open(provisioning_settings_path, "r") as settings_file:
-        provisioning_data = json.load(settings_file)
-        for data in provisioning_data:
-            started_at = time.perf_counter()
-            device = inventory.lookup(data["device_id"])
-            provisioning_config = {
-                key: value
-                for key, value in data.items()
-                if key != "device_id"
-            }
-            provision_result = provision_device(device, provisioning_config)
-            logger.info(
-                "operation=provision device_id=%s success=%s message=%s",
-                provision_result.device_id,
-                provision_result.success,
-                provision_result.message,
-            )
-            telemetry.record(
-                "provision", time.perf_counter() - started_at
-            )
+    try:
+        with open(
+            provisioning_settings_path, "r", encoding="utf-8"
+        ) as settings_file:
+            provisioning_data = json.load(settings_file)
+    except (OSError, json.JSONDecodeError):
+        logger.exception(
+            "operation=provisioning_settings_load outcome=failed path=%s",
+            provisioning_settings_path,
+        )
+        raise
+
+    for data in provisioning_data:
+        started_at = time.perf_counter()
+        device = inventory.lookup(data["device_id"])
+        provisioning_config = {
+            key: value
+            for key, value in data.items()
+            if key != "device_id"
+        }
+        provision_result = provision_device(device, provisioning_config)
+        duration = time.perf_counter() - started_at
+        logger.info(
+            "operation=provision device_id=%s success=%s message=%s "
+            "duration_seconds=%.6f",
+            provision_result.device_id,
+            provision_result.success,
+            provision_result.message,
+            duration,
+        )
+        telemetry.record("provision", duration)
 
     # Report accumulated counts and durations once all operations are complete.
+    logger.info("Device simulator ended")
     logger.info("telemetry=%s", telemetry.snapshot())
 
 if __name__ == "__main__":
