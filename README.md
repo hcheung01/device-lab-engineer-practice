@@ -129,3 +129,35 @@ After adding bounded concurrency for fleet operations, use a mutex to protect sh
 - Make each state change check the current state and apply the transition while holding the same lock.
 - Keep the critical section limited to the state check and update.
 - Demonstrate concurrent attempts to update a device and confirm that invalid transitions are still rejected.
+
+## Exercise 8: Observe the device fleet with Prometheus and Grafana
+
+The current telemetry component keeps counts and duration totals in memory and writes a snapshot to the log when the run ends. That is useful for a short local run, but Grafana needs metrics that a monitoring system can collect while the simulator is running.
+
+Use this data flow:
+
+`simulator → Prometheus metrics endpoint → Prometheus → Grafana dashboard`
+
+Prometheus collects metrics from the simulator's HTTP `/metrics` endpoint. Grafana queries Prometheus and displays the results.
+
+### Requirements
+
+- Keep the simulator running long enough for Prometheus to scrape it repeatedly, such as by running fleet cycles on a configurable interval.
+- Expose metrics in Prometheus format from the Python process.
+- Track operation totals by operation and outcome, operation duration as a distribution, and current device totals by lifecycle state.
+- Use bounded labels such as `operation`, `outcome`, and `state`. Do not use a device ID as a metric label; a unique label per device creates high-cardinality metrics that are expensive to store and query.
+- Configure Prometheus to scrape the simulator and connect Grafana to Prometheus as a data source.
+- Build a dashboard showing operation rate, failures, latency percentiles, and fleet size by lifecycle state.
+- Keep existing logs for per-device details and errors. Use metrics for fleet-wide trends; avoid putting sensitive or unbounded details in metric labels.
+
+### Task
+
+Before implementing, write down the name, type, labels, and meaning of each metric you plan to expose. Then add instrumentation, run the simulator and monitoring services locally, and verify that the dashboard changes when you run successful and failing operations.
+
+### Design questions
+
+1. Why should operation duration be a histogram instead of only a total duration?
+2. What does a latency percentile tell you that an average does not?
+3. How will you distinguish a failed operation from a failed device health check?
+4. What should happen to the lifecycle-state gauge when the inventory changes?
+5. What monitoring data belongs in logs, and what belongs in metrics?
