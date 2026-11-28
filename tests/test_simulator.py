@@ -3,9 +3,12 @@
 Run with ``python -m pytest -v tests/test_simulator.py``.
 """
 
+from concurrent.futures import ThreadPoolExecutor
+from threading import Barrier
+
 import pytest
 
-from simulator import AVAILABLE, Device, provision_device
+from simulator import AVAILABLE, IN_USE, Device, provision_device
 
 VALID_CONFIG = {
     "os_version": "19.0",
@@ -77,3 +80,51 @@ class TestProvisioning:
         else:
             assert device.os_version == "18.0"
             assert device.configuration == original_configuration
+
+
+class TestDeviceLifecycle:
+    """Test device lifecycle state changes."""
+
+    def test_change_state_accepts_valid_and_rejects_invalid_transitions(
+        self,
+    ) -> None:
+        """Accept an allowed transition and reject a disallowed one."""
+
+        device = Device("test-1", "phone", AVAILABLE, "18.0")
+        device.change_state(IN_USE)
+        assert device.device_state == IN_USE
+
+        with pytest.raises(
+            ValueError,
+            match="New device state not allowed: retired",
+        ):
+            device.change_state("retired")
+
+    def test_concurrent_same_transition_allows_only_one(self) -> None:
+        """Allow one of two simultaneous identical state changes."""
+
+        device = Device("test-2", "phone", AVAILABLE, "18.0")
+        start_barrier = Barrier(2)
+
+        def attempt_transition() -> None:
+            start_barrier.wait()
+            device.change_state(IN_USE)
+
+        with ThreadPoolExecutor(max_workers=2) as executor:
+            futures = [
+                executor.submit(attempt_transition)
+                for _ in range(2)
+            ]
+
+        outcomes = []
+        for future in futures:
+            try:
+                future.result()
+            except ValueError:
+                outcomes.append("rejected")
+            else:
+                outcomes.append("success")
+
+        assert outcomes.count("success") == 1
+        assert outcomes.count("rejected") == 1
+        assert device.device_state == IN_USE

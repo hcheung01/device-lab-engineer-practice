@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import threading
 import time
 
 logger = logging.getLogger(__name__)
@@ -50,15 +51,17 @@ class Device:
         self.battery_level = battery_level
         self.is_connected = is_connected
         self.configuration = {} if configuration is None else configuration
+        self._state_lock = threading.Lock()
 
     def change_state(self, new_state: str) -> None:
         """Move to an allowed lifecycle state or raise ``ValueError``."""
 
-        allow_states = ALLOWED_TRANSITIONS[self.device_state]
-        if new_state not in allow_states:
-            raise ValueError(f"New device state not allowed: {new_state}")
-        old_state = self.device_state
-        self.device_state = new_state
+        with self._state_lock:
+            allow_states = ALLOWED_TRANSITIONS[self.device_state]
+            if new_state not in allow_states:
+                raise ValueError(f"New device state not allowed: {new_state}")
+            old_state = self.device_state
+            self.device_state = new_state
         logger.info(
             "operation=state_change device_id=%s old_state=%s new_state=%s",
             self.device_id,
