@@ -145,9 +145,12 @@ Prometheus collects metrics from the simulator's HTTP `/metrics` endpoint. Grafa
 - Keep the simulator running long enough for Prometheus to scrape it repeatedly, such as by running fleet cycles on a configurable interval.
 - Expose metrics in Prometheus format from the Python process.
 - Track operation totals by operation and outcome, operation duration as a distribution, and current device totals by lifecycle state.
+- Track simulator liveness and device heartbeat freshness as separate signals. Record when the last fleet cycle completed successfully, and track which devices have checked in within a configurable freshness window.
+- Show heartbeat freshness and stale-device counts in Grafana. Keep device IDs in logs or inventory lookups; do not add one metric time series per device ID for this exercise.
+- Choose a heartbeat interval and stale threshold, and account for delayed checks so one missed interval does not automatically classify hardware as dead.
 - Use bounded labels such as `operation`, `outcome`, and `state`. Do not use a device ID as a metric label; a unique label per device creates high-cardinality metrics that are expensive to store and query.
 - Configure Prometheus to scrape the simulator and connect Grafana to Prometheus as a data source.
-- Build a dashboard showing operation rate, failures, latency percentiles, and fleet size by lifecycle state.
+- Build a dashboard showing operation rate, failures, latency percentiles, fleet size by lifecycle state, simulator liveness, and stale-device counts.
 - Keep existing logs for per-device details and errors. Use metrics for fleet-wide trends; avoid putting sensitive or unbounded details in metric labels.
 
 ### Task
@@ -161,3 +164,5 @@ Before implementing, write down the name, type, labels, and meaning of each metr
 3. How will you distinguish a failed operation from a failed device health check?
 4. What should happen to the lifecycle-state gauge when the inventory changes?
 5. What monitoring data belongs in logs, and what belongs in metrics?
+6. Why can a reachable `/metrics` endpoint still report a stuck simulator?
+7. Does a stale device heartbeat prove that the device is dead? What other signals would you check?
