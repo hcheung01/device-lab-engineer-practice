@@ -1,0 +1,1402 @@
+[
+  {
+    "device_id": "hiphone-001",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-001",
+    "os_version": "18.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "hiphone-002",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "bigmac-001",
+    "os_version": "15.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "hiphone-003",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "bigmac-002",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-001",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "mypad-002",
+    "os_version": "17.6",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "mypad-003",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-003",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-002",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-004",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-004",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-004",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-003",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-005",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-005",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-005",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-004",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-006",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-006",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-006",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-005",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-007",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-007",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-007",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-006",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-008",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-008",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-008",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-007",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-009",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-009",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-009",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-008",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-010",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-010",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-010",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-009",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-011",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-011",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-011",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-010",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-012",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-012",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-012",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-011",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-013",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-013",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-013",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-012",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-014",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-014",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-014",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-013",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-015",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-015",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-015",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-014",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-016",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-016",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-016",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-015",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-017",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-017",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-017",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-016",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-018",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-018",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-018",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-017",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-019",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-019",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-019",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-018",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-020",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-020",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-020",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-019",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-021",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-021",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-021",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-020",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-022",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-022",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-022",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-021",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-023",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-023",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-023",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-022",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-024",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-024",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-024",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-023",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-025",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-025",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-025",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-024",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-026",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-026",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-026",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-025",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-027",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-027",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-027",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-026",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-028",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-028",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-028",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-027",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-029",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-029",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-029",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-028",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-030",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-030",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-030",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-029",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-031",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-031",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-031",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-030",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-032",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-032",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-032",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-031",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-033",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-033",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-033",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-032",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-034",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-034",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-034",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-033",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-035",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-035",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-035",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-034",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-036",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-036",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-036",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-035",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-037",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-037",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-037",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-036",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-038",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-038",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-038",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-037",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-039",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-039",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-039",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-038",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-040",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-040",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-040",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-039",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-041",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-041",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-041",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-040",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-042",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-042",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-042",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-041",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-043",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-043",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-043",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-042",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-044",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-044",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-044",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-043",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-045",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-045",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-045",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-044",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-046",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-046",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-046",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-045",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-047",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-047",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-047",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-046",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-048",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-048",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-048",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-047",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-049",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-049",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-049",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-048",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-050",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  },
+  {
+    "device_id": "mypad-050",
+    "os_version": "18.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "tablet-compatibility"
+  },
+  {
+    "device_id": "bigmac-050",
+    "os_version": "15.1",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "desktop-build-validation"
+  },
+  {
+    "device_id": "swatch-049",
+    "os_version": "11.0",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "wearable-smoke"
+  },
+  {
+    "device_id": "hiphone-051",
+    "os_version": "18.2",
+    "locale": "en_US",
+    "timezone": "America/Los_Angeles",
+    "test_profile": "mobile-smoke"
+  }
+]
