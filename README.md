@@ -11,7 +11,6 @@ A hands-on Python project for practicing device-lab infrastructure concepts for 
 5. Error handling, retries, and recovery
 6. Bounded concurrency for fleet operations
 7. Mutexes for safe concurrent device updates
-8. Reliability and scale trade-offs
 
 The simulator uses in-memory devices and simulated operations. It does not connect to or change real devices.
 
